@@ -97,7 +97,22 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: cards
+theme: keep
+
+base_info:
+  title: Hamster
+  author: Haoting
+  url: https://hati8haha.github.io
+
+style:
+  # Theme primary color
+  primary_color: "#0066CC"
+
+  # Avatar (You can use local image or image external link)
+  avatar: /images/avatar.svg
+
+  # Favicon (You can use local image or image external link)
+  favicon: /images/logo.svg
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
