@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    
+    
+    
+    
+    
+
+
+    <!-- meta -->
+
+
+<title>產品開發筆記 | 倉鼠跑滾輪</title>
+
+
+
+
+
+    <!-- OpenGraph -->
+ 
+    <meta name="description" content="tags: 產品開發工程師的一天 &#x2F; 兩周Sprint Planning - 0.5 day開發 + Daily Standup - 7.5 day部署 - 1 daySprint demo + Sprint retrospective - 1 day 工程師怎麼知道要做什麼PM 會告訴你 XDD 一個需求是怎麼產生的 stakeholder 提出需求 PM 開始撰寫 spec &amp;#x3">
+<meta property="og:type" content="article">
+<meta property="og:title" content="產品開發筆記">
+<meta property="og:url" content="https://hati8haha.github.io/2021/12/01/%E7%94%A2%E5%93%81%E9%96%8B%E7%99%BC%E7%AD%86%E8%A8%98/index.html">
+<meta property="og:site_name" content="倉鼠跑滾輪">
+<meta property="og:description" content="tags: 產品開發工程師的一天 &#x2F; 兩周Sprint Planning - 0.5 day開發 + Daily Standup - 7.5 day部署 - 1 daySprint demo + Sprint retrospective - 1 day 工程師怎麼知道要做什麼PM 會告訴你 XDD 一個需求是怎麼產生的 stakeholder 提出需求 PM 開始撰寫 spec &amp;#x3">
+<meta property="og:locale">
+<meta property="og:image" content="https://i.imgur.com/5lzyOJr.png">
+<meta property="og:image" content="https://i.imgur.com/QU7q981.png">
+<meta property="og:image" content="https://i.imgur.com/2oczlDH.png">
+<meta property="og:image" content="https://i.imgur.com/pKyYuvc.png">
+<meta property="og:image" content="https://i.imgur.com/ZEav2QM.png">
+<meta property="article:published_time" content="2021-11-30T23:47:32.000Z">
+<meta property="article:modified_time" content="2022-09-07T15:41:25.285Z">
+<meta property="article:author" content="Haoting">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://i.imgur.com/5lzyOJr.png">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+    
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/default.css" media="none">
+        
+    
+
+    
+    
+
+    
+
+     
+
+    <!-- custom head -->
+
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+    <body>
+        <div id="app">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">Demo</span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">首页</a>
+                
+                    <a href="/tags/" class="navbar-menu button">标签</a>
+                
+                    <a href="/archives/" class="navbar-menu button">归档</a>
+                
+                    <a href="/friends/" class="navbar-menu button">友链</a>
+                
+                    <a href="/page/" class="navbar-menu button">Page</a>
+                
+            </div>
+        
+        
+        
+
+        
+        
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                
+                    <a href="/" class="dropdown-menu button">首页</a>
+                
+                    <a href="/tags/" class="dropdown-menu button">标签</a>
+                
+                    <a href="/archives/" class="dropdown-menu button">归档</a>
+                
+                    <a href="/friends/" class="dropdown-menu button">友链</a>
+                
+                    <a href="/page/" class="dropdown-menu button">Page</a>
+                
+            </div>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    
+
+<div class="post-title">
+    <h1 class="post-title__text">
+        產品開發筆記
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2021/12/" class="post-meta__date button">2021-12-01</a>
+        
+ 
+        
+    
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+
+<article class="post content-card">
+    <div class="post__header"></div>
+    <div class="post__content">
+        <h6 id="tags-產品開發"><a href="#tags-產品開發" class="headerlink" title="tags: 產品開發"></a>tags: <code>產品開發</code></h6><h2 id="工程師的一天-x2F-兩周"><a href="#工程師的一天-x2F-兩周" class="headerlink" title="工程師的一天 &#x2F; 兩周"></a>工程師的一天 &#x2F; 兩周</h2><p>Sprint Planning - 0.5 day<br>開發 + Daily Standup - 7.5 day<br>部署 - 1 day<br>Sprint demo + Sprint retrospective - 1 day</p>
+<h2 id="工程師怎麼知道要做什麼"><a href="#工程師怎麼知道要做什麼" class="headerlink" title="工程師怎麼知道要做什麼"></a>工程師怎麼知道要做什麼</h2><p>PM 會告訴你 XDD</p>
+<h2 id="一個需求是怎麼產生的"><a href="#一個需求是怎麼產生的" class="headerlink" title="一個需求是怎麼產生的"></a>一個需求是怎麼產生的</h2><ol>
+<li>stakeholder 提出需求</li>
+<li>PM 開始撰寫 spec &#x3D;&gt; 功能</li>
+<li>畫 wireframe</li>
+<li>交給 designer 產生 mockup &#x3D;&gt; 畫面</li>
+<li>交給工程師開工</li>
+</ol>
+<p>功能 + 畫面 &#x3D; 工程師的工作</p>
+<h3 id="Product-Requirement-Document-產品需求文件"><a href="#Product-Requirement-Document-產品需求文件" class="headerlink" title="Product Requirement Document 產品需求文件"></a>Product Requirement Document 產品需求文件</h3><h3 id="Product-Specifications-產品規格書"><a href="#Product-Specifications-產品規格書" class="headerlink" title="Product Specifications 產品規格書"></a>Product Specifications 產品規格書</h3><p>規格盡可能與功能一致，工程師照規格做，有功能調整需請 PM 更新</p>
+<p><a target="_blank" rel="noopener" href="https://medium.com/as-a-product-designer/sop-ep01-prd-3c6d33880c34">【SOP不藏私】系列＃EP1「連猴子也會的PRD指南」</a></p>
+<p><a target="_blank" rel="noopener" href="http://www.woshipm.com/pmd/3327770.html">PRD到底该怎么写？更全面的文档范例来了：</a></p>
+<p><a target="_blank" rel="noopener" href="https://medium.com/y-pointer/product-prd-ca0ea9b75b85">【產品經理 PM｜需求文檔 PRD】優惠券發放的產品設計，需求文檔怎麼寫？</a></p>
+<h3 id="User-Story-使用者故事"><a href="#User-Story-使用者故事" class="headerlink" title="User Story 使用者故事"></a>User Story 使用者故事</h3><p>Task 任務 &#x3D; Card 卡片 &#x3D; Ticket 票 &#x3D; Issue 問題</p>
+<p>管理系統如 Jira</p>
+<h2 id="軟體開發方法論-Waterfall-瀑布流"><a href="#軟體開發方法論-Waterfall-瀑布流" class="headerlink" title="軟體開發方法論 - Waterfall 瀑布流"></a>軟體開發方法論 - Waterfall 瀑布流</h2><h3 id="Methodology-方法論"><a href="#Methodology-方法論" class="headerlink" title="Methodology 方法論"></a>Methodology 方法論</h3><h4 id="Waterfall-瀑布流"><a href="#Waterfall-瀑布流" class="headerlink" title="Waterfall 瀑布流"></a>Waterfall 瀑布流</h4><p><img src="https://i.imgur.com/5lzyOJr.png"><br>從頭到下，比較不適合有新功能增加</p>
+<h3 id="Agile-敏捷"><a href="#Agile-敏捷" class="headerlink" title="Agile 敏捷"></a>Agile 敏捷</h3><p><img src="https://i.imgur.com/QU7q981.png"><br>快速迭代、循環</p>
+<p>【文思不藏私】@敏捷宣言 12 原則</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=Z9QbYZh1YXY">什麼是敏捷?</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=HDmO7Ev7Mlc">【敏捷系列 - 1】什麼是敏捷？敏捷實例分享</a></li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://www.smartsheet.com/agile-vs-scrum-vs-waterfall-vs-kanban">What’s the Difference? Agile vs Scrum vs Waterfall vs Kanban</a></p>
+<p><a target="_blank" rel="noopener" href="https://medium.com/3pm-lab/pm-podcast-ep03-waterfall-vs-agile-82b214853112">【Podcast EP03】敏捷或瀑布開發哪個好？流程用哪種重要嗎？</a></p>
+<p>協助開發實作敏捷方法論的產品</p>
+<ol>
+<li>Kanban<br><img src="https://i.imgur.com/2oczlDH.png"></li>
+<li>Scrum<br><img src="https://i.imgur.com/pKyYuvc.png"><br><img src="https://i.imgur.com/ZEav2QM.png"><br>角色：<ul>
+<li>Product Owner：產品所有權、決定權（PM）</li>
+<li>ScrumMaster：協助 Scrum 進行（通常團隊不一定有，或可能 PM 兼）</li>
+<li>Team：執行者<br>與 Kanban 主要差異在 Scrum 有固定的 Sprint（衝刺）</li>
+</ul>
+</li>
+</ol>
+<p>協助做 retro 的工具：<a target="_blank" rel="noopener" href="https://reetro.io/">https://reetro.io/</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=9TycLR0TqFA">Introduction to Scrum - 7 Minutes</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=CQp0nGY4noo">【敏捷系列 - 3】Scrum中的短衝 (Sprint)</a></p>
+<h2 id="做完會部署到哪裡"><a href="#做完會部署到哪裡" class="headerlink" title="做完會部署到哪裡"></a>做完會部署到哪裡</h2><ol>
+<li>local 環境（本機）</li>
+<li>development 環境（dev）</li>
+<li>staging 環境 &#x2F; qa 環境（對外看不到的 production 環境，用來測試）</li>
+<li>production 環境</li>
+</ol>
+<p>每個環境是不同 Server</p>
+<h2 id="QA-會怎麼測試"><a href="#QA-會怎麼測試" class="headerlink" title="QA 會怎麼測試"></a>QA 會怎麼測試</h2><p>QA 只管功能出來有沒有錯</p>
+<h3 id="SIT系統整合測試"><a href="#SIT系統整合測試" class="headerlink" title="SIT	系統整合測試"></a>SIT	系統整合測試</h3><p>System Integration Testing	</p>
+<p>只測試功能是否正確</p>
+<h3 id="UAT使用者可用性測試"><a href="#UAT使用者可用性測試" class="headerlink" title="UAT	使用者可用性測試"></a>UAT	使用者可用性測試</h3><p>User Acceptance Testing	</p>
+<h2 id="怎麼樣算是完成"><a href="#怎麼樣算是完成" class="headerlink" title="怎麼樣算是完成"></a>怎麼樣算是完成</h2><p>想了解更多產品相關的知識，可以參考：做產品真是哭夭難！ — Marty Cagan 演講 70 分鐘中文逐字翻譯（附贈 YouTube 錄影）</p>
+<p><a target="_blank" rel="noopener" href="https://medium.com/3pm-lab/marty-cagan-producttank-taipei-speech-933e7dfc13af">https://medium.com/3pm-lab/marty-cagan-producttank-taipei-speech-933e7dfc13af</a></p>
+
+    </div>
+     
+    <div class="post-footer__meta"><p>updated at 2022-09-07</p></div> 
+    <div class="post-entry__tags"></div> 
+</article>
+
+
+    <div class="nav">
+        <div class="nav__prev">
+            
+                <a href="/2021/12/01/Linked%20List/" class="nav__link">
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#808080"></path></svg>
+                    </div>
+                    <div>
+                        <div class="nav__label">
+                            Previous Post
+                        </div>
+                        <div class="nav__title">
+                            Linked List
+                        </div>
+                    </div>
+                </a>
+            
+        </div>
+        <div class="nav__next">
+            
+                <a href="/2021/12/01/MVC/" class="nav__link">
+                    <div>
+                        <div class="nav__label">
+                            Next Post
+                        </div>
+                        <div class="nav__title">
+                            MVC
+                        </div>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#808080"></path></svg>
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+
+
+
+
+
+</main>
+
+            <footer class="footer">
+    
+    
+
+
+    
+     
+ 
+
+ 
+    
+        
+        <p class="footer-copyright">
+            Copyright © 2022 <a href="/">倉鼠跑滾輪</a>
+        </p>
+    
+    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+</footer>
+
+        </div>
+         
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+    
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+    </body>
+</html>

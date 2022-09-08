@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    
+    
+    
+    
+    
+
+
+    <!-- meta -->
+
+
+<title>Express 筆記 | 倉鼠跑滾輪</title>
+
+
+
+
+
+    <!-- OpenGraph -->
+ 
+    <meta name="description" content="tags: 後端Express123graph LRA[瀏覽器] --&gt; B[Express Server]B --&gt;A Apache + PHP12345graph LRA[瀏覽器] --&gt; B[Apache Server]B --&gt; C[PHP]C --&gt; BB --&gt;A 需要透過中間的 Apache Server，會受到檔案路徑的限制（可修改） MVC12">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Express 筆記">
+<meta property="og:url" content="https://hati8haha.github.io/2021/12/01/Express%20%E7%AD%86%E8%A8%98/index.html">
+<meta property="og:site_name" content="倉鼠跑滾輪">
+<meta property="og:description" content="tags: 後端Express123graph LRA[瀏覽器] --&gt; B[Express Server]B --&gt;A Apache + PHP12345graph LRA[瀏覽器] --&gt; B[Apache Server]B --&gt; C[PHP]C --&gt; BB --&gt;A 需要透過中間的 Apache Server，會受到檔案路徑的限制（可修改） MVC12">
+<meta property="og:locale">
+<meta property="article:published_time" content="2021-11-30T23:50:28.000Z">
+<meta property="article:modified_time" content="2022-09-07T15:41:25.281Z">
+<meta property="article:author" content="Haoting">
+<meta name="twitter:card" content="summary_large_image">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+    
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/default.css" media="none">
+        
+    
+
+    
+    
+
+    
+
+     
+
+    <!-- custom head -->
+
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+    <body>
+        <div id="app">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">Demo</span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">首页</a>
+                
+                    <a href="/tags/" class="navbar-menu button">标签</a>
+                
+                    <a href="/archives/" class="navbar-menu button">归档</a>
+                
+                    <a href="/friends/" class="navbar-menu button">友链</a>
+                
+                    <a href="/page/" class="navbar-menu button">Page</a>
+                
+            </div>
+        
+        
+        
+
+        
+        
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                
+                    <a href="/" class="dropdown-menu button">首页</a>
+                
+                    <a href="/tags/" class="dropdown-menu button">标签</a>
+                
+                    <a href="/archives/" class="dropdown-menu button">归档</a>
+                
+                    <a href="/friends/" class="dropdown-menu button">友链</a>
+                
+                    <a href="/page/" class="dropdown-menu button">Page</a>
+                
+            </div>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    
+
+<div class="post-title">
+    <h1 class="post-title__text">
+        Express 筆記
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2021/12/" class="post-meta__date button">2021-12-01</a>
+        
+ 
+        
+    
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+
+<article class="post content-card">
+    <div class="post__header"></div>
+    <div class="post__content">
+        <h6 id="tags-後端"><a href="#tags-後端" class="headerlink" title="tags: 後端"></a>tags: <code>後端</code></h6><h2 id="Express"><a href="#Express" class="headerlink" title="Express"></a>Express</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A[瀏覽器] --&gt; B[Express Server]</span><br><span class="line">B --&gt;A</span><br></pre></td></tr></table></figure>
+<h2 id="Apache-PHP"><a href="#Apache-PHP" class="headerlink" title="Apache + PHP"></a>Apache + PHP</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A[瀏覽器] --&gt; B[Apache Server]</span><br><span class="line">B --&gt; C[PHP]</span><br><span class="line">C --&gt; B</span><br><span class="line">B --&gt;A</span><br></pre></td></tr></table></figure>
+<p>需要透過中間的 Apache Server，會受到檔案路徑的限制（可修改）</p>
+<h2 id="MVC"><a href="#MVC" class="headerlink" title="MVC"></a>MVC</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A[request] -- resquest --&gt; B[Controller]</span><br><span class="line">B --&gt; C((Model)) </span><br><span class="line">B -- data --&gt; D((View))</span><br><span class="line">C -- data --&gt; B</span><br><span class="line">D -- 完整的 response --&gt; B</span><br><span class="line">B -- response --&gt;A</span><br></pre></td></tr></table></figure>
+<h2 id="Express-基本架構"><a href="#Express-基本架構" class="headerlink" title="Express 基本架構"></a>Express 基本架構</h2><h3 id="實作-view"><a href="#實作-view" class="headerlink" title="實作 view"></a>實作 view</h3><p>安裝 template engines</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install ejs</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app.<span class="title function_">set</span>(<span class="string">&#x27;view engine&#x27;</span>, <span class="string">&#x27;ejs&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<p>預設目錄會是 &#x2F;views，需新增資料夾 views，並在資料夾中新增 .ejs 檔案。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">app.<span class="title function_">get</span>(<span class="string">&#x27;/todos&#x27;</span>, <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span><br><span class="line">  res.<span class="title function_">render</span>(<span class="string">&#x27;todos&#x27;</span>,&#123;</span><br><span class="line">  todos <span class="comment">//ES6 若 key = value，可以省略</span></span><br><span class="line">  &#125;)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">app.<span class="title function_">get</span>(<span class="string">&#x27;/hello&#x27;</span>, <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span><br><span class="line">  res.<span class="title function_">render</span>(<span class="string">&#x27;hello&#x27;</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>todo.ejs</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;ul&gt;</span><br><span class="line">&lt;% for(let i = 0; i&lt;todo.length; i++) &#123;%&gt;  //&lt;%%&gt; 裡面可以寫 Js 語法</span><br><span class="line">  &lt;li&gt;&lt;% todo[i] %&gt;&lt;/li&gt;</span><br><span class="line">&lt;  &#125;%%&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>index.js</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">app.<span class="title function_">get</span>(<span class="string">&#x27;/todo/:id&#x27;</span>, <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;  <span class="comment">//: 表示可以代參數</span></span><br><span class="line">  <span class="keyword">const</span> id = req.<span class="property">params</span>.<span class="property">id</span>    <span class="comment">//.params 代表參數，從網址把參數代進來</span></span><br><span class="line">  <span class="keyword">const</span> todo = todos[id]</span><br><span class="line">  res.<span class="title function_">render</span>(<span class="string">&#x27;hello&#x27;</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h4 id="重構"><a href="#重構" class="headerlink" title="重構"></a>重構</h4><p>index.js</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">&#x27;express&#x27;</span>)</span><br><span class="line"><span class="keyword">const</span> app = <span class="title function_">express</span>()</span><br><span class="line"><span class="keyword">const</span> port = <span class="number">5001</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> todoController = <span class="built_in">require</span>(<span class="string">&#x27;.controllers/todo&#x27;</span>)</span><br><span class="line"></span><br><span class="line">app.<span class="title function_">set</span>(<span class="string">&#x27;view engine&#x27;</span>, <span class="string">&#x27;ejs&#x27;</span>)</span><br><span class="line"></span><br><span class="line">app.<span class="title function_">get</span>(<span class="string">&#x27;/todos&#x27;</span>, todoController.<span class="property">getAll</span>)</span><br><span class="line">app.<span class="title function_">get</span>(<span class="string">&#x27;/todos/:id&#x27;</span>, todoController.<span class="property">get</span>)</span><br><span class="line"></span><br><span class="line">app.<span class="title function_">listen</span>(port, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`Example app listening on port <span class="subst">$&#123;port&#125;</span>!`</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+
+<p>&#x2F;models&#x2F;todos.js</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> todos = [</span><br><span class="line">  <span class="string">&#x27;first todo&#x27;</span>, <span class="string">&#x27;second todo&#x27;</span>, <span class="string">&#x27;third todo&#x27;</span></span><br><span class="line">]</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> todoModel = &#123;</span><br><span class="line">  <span class="attr">getAll</span>: <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> todos</span><br><span class="line">  &#125;, </span><br><span class="line">  </span><br><span class="line">  <span class="attr">get</span>: <span class="function"><span class="params">id</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> todos[id]</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = todoModel</span><br></pre></td></tr></table></figure>
+
+<p>&#x2F;controller&#x2F;todo.js</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> todos = <span class="built_in">require</span>(<span class="string">&#x27;../models/todo&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> todoController = &#123;</span><br><span class="line">  <span class="attr">getAll</span>: <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> todos = todoModel.<span class="title function_">getAll</span>()</span><br><span class="line">    res.<span class="title function_">render</span>(<span class="string">&#x27;todos&#x27;</span>, &#123;</span><br><span class="line">      todos</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;,</span><br><span class="line">  </span><br><span class="line">  <span class="attr">get</span>: <span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> id = req.<span class="property">params</span>.<span class="property">id</span></span><br><span class="line">    <span class="keyword">const</span> todo = todoModel.<span class="title function_">get</span>(id)</span><br><span class="line">    res.<span class="title function_">render</span>(<span class="string">&#x27;todo&#x27;</span>, &#123;</span><br><span class="line">      todo</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>&#x2F;view&#x2F;todo.ejs</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;h1&gt;Todo&lt;/h1&gt;</span><br><span class="line"></span><br><span class="line">&lt;h2&gt;</span><br><span class="line">&lt;%= todo %&gt;</span><br><span class="line">&lt;/h2&gt;</span><br></pre></td></tr></table></figure>
+
+<p>&#x2F;view&#x2F;todos.ejs</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;ul&gt;</span><br><span class="line">&lt;% for(let i = 0; i&lt;todo.length; i++) &#123;%&gt;</span><br><span class="line">  &lt;li&gt;&lt;% todo[i] %&gt;&lt;/li&gt;</span><br><span class="line">&lt;  &#125;%%&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="Node-js-與-MySQL-的串接"><a href="#Node-js-與-MySQL-的串接" class="headerlink" title="Node.js 與 MySQL 的串接"></a>Node.js 與 MySQL 的串接</h2><p><a target="_blank" rel="noopener" href="https://github.com/mysqljs/mysql">mysqljs Github</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install mysql</span><br></pre></td></tr></table></figure>
+<p>db.js</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> mysql      = <span class="built_in">require</span>(<span class="string">&#x27;mysql&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> connection = mysql.<span class="title function_">createConnection</span>(&#123;</span><br><span class="line">  host     : <span class="string">&#x27;localhost&#x27;</span>,</span><br><span class="line">  user     : <span class="string">&#x27;root&#x27;</span>,</span><br><span class="line">  password : <span class="string">&#x27;root&#x27;</span>,</span><br><span class="line">  database : <span class="string">&#x27;app&#x27;</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//connection.connect();</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">module</span>.<span class="property">export</span> = connection</span><br><span class="line"></span><br><span class="line"><span class="comment">// connection.query(&#x27;SELECT * from todos&#x27;, function (error, results, fields) &#123;</span></span><br><span class="line"><span class="comment">//   if (error) throw error;</span></span><br><span class="line"><span class="comment">//   console.log(results[0].content);</span></span><br><span class="line"><span class="comment">// &#125;);</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// connection.end();</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node db.js</span><br></pre></td></tr></table></figure>
+<p>會印出 result，確認資料庫可連線</p>
+<p>index.js</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> = <span class="built_in">require</span>(<span class="string">&#x27;./db&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+
+    </div>
+     
+    <div class="post-footer__meta"><p>updated at 2022-09-07</p></div> 
+    <div class="post-entry__tags"></div> 
+</article>
+
+
+    <div class="nav">
+        <div class="nav__prev">
+            
+                <a href="/2021/12/01/DNS/" class="nav__link">
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#808080"></path></svg>
+                    </div>
+                    <div>
+                        <div class="nav__label">
+                            Previous Post
+                        </div>
+                        <div class="nav__title">
+                            DNS
+                        </div>
+                    </div>
+                </a>
+            
+        </div>
+        <div class="nav__next">
+            
+                <a href="/2021/12/01/Linked%20List/" class="nav__link">
+                    <div>
+                        <div class="nav__label">
+                            Next Post
+                        </div>
+                        <div class="nav__title">
+                            Linked List
+                        </div>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#808080"></path></svg>
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+
+
+
+
+
+</main>
+
+            <footer class="footer">
+    
+    
+
+
+    
+     
+ 
+
+ 
+    
+        
+        <p class="footer-copyright">
+            Copyright © 2022 <a href="/">倉鼠跑滾輪</a>
+        </p>
+    
+    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+</footer>
+
+        </div>
+         
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+    
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+    </body>
+</html>

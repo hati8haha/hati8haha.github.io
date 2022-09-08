@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    
+    
+    
+    
+    
+
+
+    <!-- meta -->
+
+
+<title>Ajax | 倉鼠跑滾輪</title>
+
+
+
+
+
+    <!-- OpenGraph -->
+ 
+    <meta name="description" content="tags: JS什麼是 Ajax？Ajax 全名是 Asynchronous JavaScript and XML，指的是非同步的 JavaScript 與 XML。 Javascript 指的是使用的程式語言，而 XML 則是交換資料的類型（現在也不限於 XML、許多 API 都採用 JSON 格式），至於非同步呢？ 首先來釐清什麼是非同步，與同步之間的差異是什麼？ 同步與非同步同步：一般在執行">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ajax">
+<meta property="og:url" content="https://hati8haha.github.io/2021/12/01/Ajax/index.html">
+<meta property="og:site_name" content="倉鼠跑滾輪">
+<meta property="og:description" content="tags: JS什麼是 Ajax？Ajax 全名是 Asynchronous JavaScript and XML，指的是非同步的 JavaScript 與 XML。 Javascript 指的是使用的程式語言，而 XML 則是交換資料的類型（現在也不限於 XML、許多 API 都採用 JSON 格式），至於非同步呢？ 首先來釐清什麼是非同步，與同步之間的差異是什麼？ 同步與非同步同步：一般在執行">
+<meta property="og:locale">
+<meta property="og:image" content="https://i.imgur.com/Dv7RSSh.png">
+<meta property="article:published_time" content="2021-12-01T00:14:04.000Z">
+<meta property="article:modified_time" content="2022-09-07T15:41:25.284Z">
+<meta property="article:author" content="Haoting">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://i.imgur.com/Dv7RSSh.png">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+    
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/default.css" media="none">
+        
+    
+
+    
+    
+
+    
+
+     
+
+    <!-- custom head -->
+
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+    <body>
+        <div id="app">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">Demo</span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">首页</a>
+                
+                    <a href="/tags/" class="navbar-menu button">标签</a>
+                
+                    <a href="/archives/" class="navbar-menu button">归档</a>
+                
+                    <a href="/friends/" class="navbar-menu button">友链</a>
+                
+                    <a href="/page/" class="navbar-menu button">Page</a>
+                
+            </div>
+        
+        
+        
+
+        
+        
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                
+                    <a href="/" class="dropdown-menu button">首页</a>
+                
+                    <a href="/tags/" class="dropdown-menu button">标签</a>
+                
+                    <a href="/archives/" class="dropdown-menu button">归档</a>
+                
+                    <a href="/friends/" class="dropdown-menu button">友链</a>
+                
+                    <a href="/page/" class="dropdown-menu button">Page</a>
+                
+            </div>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    
+
+<div class="post-title">
+    <h1 class="post-title__text">
+        Ajax
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2021/12/" class="post-meta__date button">2021-12-01</a>
+        
+ 
+        
+    
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+
+<article class="post content-card">
+    <div class="post__header"></div>
+    <div class="post__content">
+        <h6 id="tags-JS"><a href="#tags-JS" class="headerlink" title="tags: JS"></a>tags: <code>JS</code></h6><h2 id="什麼是-Ajax？"><a href="#什麼是-Ajax？" class="headerlink" title="什麼是 Ajax？"></a>什麼是 Ajax？</h2><p>Ajax 全名是 Asynchronous JavaScript and XML，指的是非同步的 JavaScript 與 XML。</p>
+<p>Javascript 指的是使用的程式語言，而 XML 則是交換資料的類型（現在也不限於 XML、許多 API 都採用 JSON 格式），至於非同步呢？</p>
+<p>首先來釐清什麼是非同步，與同步之間的差異是什麼？</p>
+<h3 id="同步與非同步"><a href="#同步與非同步" class="headerlink" title="同步與非同步"></a>同步與非同步</h3><h4 id="同步："><a href="#同步：" class="headerlink" title="同步："></a>同步：</h4><p>一般在執行 JavaScript 時，程式是逐行往下執行的，下一行的程式需要等到上一行執行完畢，才會開始執行下一行。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> i = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> (i &lt; <span class="number">100000000000</span>) &#123;  <span class="comment">//需要執行相當多次的迴圈，會花費一定時間</span></span><br><span class="line">i++</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(i)  <span class="comment">//等到上一行結束時才會執行。若是非同步的話則不能確保 i 的值為多少</span></span><br></pre></td></tr></table></figure>
+<h4 id="同步請求（Synchronous-request）："><a href="#同步請求（Synchronous-request）：" class="headerlink" title="同步請求（Synchronous request）："></a>同步請求（Synchronous request）：</h4><p>當今天程式涉及網路時，若發送 request 與接收 response 是採用同步的形式進行，被稱作同步請求。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> result = <span class="title function_">sendRequest</span>(<span class="string">&#x27;https://api.twitch.tv/kraken/games/top?client_id=xxx&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(result) <span class="comment">//等到收到 response 才會執行</span></span><br></pre></td></tr></table></figure>
+<p>由於要等到收到 response 才能執行接下來的程式，因此會需要花費相當的時間。更重要的是，在等待的時間 <strong>什麼事都不能做</strong>，由於同步的關係，程式會停留在等待收 response 的階段，若等待時間相當長，結果就是造成糟糕的使用者體驗，像是下面這張圖。</p>
+<p><img src="https://i.imgur.com/Dv7RSSh.png"></p>
+<h4 id="非同步："><a href="#非同步：" class="headerlink" title="非同步："></a>非同步：</h4><p>非同步則代表不必等待上一行完全執行完畢，就可以先執行下一行。例如再 DOM 中常運用的 <code>addEventListener</code> 中的 callback function 並不會直接執行，而是等到監聽事件發生時才會執行。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;div&#x27;</span>).<span class="title function_">addEventListener</span>(<span class="string">&#x27;click&#x27;</span>, callbackFunction)</span><br><span class="line"><span class="comment">//callback function 不會直接執行，這也算是非同步表現</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="非同步請求（Asynchronous-request）："><a href="#非同步請求（Asynchronous-request）：" class="headerlink" title="非同步請求（Asynchronous request）："></a>非同步請求（Asynchronous request）：</h4><p>在現代的網業中大多程式會採用非同步的方式發送 request，採用非同步的好處是網頁不必等待收到 response 才能進行下一個動作。可以先執行其他部分，若收到 response 再把收到的內容與既有內容融合呈現。</p>
+<h3 id="Ajax-實例"><a href="#Ajax-實例" class="headerlink" title="Ajax 實例"></a>Ajax 實例</h3><p>在 JavaScript 中，可以透過瀏覽器準備好的物件 <code>XMLHttpRequest</code> 發送非同步方式的 request。</p>
+<p>以下是參考自<a target="_blank" rel="noopener" href="https://blog.huli.tw/2017/08/27/ajax-and-cors/">輕鬆理解 Ajax 與跨來源請求</a>一文的程式碼：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> request = <span class="keyword">new</span> <span class="title class_">XMLHttpRequest</span>();</span><br><span class="line">request.<span class="title function_">open</span>(<span class="string">&#x27;GET&#x27;</span>, <span class="string">`https://api.twitch.tv/kraken/games/top?client_id=xxx`</span>, <span class="literal">true</span>);</span><br><span class="line">request.<span class="property">onload</span> = <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> (request.<span class="property">status</span> &gt;= <span class="number">200</span> &amp;&amp; request.<span class="property">status</span> &lt; <span class="number">400</span>) &#123;</span><br><span class="line">  </span><br><span class="line">    <span class="comment">// Success!</span></span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(request.<span class="property">responseText</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line">request.<span class="title function_">send</span>();</span><br></pre></td></tr></table></figure>
+
+<h2 id="用-Ajax-與我們用表單送出資料的差別在哪？"><a href="#用-Ajax-與我們用表單送出資料的差別在哪？" class="headerlink" title="用 Ajax 與我們用表單送出資料的差別在哪？"></a>用 Ajax 與我們用表單送出資料的差別在哪？</h2><h3 id="表單"><a href="#表單" class="headerlink" title="表單"></a>表單</h3><p>用表單送出資料時，頁面會先跳轉再送出 request。<br>表單是瀏覽器內建就有的功能，若瀏覽器有禁用 Javascript 依然可以發送 request。<br>若是以 GET 的方式發送 request，則表單資訊會附加在 url 中送出。</p>
+<h3 id="Ajax"><a href="#Ajax" class="headerlink" title="Ajax"></a>Ajax</h3><p>使用 Ajax 傳送資料時不需要跳轉頁面，資料以非同步的方式傳送。送出 request 的同時，網頁其他部分可以繼續運作。<br>若瀏覽器有禁用 Javascript 的話就不能用 Ajax 的方式發送表單。</p>
+<h3 id="兩者比較"><a href="#兩者比較" class="headerlink" title="兩者比較"></a>兩者比較</h3><table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">表單</th>
+<th align="center">Ajax</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong>頁面跳轉</strong></td>
+<td align="center">需要</td>
+<td align="center">不需</td>
+</tr>
+<tr>
+<td align="center"><strong>需要什麼才能進行</strong></td>
+<td align="center">瀏覽器</td>
+<td align="center">Javascript</td>
+</tr>
+</tbody></table>
+<h2 id="JSONP-是什麼？"><a href="#JSONP-是什麼？" class="headerlink" title="JSONP 是什麼？"></a>JSONP 是什麼？</h2><p>JSONP 的全名是 JSON with Padding，是一種可以進行跨來源請求的方法。<br>原理是利用 <code>&lt;script&gt;&lt;/script&gt;</code> 標籤可以跨網域的特性，將遠端的資料利用 callback function 帶入本地端。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script href=&quot;https://another-origin.com/api/&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  function receiveData (response) &#123;</span><br><span class="line">    console.log(response);</span><br><span class="line">  &#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>若此時 <code>https://another-origin.com/api/</code> 返回的內容如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">receiveData</span>(&#123;</span><br><span class="line">  <span class="attr">data</span>: <span class="string">&#x27;test&#x27;</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>透過函式，那麼原本 html 中的 javascript 便可以存取來自其他網域的資料。</p>
+<p>JSONP 的缺點是附加的參數（例如：client-ID 等）只能透過附加在 url 上傳送，也只能使用 GET 方法發送 request，無法使用 POST 或其他 request 方法。</p>
+
+    </div>
+     
+    <div class="post-footer__meta"><p>updated at 2022-09-07</p></div> 
+    <div class="post-entry__tags"></div> 
+</article>
+
+
+    <div class="nav">
+        <div class="nav__prev">
+            
+                <a href="/2021/12/01/CORS/" class="nav__link">
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#808080"></path></svg>
+                    </div>
+                    <div>
+                        <div class="nav__label">
+                            Previous Post
+                        </div>
+                        <div class="nav__title">
+                            CORS
+                        </div>
+                    </div>
+                </a>
+            
+        </div>
+        <div class="nav__next">
+            
+                <a href="/2021/12/01/BOM%20DOM%20%E5%B7%AE%E5%88%A5/" class="nav__link">
+                    <div>
+                        <div class="nav__label">
+                            Next Post
+                        </div>
+                        <div class="nav__title">
+                            BOM DOM 差別
+                        </div>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#808080"></path></svg>
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+
+
+
+
+
+</main>
+
+            <footer class="footer">
+    
+    
+
+
+    
+     
+ 
+
+ 
+    
+        
+        <p class="footer-copyright">
+            Copyright © 2022 <a href="/">倉鼠跑滾輪</a>
+        </p>
+    
+    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+</footer>
+
+        </div>
+         
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+    
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+    </body>
+</html>

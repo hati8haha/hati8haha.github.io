@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    
+    
+    
+    
+    
+
+
+    <!-- meta -->
+
+
+<title>Redux | 倉鼠跑滾輪</title>
+
+
+
+
+
+    <!-- OpenGraph -->
+ 
+    <meta name="description" content="tags: react reduxredux &#x3D;&gt; 狀態管理工具 jQuery -&gt; 資料與畫面分離Vue、Angular -&gt; 資料與畫面雙向綁定React -&gt; 只需要管資料 flux 簡介看 facebook flux 影片原先可以直接從 View 去更改 Store(資料)flux 讓 view 需要透過 action 到 dispatcher 去更改資料">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Redux">
+<meta property="og:url" content="https://hati8haha.github.io/2022/09/02/Redux/index.html">
+<meta property="og:site_name" content="倉鼠跑滾輪">
+<meta property="og:description" content="tags: react reduxredux &#x3D;&gt; 狀態管理工具 jQuery -&gt; 資料與畫面分離Vue、Angular -&gt; 資料與畫面雙向綁定React -&gt; 只需要管資料 flux 簡介看 facebook flux 影片原先可以直接從 View 去更改 Store(資料)flux 讓 view 需要透過 action 到 dispatcher 去更改資料">
+<meta property="og:locale">
+<meta property="og:image" content="https://i.imgur.com/LHEj84n.png">
+<meta property="og:image" content="https://i.imgur.com/ckg5NnB.png">
+<meta property="og:image" content="https://i.imgur.com/y79HAIB.png">
+<meta property="article:published_time" content="2022-09-02T07:20:46.000Z">
+<meta property="article:modified_time" content="2022-09-07T15:41:25.277Z">
+<meta property="article:author" content="Haoting">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://i.imgur.com/LHEj84n.png">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+    
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/default.css" media="none">
+        
+    
+
+    
+    
+
+    
+
+     
+
+    <!-- custom head -->
+
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+    <body>
+        <div id="app">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">Demo</span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">首页</a>
+                
+                    <a href="/tags/" class="navbar-menu button">标签</a>
+                
+                    <a href="/archives/" class="navbar-menu button">归档</a>
+                
+                    <a href="/friends/" class="navbar-menu button">友链</a>
+                
+                    <a href="/page/" class="navbar-menu button">Page</a>
+                
+            </div>
+        
+        
+        
+
+        
+        
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                
+                    <a href="/" class="dropdown-menu button">首页</a>
+                
+                    <a href="/tags/" class="dropdown-menu button">标签</a>
+                
+                    <a href="/archives/" class="dropdown-menu button">归档</a>
+                
+                    <a href="/friends/" class="dropdown-menu button">友链</a>
+                
+                    <a href="/page/" class="dropdown-menu button">Page</a>
+                
+            </div>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    
+
+<div class="post-title">
+    <h1 class="post-title__text">
+        Redux
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2022/09/" class="post-meta__date button">2022-09-02</a>
+        
+ 
+        
+    
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+
+<article class="post content-card">
+    <div class="post__header"></div>
+    <div class="post__content">
+        <h6 id="tags-react-redux"><a href="#tags-react-redux" class="headerlink" title="tags: react redux"></a>tags: <code>react</code> <code>redux</code></h6><p>redux &#x3D;&gt; 狀態管理工具</p>
+<p>jQuery -&gt; 資料與畫面分離<br>Vue、Angular -&gt; 資料與畫面雙向綁定<br>React -&gt; 只需要管資料</p>
+<h3 id="flux-簡介"><a href="#flux-簡介" class="headerlink" title="flux 簡介"></a>flux 簡介</h3><p>看 <a target="_blank" rel="noopener" href="https://facebook.github.io/flux/docs/in-depth-overview">facebook flux 影片</a><br><img src="https://i.imgur.com/LHEj84n.png"><br>原先可以直接從 View 去更改 Store(資料)<br>flux 讓 view 需要透過 action 到 dispatcher 去更改資料<br>好處是可以追蹤問題來源<br>若專案規模小可能會造成資源浪費</p>
+<h3 id="redux-簡介"><a href="#redux-簡介" class="headerlink" title="redux 簡介"></a>redux 簡介</h3><p><img src="https://i.imgur.com/ckg5NnB.png"></p>
+<p>react 把狀態放在 state<br>redux 把狀態放在 store</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> &#123;createStore&#125; = <span class="built_in">require</span>(<span class="string">&#x27;redux&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> initialState = &#123;</span><br><span class="line">  <span class="attr">value</span>: <span class="number">0</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">counterReducer</span>(<span class="params">stae = initialState, action</span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> (action.<span class="property">type</span> === <span class="string">&#x27;plus&#x27;</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      <span class="attr">value</span>: state.<span class="property">value</span> + <span class="number">1</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> state</span><br><span class="line">&#125;</span><br><span class="line">store.<span class="title function_">dispatch</span>(&#123;</span><br><span class="line">  <span class="attr">type</span>: <span class="string">&#x27;plus&#x27;</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>訂閱 state 改變時要做的事情</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">store.<span class="title function_">subscribe</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;changed!&#x27;</span>, store.<span class="title function_">getState</span>())</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>action 中常會用的</p>
+<ul>
+<li>type &#x3D;&gt; action 名稱</li>
+<li>payload &#x3D;&gt; 想要傳的參數</li>
+</ul>
+<p>避免 type 錯字難以 debug<br>&#x3D;&gt; 字串改成 object</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title class_">ActionTypes</span> = &#123;</span><br><span class="line">  <span class="attr">ADD_TODO</span>: <span class="string">&#x27;add_todo&#x27;</span>,</span><br><span class="line">  <span class="attr">DELETE_TODO</span>: <span class="string">&#x27;delete_todo&#x27;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>action creattor<br><img src="https://i.imgur.com/y79HAIB.png"></p>
+<h3 id="react-redux"><a href="#react-redux" class="headerlink" title="react-redux"></a>react-redux</h3><h4 id="selector"><a href="#selector" class="headerlink" title="selector"></a>selector</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> todos = <span class="title function_">useSelector</span>(<span class="function">(<span class="params">store</span>) =&gt;</span> store.<span class="property">todoReducer</span>.<span class="property">todos</span>)</span><br></pre></td></tr></table></figure>
+    </div>
+     
+    <div class="post-footer__meta"><p>updated at 2022-09-07</p></div> 
+    <div class="post-entry__tags"></div> 
+</article>
+
+
+    <div class="nav">
+        <div class="nav__prev">
+            
+                <a href="/2022/09/02/%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/" class="nav__link">
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#808080"></path></svg>
+                    </div>
+                    <div>
+                        <div class="nav__label">
+                            Previous Post
+                        </div>
+                        <div class="nav__title">
+                            學習筆記
+                        </div>
+                    </div>
+                </a>
+            
+        </div>
+        <div class="nav__next">
+            
+                <a href="/2022/09/02/React%20%E8%A7%A3%E6%B1%BA%E4%BA%86%E4%BB%80%E9%BA%BC%E5%95%8F%E9%A1%8C/" class="nav__link">
+                    <div>
+                        <div class="nav__label">
+                            Next Post
+                        </div>
+                        <div class="nav__title">
+                            React 解決了什麼問題
+                        </div>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#808080"></path></svg>
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+
+
+
+
+
+</main>
+
+            <footer class="footer">
+    
+    
+
+
+    
+     
+ 
+
+ 
+    
+        
+        <p class="footer-copyright">
+            Copyright © 2022 <a href="/">倉鼠跑滾輪</a>
+        </p>
+    
+    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+</footer>
+
+        </div>
+         
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+    
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+    </body>
+</html>

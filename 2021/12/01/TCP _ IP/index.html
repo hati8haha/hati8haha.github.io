@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    
+    
+    
+    
+    
+
+
+    <!-- meta -->
+
+
+<title>TCP / IP | 倉鼠跑滾輪</title>
+
+
+
+
+
+    <!-- OpenGraph -->
+ 
+    <meta name="description" content="tags: web 基礎網路的層級OSI 七層TCP &#x2F; IP 四層IPIPv4 IPv6 不同版本的 IP 不同類型 IP固定 IP一台電腦一個 IP，server 會用固定 IP浮動 IP每次連線時 IP 不同虛擬 IP內網內可互相連接，外網無法連至內網 IP PORT區別同一台電腦上的不同服務HTTP：80HTTPS：443FTP：21 表格 SOAP Simple Object">
+<meta property="og:type" content="article">
+<meta property="og:title" content="TCP &#x2F; IP">
+<meta property="og:url" content="https://hati8haha.github.io/2021/12/01/TCP%20_%20IP/index.html">
+<meta property="og:site_name" content="倉鼠跑滾輪">
+<meta property="og:description" content="tags: web 基礎網路的層級OSI 七層TCP &#x2F; IP 四層IPIPv4 IPv6 不同版本的 IP 不同類型 IP固定 IP一台電腦一個 IP，server 會用固定 IP浮動 IP每次連線時 IP 不同虛擬 IP內網內可互相連接，外網無法連至內網 IP PORT區別同一台電腦上的不同服務HTTP：80HTTPS：443FTP：21 表格 SOAP Simple Object">
+<meta property="og:locale">
+<meta property="og:image" content="https://i.imgur.com/0wx7ZCr.png">
+<meta property="og:image" content="https://i.imgur.com/edivef1.png">
+<meta property="article:published_time" content="2021-12-01T00:00:08.000Z">
+<meta property="article:modified_time" content="2022-09-07T15:41:25.272Z">
+<meta property="article:author" content="Haoting">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://i.imgur.com/0wx7ZCr.png">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+    
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/default.css" media="none">
+        
+    
+
+    
+    
+
+    
+
+     
+
+    <!-- custom head -->
+
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+    <body>
+        <div id="app">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">Demo</span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">首页</a>
+                
+                    <a href="/tags/" class="navbar-menu button">标签</a>
+                
+                    <a href="/archives/" class="navbar-menu button">归档</a>
+                
+                    <a href="/friends/" class="navbar-menu button">友链</a>
+                
+                    <a href="/page/" class="navbar-menu button">Page</a>
+                
+            </div>
+        
+        
+        
+
+        
+        
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                
+                    <a href="/" class="dropdown-menu button">首页</a>
+                
+                    <a href="/tags/" class="dropdown-menu button">标签</a>
+                
+                    <a href="/archives/" class="dropdown-menu button">归档</a>
+                
+                    <a href="/friends/" class="dropdown-menu button">友链</a>
+                
+                    <a href="/page/" class="dropdown-menu button">Page</a>
+                
+            </div>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    
+
+<div class="post-title">
+    <h1 class="post-title__text">
+        TCP / IP
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2021/12/" class="post-meta__date button">2021-12-01</a>
+        
+ 
+        
+    
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+
+<article class="post content-card">
+    <div class="post__header"></div>
+    <div class="post__content">
+        <h6 id="tags-web-基礎"><a href="#tags-web-基礎" class="headerlink" title="tags: web 基礎"></a>tags: <code>web 基礎</code></h6><h3 id="網路的層級"><a href="#網路的層級" class="headerlink" title="網路的層級"></a>網路的層級</h3><h4 id="OSI-七層"><a href="#OSI-七層" class="headerlink" title="OSI 七層"></a>OSI 七層</h4><h4 id="TCP-x2F-IP-四層"><a href="#TCP-x2F-IP-四層" class="headerlink" title="TCP &#x2F; IP 四層"></a>TCP &#x2F; IP 四層</h4><h3 id="IP"><a href="#IP" class="headerlink" title="IP"></a>IP</h3><p>IPv4 IPv6 不同版本的 IP</p>
+<h4 id="不同類型-IP"><a href="#不同類型-IP" class="headerlink" title="不同類型 IP"></a>不同類型 IP</h4><p><strong>固定 IP</strong><br>一台電腦一個 IP，server 會用固定 IP<br><strong>浮動 IP</strong><br>每次連線時 IP 不同<br><strong>虛擬 IP</strong><br>內網內可互相連接，外網無法連至內網 IP</p>
+<h3 id="PORT"><a href="#PORT" class="headerlink" title="PORT"></a>PORT</h3><p>區別同一台電腦上的不同服務<br>HTTP：80<br>HTTPS：443<br>FTP：21</p>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><p><img src="https://i.imgur.com/0wx7ZCr.png"></p>
+<h3 id="SOAP-Simple-Object-Acess-Protocol"><a href="#SOAP-Simple-Object-Acess-Protocol" class="headerlink" title="SOAP Simple Object Acess Protocol"></a>SOAP Simple Object Acess Protocol</h3><p>透過 xml 進行資料交換</p>
+<h3 id="不是-SOAP-的其他-HTTP-API"><a href="#不是-SOAP-的其他-HTTP-API" class="headerlink" title="不是 SOAP 的其他 HTTP API"></a>不是 SOAP 的其他 HTTP API</h3><h4 id="RESTful"><a href="#RESTful" class="headerlink" title="RESTful"></a>RESTful</h4><p>它不是一個協定，是一種風格<br><img src="https://i.imgur.com/edivef1.png"><br>符合語意，直覺的方式</p>
+
+    </div>
+     
+    <div class="post-footer__meta"><p>updated at 2022-09-07</p></div> 
+    <div class="post-entry__tags"></div> 
+</article>
+
+
+    <div class="nav">
+        <div class="nav__prev">
+            
+                <a href="/2021/12/01/HTTP/" class="nav__link">
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#808080"></path></svg>
+                    </div>
+                    <div>
+                        <div class="nav__label">
+                            Previous Post
+                        </div>
+                        <div class="nav__title">
+                            HTTP
+                        </div>
+                    </div>
+                </a>
+            
+        </div>
+        <div class="nav__next">
+            
+                <a href="/2021/12/01/PHP%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/" class="nav__link">
+                    <div>
+                        <div class="nav__label">
+                            Next Post
+                        </div>
+                        <div class="nav__title">
+                            PHP 學習筆記
+                        </div>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#808080"></path></svg>
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+
+
+
+
+
+</main>
+
+            <footer class="footer">
+    
+    
+
+
+    
+     
+ 
+
+ 
+    
+        
+        <p class="footer-copyright">
+            Copyright © 2022 <a href="/">倉鼠跑滾輪</a>
+        </p>
+    
+    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+</footer>
+
+        </div>
+         
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+    
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+    </body>
+</html>

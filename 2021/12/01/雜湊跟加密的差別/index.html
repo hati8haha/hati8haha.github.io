@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    
+    
+    
+    
+    
+
+
+    <!-- meta -->
+
+
+<title>雜湊跟加密的差別 | 倉鼠跑滾輪</title>
+
+
+
+
+
+    <!-- OpenGraph -->
+ 
+    <meta name="description" content="tags: 網路安全 資料庫雜湊跟加密的最重要的差別是加密可以解密，而雜湊不行還原。因此密碼要雜湊過後才存入資料庫。 加密 encryption透過演算法與 key，將字串計算得出加密後的密文，根據是否使用同一組 key 加密與解密可分為對稱加密法與與非對稱加密法。加密是一對一關係，若知道 key 跟演算法也會被解開 明文 &#x3D;&gt; 加密 &#x3D;&gt; 密文密文 &#x3D;&amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="雜湊跟加密的差別">
+<meta property="og:url" content="https://hati8haha.github.io/2021/12/01/%E9%9B%9C%E6%B9%8A%E8%B7%9F%E5%8A%A0%E5%AF%86%E7%9A%84%E5%B7%AE%E5%88%A5/index.html">
+<meta property="og:site_name" content="倉鼠跑滾輪">
+<meta property="og:description" content="tags: 網路安全 資料庫雜湊跟加密的最重要的差別是加密可以解密，而雜湊不行還原。因此密碼要雜湊過後才存入資料庫。 加密 encryption透過演算法與 key，將字串計算得出加密後的密文，根據是否使用同一組 key 加密與解密可分為對稱加密法與與非對稱加密法。加密是一對一關係，若知道 key 跟演算法也會被解開 明文 &#x3D;&gt; 加密 &#x3D;&gt; 密文密文 &#x3D;&amp;">
+<meta property="og:locale">
+<meta property="article:published_time" content="2021-12-01T00:21:36.000Z">
+<meta property="article:modified_time" content="2022-09-07T15:41:25.285Z">
+<meta property="article:author" content="Haoting">
+<meta name="twitter:card" content="summary_large_image">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+    
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/default.css" media="none">
+        
+    
+
+    
+    
+
+    
+
+     
+
+    <!-- custom head -->
+
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+    <body>
+        <div id="app">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">Demo</span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">首页</a>
+                
+                    <a href="/tags/" class="navbar-menu button">标签</a>
+                
+                    <a href="/archives/" class="navbar-menu button">归档</a>
+                
+                    <a href="/friends/" class="navbar-menu button">友链</a>
+                
+                    <a href="/page/" class="navbar-menu button">Page</a>
+                
+            </div>
+        
+        
+        
+
+        
+        
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                
+                    <a href="/" class="dropdown-menu button">首页</a>
+                
+                    <a href="/tags/" class="dropdown-menu button">标签</a>
+                
+                    <a href="/archives/" class="dropdown-menu button">归档</a>
+                
+                    <a href="/friends/" class="dropdown-menu button">友链</a>
+                
+                    <a href="/page/" class="dropdown-menu button">Page</a>
+                
+            </div>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    
+
+<div class="post-title">
+    <h1 class="post-title__text">
+        雜湊跟加密的差別
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2021/12/" class="post-meta__date button">2021-12-01</a>
+        
+ 
+        
+    
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+
+<article class="post content-card">
+    <div class="post__header"></div>
+    <div class="post__content">
+        <h6 id="tags-網路安全-資料庫"><a href="#tags-網路安全-資料庫" class="headerlink" title="tags: 網路安全 資料庫"></a>tags: <code>網路安全</code> <code>資料庫</code></h6><p>雜湊跟加密的最重要的差別是加密可以解密，而雜湊不行還原。因此密碼要雜湊過後才存入資料庫。</p>
+<h3 id="加密-encryption"><a href="#加密-encryption" class="headerlink" title="加密 encryption"></a>加密 encryption</h3><p>透過演算法與 key，將字串計算得出加密後的密文，根據是否使用同一組 key 加密與解密可分為對稱加密法與與非對稱加密法。<br>加密是一對一關係，若知道 key 跟演算法也會被解開</p>
+<p>明文 &#x3D;&gt; 加密 &#x3D;&gt; 密文<br>密文 &#x3D;&gt; 解密 &#x3D;&gt; 明文</p>
+<h3 id="雜湊-hash"><a href="#雜湊-hash" class="headerlink" title="雜湊 hash"></a>雜湊 hash</h3><p>將字元丟進去某個公式計算的方式就叫做雜湊（Hash），而這個計算公式就稱為雜湊函數（Hash function）</p>
+<p>雜湊為多對一關係，這也是無法還原的原因</p>
+<p>明文 &#x3D;&gt; hash &#x3D;&gt; 文字</p>
+<p>若兩個不同密碼產生同個 hash 稱碰撞</p>
+
+    </div>
+     
+    <div class="post-footer__meta"><p>updated at 2022-09-07</p></div> 
+    <div class="post-entry__tags"></div> 
+</article>
+
+
+    <div class="nav">
+        <div class="nav__prev">
+            
+                <a href="/2021/12/01/include%E3%80%81require%E3%80%81include_once%E3%80%81require_once%20%E7%9A%84%E5%B7%AE%E5%88%A5/" class="nav__link">
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#808080"></path></svg>
+                    </div>
+                    <div>
+                        <div class="nav__label">
+                            Previous Post
+                        </div>
+                        <div class="nav__title">
+                            include、require、include_once、require_once 的差別
+                        </div>
+                    </div>
+                </a>
+            
+        </div>
+        <div class="nav__next">
+            
+                <a href="/2021/12/01/Cookie%20%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F%E5%A6%82%E4%BD%95%E8%A8%AD%E5%AE%9A%EF%BC%9F/" class="nav__link">
+                    <div>
+                        <div class="nav__label">
+                            Next Post
+                        </div>
+                        <div class="nav__title">
+                            Cookie 是什麼？如何設定？
+                        </div>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#808080"></path></svg>
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+
+
+
+
+
+</main>
+
+            <footer class="footer">
+    
+    
+
+
+    
+     
+ 
+
+ 
+    
+        
+        <p class="footer-copyright">
+            Copyright © 2022 <a href="/">倉鼠跑滾輪</a>
+        </p>
+    
+    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+</footer>
+
+        </div>
+         
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+    
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+    </body>
+</html>

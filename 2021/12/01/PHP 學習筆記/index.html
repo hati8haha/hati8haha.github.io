@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    
+    
+    
+    
+    
+
+
+    <!-- meta -->
+
+
+<title>PHP 學習筆記 | 倉鼠跑滾輪</title>
+
+
+
+
+
+    <!-- OpenGraph -->
+ 
+    <meta name="description" content="tags: PHP安裝 XAMPP安裝 XAMPP 之後，執行 Apache 與 MySQL，點 Config，就能查到目錄。檔案會在 C:\xampp\htdocs 中。 資料庫系統server &#x3D;&gt; 專門處理 request 跟 respone 的程式資料庫系統 &#x3D;&gt; 專門處理資料的程式 關聯式資料庫 關聯資料語言 SQL NoSQL (Not only SQL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PHP 學習筆記">
+<meta property="og:url" content="https://hati8haha.github.io/2021/12/01/PHP%20%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/index.html">
+<meta property="og:site_name" content="倉鼠跑滾輪">
+<meta property="og:description" content="tags: PHP安裝 XAMPP安裝 XAMPP 之後，執行 Apache 與 MySQL，點 Config，就能查到目錄。檔案會在 C:\xampp\htdocs 中。 資料庫系統server &#x3D;&gt; 專門處理 request 跟 respone 的程式資料庫系統 &#x3D;&gt; 專門處理資料的程式 關聯式資料庫 關聯資料語言 SQL NoSQL (Not only SQL">
+<meta property="og:locale">
+<meta property="article:published_time" content="2021-11-30T23:58:26.000Z">
+<meta property="article:modified_time" content="2022-09-07T15:41:25.278Z">
+<meta property="article:author" content="Haoting">
+<meta name="twitter:card" content="summary_large_image">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+    
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/default.css" media="none">
+        
+    
+
+    
+    
+
+    
+
+     
+
+    <!-- custom head -->
+
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+    <body>
+        <div id="app">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">Demo</span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">首页</a>
+                
+                    <a href="/tags/" class="navbar-menu button">标签</a>
+                
+                    <a href="/archives/" class="navbar-menu button">归档</a>
+                
+                    <a href="/friends/" class="navbar-menu button">友链</a>
+                
+                    <a href="/page/" class="navbar-menu button">Page</a>
+                
+            </div>
+        
+        
+        
+
+        
+        
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                
+                    <a href="/" class="dropdown-menu button">首页</a>
+                
+                    <a href="/tags/" class="dropdown-menu button">标签</a>
+                
+                    <a href="/archives/" class="dropdown-menu button">归档</a>
+                
+                    <a href="/friends/" class="dropdown-menu button">友链</a>
+                
+                    <a href="/page/" class="dropdown-menu button">Page</a>
+                
+            </div>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    
+
+<div class="post-title">
+    <h1 class="post-title__text">
+        PHP 學習筆記
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2021/12/" class="post-meta__date button">2021-12-01</a>
+        
+ 
+        
+    
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+
+<article class="post content-card">
+    <div class="post__header"></div>
+    <div class="post__content">
+        <h6 id="tags-PHP"><a href="#tags-PHP" class="headerlink" title="tags: PHP"></a>tags: <code>PHP</code></h6><h2 id="安裝-XAMPP"><a href="#安裝-XAMPP" class="headerlink" title="安裝 XAMPP"></a>安裝 XAMPP</h2><p>安裝 XAMPP 之後，執行 Apache 與 MySQL，點 Config，就能查到目錄。<br>檔案會在 <code>C:\xampp\htdocs</code> 中。</p>
+<h2 id="資料庫系統"><a href="#資料庫系統" class="headerlink" title="資料庫系統"></a>資料庫系統</h2><p>server &#x3D;&gt; 專門處理 request 跟 respone 的程式<br>資料庫系統 &#x3D;&gt; 專門處理資料的程式</p>
+<p>關聯式資料庫</p>
+<p>關聯資料語言 SQL</p>
+<p>NoSQL (Not only SQL)<br>例如MongoDB</p>
+<p>CLI &#x3D;&gt; mysql connect<br>GUI &#x3D;&gt; 例如 phpMyAdmin</p>
+<p>phpMyAdmin </p>
+<h2 id="table"><a href="#table" class="headerlink" title="table"></a>table</h2><h3 id="Schema-結構"><a href="#Schema-結構" class="headerlink" title="Schema 結構"></a>Schema 結構</h3><p>每個表格都有 schema<br>phpMyAdmin 中可以從 schema &#x2F; 結構中檢視<br>資料一定會有的是<strong>名稱</strong>與<strong>型態</strong></p>
+<ul>
+<li>名稱：就是名稱</li>
+<li>型態：哪種儲存型態</li>
+</ul>
+<p>CHAR：固定長度（0 ~ 255）的字串，不足時會自右邊補足空白<br>VARCHAR：可變長度（0 ~ 65,535）的字串，最大的有效長度需視資料列大小限制而定。</p>
+<p>通常字數較少會存成 VARCHAR，例如文章標題。<br>字數較長會存成 TEXT，例如文章內文。</p>
+<p>Primary Key (PK) 主鍵：不能為空，不能重複，最主要的，例如 id、會員帳號等<br>unique 唯一：資料不能重複（PK 一定是唯一）<br>index 索引：針對常查詢的欄位可以建立索引</p>
+<h2 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h2><h3 id="Select-查詢資料"><a href="#Select-查詢資料" class="headerlink" title="Select 查詢資料"></a>Select 查詢資料</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> `qoo` <span class="comment">--查詢所有，從 qoo 資料庫</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> qoo <span class="comment">-- 可以加反引號也可以不加</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> id <span class="keyword">FROM</span> qoo <span class="comment">-- 搜尋欄</span></span><br><span class="line"><span class="keyword">SELECT</span> id, content <span class="keyword">FROM</span> qoo <span class="comment">-- 同時搜尋兩欄以 &quot;,&quot; 進行分隔</span></span><br><span class="line"><span class="keyword">SELECT</span> id <span class="keyword">as</span> name <span class="keyword">FROM</span> qoo <span class="comment">-- 查詢結果會 id 會以 name 顯示</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> qoo <span class="keyword">WHERE</span> id <span class="operator">=</span> <span class="number">2</span> <span class="comment">-- 查詢 id 為 2 的資料</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> qoo <span class="keyword">where</span> id <span class="operator">=</span> <span class="number">1</span> <span class="keyword">and</span> username <span class="operator">=</span> <span class="string">&#x27;Peter&#x27;</span> <span class="comment">-- and 查詢條件</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> qoo <span class="keyword">where</span> id <span class="operator">=</span> <span class="number">1</span> <span class="keyword">or</span> username <span class="operator">=</span> <span class="string">&#x27;Peter&#x27;</span> <span class="comment">-- or 查詢條件</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="number">10</span> <span class="keyword">FROM</span> qoo <span class="comment">-- 結果為 10</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Insert-新增資料"><a href="#Insert-新增資料" class="headerlink" title="Insert 新增資料"></a>Insert 新增資料</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> `qoo` (`username`, `content`) <span class="keyword">VALUES</span> (&quot;username01&quot;, &quot;content01&quot;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="Update-修改資料"><a href="#Update-修改資料" class="headerlink" title="Update 修改資料"></a>Update 修改資料</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> `qoo` <span class="keyword">SET</span> username <span class="operator">=</span> &quot;user01&quot;, content <span class="operator">=</span> &quot;content01&quot; <span class="keyword">WHERE</span> id <span class="operator">=</span> <span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="DELETE-刪除資料"><a href="#DELETE-刪除資料" class="headerlink" title="DELETE 刪除資料"></a>DELETE 刪除資料</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> `qoo` <span class="keyword">WHERE</span> id <span class="operator">=</span> <span class="number">2</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h2><h3 id="Disable-cache"><a href="#Disable-cache" class="headerlink" title="Disable cache"></a>Disable cache</h3><p>開始前到開發人員工具的 Network，把 Disable cache 勾選起來。<br>目前用的工具會暫存快取，可能會造成瀏覽器讀取到舊的資料。</p>
+<h3 id="PHP-執行流程"><a href="#PHP-執行流程" class="headerlink" title="PHP 執行流程"></a>PHP 執行流程</h3><h4 id="靜態檔案"><a href="#靜態檔案" class="headerlink" title="靜態檔案"></a>靜態檔案</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A[request] --&gt; B[Server]</span><br><span class="line">B --&gt; C[style.css]</span><br><span class="line">C --&gt; B</span><br><span class="line">B --&gt; A</span><br></pre></td></tr></table></figure>
+<h4 id="動態網站"><a href="#動態網站" class="headerlink" title="動態網站"></a>動態網站</h4><p>Server 有設定 .php 檔案會執行</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A[request] --&gt; B[Server]</span><br><span class="line">B --&gt; C[style.css]</span><br><span class="line">C --&gt; D[執行 php]</span><br><span class="line">D --&gt; B</span><br><span class="line">B --&gt; A</span><br></pre></td></tr></table></figure>
+<h3 id="PHP-語法"><a href="#PHP-語法" class="headerlink" title="PHP 語法"></a>PHP 語法</h3><p>php 檔案中未用 <code>&lt;?php ?&gt;</code> 包住的程式碼會直接顯示</p>
+<h4 id="date-日期"><a href="#date-日期" class="headerlink" title="date 日期"></a>date 日期</h4><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> <span class="keyword">echo</span> <span class="title function_ invoke__">date</span>(<span class="string">&quot;Y-m-d H:i:s&quot;</span>) <span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="從前端傳資料給後端：GET-與-POST"><a href="#從前端傳資料給後端：GET-與-POST" class="headerlink" title="從前端傳資料給後端：GET 與 POST"></a>從前端傳資料給後端：GET 與 POST</h3><p>可以在網址加上 query string，例如：<br><code>http://localhost:8080/peter/vivian/data.php?a=1</code><br>當加上 query string 時，php 會自動給一個變數 <code>$_GET</code></p>
+<blockquote>
+<p>假設網址是 ?a&#x3D;&amp;b&#x3D;，只有傳 key 沒有傳 value，isset 的結果依舊會是 true<br>必須連 key 都沒有傳，isset 才會是 false<br>因此針對這種檢查，會推薦使用 empty 來檢測，因為 empty 可以順便檢測空字串的狀況</p>
+</blockquote>
+<p>前端用表單，method 設為 <code>GET</code>，便能在網址中加上 query string。</p>
+<blockquote>
+<p>小技巧：開發工具勾選 Preserve log 可以查看發出的 request</p>
+</blockquote>
+<h4 id="前後端溝通簡單範例（GET-表單）"><a href="#前後端溝通簡單範例（GET-表單）" class="headerlink" title="前後端溝通簡單範例（GET 表單）"></a>前後端溝通簡單範例（GET 表單）</h4><p>index.php</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">  <span class="keyword">echo</span> <span class="string">&quot;Who are you?&quot;</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br><span class="line"></span><br><span class="line">&lt;form method=<span class="string">&quot;GET&quot;</span> action=<span class="string">&quot;data.php&quot;</span>&gt;</span><br><span class="line">  name: &lt;input name=<span class="string">&quot;name&quot;</span> /&gt;</span><br><span class="line">  age: &lt;input name=<span class="string">&quot;age&quot;</span> /&gt;</span><br><span class="line">  &lt;input type=<span class="string">&quot;submit&quot;</span> /&gt;</span><br><span class="line">&lt;/form&gt;</span><br></pre></td></tr></table></figure>
+
+<p>data.php</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">  <span class="keyword">if</span> (!<span class="keyword">isset</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;name&#x27;</span>]) || !<span class="keyword">isset</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;age&#x27;</span>])) &#123; <span class="comment">//其中一項資料沒填的條件</span></span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&#x27;資料有缺，請再次填寫&lt;br&gt;&#x27;</span>;</span><br><span class="line">    <span class="keyword">exit</span>();</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">echo</span> <span class="string">&quot;Hello!&quot;</span> . <span class="variable">$_GET</span>[<span class="string">&#x27;name&#x27;</span>] . <span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line">  <span class="keyword">echo</span> <span class="string">&quot;Your age is&quot;</span> . <span class="variable">$_GET</span>[<span class="string">&#x27;age&#x27;</span>] . <span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="前後端溝通簡單範例（POST-表單）"><a href="#前後端溝通簡單範例（POST-表單）" class="headerlink" title="前後端溝通簡單範例（POST 表單）"></a>前後端溝通簡單範例（POST 表單）</h4><p>index.php</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">  <span class="keyword">echo</span> <span class="string">&quot;Who are you?&quot;</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br><span class="line"></span><br><span class="line">&lt;form method=<span class="string">&quot;POST&quot;</span> action=<span class="string">&quot;data.php&quot;</span>&gt;</span><br><span class="line">  name: &lt;input name=<span class="string">&quot;name&quot;</span> /&gt;</span><br><span class="line">  age: &lt;input name=<span class="string">&quot;age&quot;</span> /&gt;</span><br><span class="line">  &lt;input type=<span class="string">&quot;submit&quot;</span> /&gt;</span><br><span class="line">&lt;/form&gt;</span><br></pre></td></tr></table></figure>
+
+<p>data.php</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">  <span class="keyword">if</span> (<span class="keyword">empty</span>(<span class="variable">$_POST</span>[<span class="string">&#x27;name&#x27;</span>]) || <span class="keyword">empty</span>(<span class="variable">$_POST</span>[<span class="string">&#x27;age&#x27;</span>])) &#123; </span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&#x27;資料有缺，請再次填寫&lt;br&gt;&#x27;</span>;</span><br><span class="line">    <span class="keyword">exit</span>();</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">echo</span> <span class="string">&quot;Hello!&quot;</span> . <span class="variable">$_POST</span>[<span class="string">&#x27;name&#x27;</span>] . <span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line">  <span class="keyword">echo</span> <span class="string">&quot;Your age is&quot;</span> . <span class="variable">$_POST</span>[<span class="string">&#x27;age&#x27;</span>] . <span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="從-PHP-連線到-MySQL-資料庫"><a href="#從-PHP-連線到-MySQL-資料庫" class="headerlink" title="從 PHP 連線到 MySQL 資料庫"></a>從 PHP 連線到 MySQL 資料庫</h3><p>進 phpMyAdmin，新增使用者帳號<br>全域權限可勾全選</p>
+<p>建立資料表<br>編碼可用 utf8mb4_unicode_ci</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">  <span class="variable">$server_name</span> = <span class="string">&#x27;localhost&#x27;</span>;</span><br><span class="line">  <span class="variable">$username</span> = <span class="string">&#x27;huli&#x27;</span>;</span><br><span class="line">  <span class="variable">$password</span> = <span class="string">&#x27;huli&#x27;</span>;</span><br><span class="line">  <span class="variable">$db_name</span> = <span class="string">&#x27;huli&#x27;</span>;</span><br><span class="line"></span><br><span class="line">  <span class="variable">$conn</span> = <span class="keyword">new</span> <span class="title function_ invoke__">mysqli</span>(<span class="variable">$server_name</span>, <span class="variable">$username</span>, <span class="variable">$password</span>, <span class="variable">$db_name</span>);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (<span class="variable">$conn</span>-&gt;connect_error) &#123; <span class="comment">//物件存取屬性用 -&gt;</span></span><br><span class="line">    <span class="keyword">die</span>(<span class="string">&#x27;資料庫連線錯誤:&#x27;</span> . <span class="variable">$conn</span>-&gt;connect_error); <span class="comment">//die 執行完這行，接下來都不會執行</span></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="variable">$conn</span>-&gt;<span class="title function_ invoke__">query</span>(<span class="string">&#x27;SET NAMES UTF8&#x27;</span>); <span class="comment">//設定編碼</span></span><br><span class="line">  <span class="variable">$conn</span>-&gt;<span class="title function_ invoke__">query</span>(<span class="string">&#x27;SET time_zone = &quot;+8:00&quot;&#x27;</span>); <span class="comment">//設定時區</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="PHP-與-MySQL-的互動"><a href="#PHP-與-MySQL-的互動" class="headerlink" title="PHP 與 MySQL 的互動"></a>PHP 與 MySQL 的互動</h3><p>CRUD<br>Create<br>Read<br>Update<br>Delete</p>
+<h3 id="PHP-與-MySQL-的互動：讀取資料"><a href="#PHP-與-MySQL-的互動：讀取資料" class="headerlink" title="PHP 與 MySQL 的互動：讀取資料"></a>PHP 與 MySQL 的互動：讀取資料</h3><p>要連線可以加上在 <code>$conn</code> 用 <code>-&gt;</code> 加上 <code>query()</code></p>
+<p>connn.php 建議在 git 中設定 ignore，避免密碼等敏感資訊放到網路上。</p>
+<p>每拿一筆資料需要 <code>$result-&gt;fetch_assoc()</code> 一次，可以用 while 迴圈來</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">require_once</span>(<span class="string">&#x27;conn.php&#x27;</span>);</span><br><span class="line"></span><br><span class="line">  <span class="variable">$result</span> = <span class="variable">$conn</span>-&gt;<span class="title function_ invoke__">query</span>(<span class="string">&quot;SELECT * FROM users&quot;</span>);</span><br><span class="line">  <span class="keyword">if</span> (!<span class="variable">$result</span>) &#123;</span><br><span class="line">    <span class="keyword">die</span>(<span class="variable">$conn</span>-&gt;error);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">while</span> (<span class="variable">$row</span> = <span class="variable">$result</span>-&gt;<span class="title function_ invoke__">fetch_assoc</span>()) &#123; <span class="comment">//把對應的資料取出</span></span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&quot;id:&quot;</span> . <span class="variable">$row</span>[<span class="string">&#x27;id&#x27;</span>] . <span class="string">&#x27;&lt;br&gt;&#x27;</span>;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&quot;username:&quot;</span> . <span class="variable">$row</span>[<span class="string">&#x27;username&#x27;</span>] . <span class="string">&#x27;&lt;br&gt;&#x27;</span>;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="PHP-與-MySQL-的互動：新增資料"><a href="#PHP-與-MySQL-的互動：新增資料" class="headerlink" title="PHP 與 MySQL 的互動：新增資料"></a>PHP 與 MySQL 的互動：新增資料</h3><p><code>sprintf()</code> 字串組合，要帶進去的變數在文字中以 <code>%d</code> 表示數字、<code>%s</code>表示字串</p>
+<p><code>header(&quot;Location: index.php&quot;)</code> 回傳一個 response header，自動跳轉回 index.php</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">  <span class="keyword">require_once</span>(<span class="string">&#x27;conn.php&#x27;</span>);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (<span class="keyword">empty</span>(<span class="variable">$_POST</span>[<span class="string">&#x27;username&#x27;</span>])) &#123;</span><br><span class="line">    <span class="keyword">die</span>(<span class="string">&#x27;請輸入 username&#x27;</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="variable">$username</span> = <span class="variable">$_POST</span>[<span class="string">&#x27;username&#x27;</span>];</span><br><span class="line">  <span class="variable">$sql</span> = <span class="title function_ invoke__">sprintf</span>(</span><br><span class="line">    <span class="string">&quot;insert into users(username) values(&#x27;%s&#x27;)&quot;</span>,</span><br><span class="line">    <span class="variable">$username</span></span><br><span class="line">  );</span><br><span class="line">  <span class="variable">$result</span> = <span class="variable">$conn</span>-&gt;<span class="title function_ invoke__">query</span>(<span class="variable">$sql</span>);</span><br><span class="line">  <span class="keyword">if</span> (!<span class="variable">$result</span>) &#123;</span><br><span class="line">    <span class="keyword">die</span>(<span class="variable">$conn</span>-&gt;error);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="title function_ invoke__">header</span>(<span class="string">&quot;Location: index.php&quot;</span>);</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="PHP-與-MySQL-的互動：刪除資料"><a href="#PHP-與-MySQL-的互動：刪除資料" class="headerlink" title="PHP 與 MySQL 的互動：刪除資料"></a>PHP 與 MySQL 的互動：刪除資料</h3><p>顯示被影響的 row</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">  <span class="keyword">echo</span> <span class="variable">$conn</span>-&gt;affected_rows;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">  <span class="keyword">require_once</span>(<span class="string">&#x27;conn.php&#x27;</span>);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (<span class="keyword">empty</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;id&#x27;</span>])) &#123;</span><br><span class="line">    <span class="keyword">die</span>(<span class="string">&#x27;請輸入 id&#x27;</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="variable">$id</span> = <span class="variable">$_GET</span>[<span class="string">&#x27;id&#x27;</span>];</span><br><span class="line">  <span class="variable">$sql</span> = <span class="title function_ invoke__">sprintf</span>(</span><br><span class="line">    <span class="string">&quot;delete from users where id = %d&quot;</span>,</span><br><span class="line">    <span class="variable">$id</span></span><br><span class="line">  );</span><br><span class="line">  <span class="keyword">echo</span> <span class="variable">$sql</span> . <span class="string">&#x27;&lt;br&gt;&#x27;</span>;</span><br><span class="line">  <span class="variable">$result</span> = <span class="variable">$conn</span>-&gt;<span class="title function_ invoke__">query</span>(<span class="variable">$sql</span>);</span><br><span class="line">  <span class="keyword">if</span> (!<span class="variable">$result</span>) &#123;</span><br><span class="line">    <span class="keyword">die</span>(<span class="variable">$conn</span>-&gt;error);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (<span class="variable">$conn</span>-&gt;affected_rows &gt;= <span class="number">1</span>) &#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&#x27;刪除成功&#x27;</span>;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&#x27;查無資料&#x27;</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// header(&quot;Location: index.php&quot;);</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="PHP-與-MySQL-的互動：編輯資料"><a href="#PHP-與-MySQL-的互動：編輯資料" class="headerlink" title="PHP 與 MySQL 的互動：編輯資料"></a>PHP 與 MySQL 的互動：編輯資料</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">  <span class="keyword">require_once</span>(<span class="string">&#x27;conn.php&#x27;</span>);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (<span class="keyword">empty</span>(<span class="variable">$_POST</span>[<span class="string">&#x27;id&#x27;</span>]) || <span class="keyword">empty</span>(<span class="variable">$_POST</span>[<span class="string">&#x27;username&#x27;</span>])) &#123;</span><br><span class="line">    <span class="keyword">die</span>(<span class="string">&#x27;請輸入 id 與 username&#x27;</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="variable">$id</span> = <span class="variable">$_POST</span>[<span class="string">&#x27;id&#x27;</span>];</span><br><span class="line">  <span class="variable">$username</span> = <span class="variable">$_POST</span>[<span class="string">&#x27;username&#x27;</span>];</span><br><span class="line">  <span class="variable">$sql</span> = <span class="title function_ invoke__">sprintf</span>(</span><br><span class="line">    <span class="string">&quot;update users set username=&#x27;%s&#x27; where id=%d&quot;</span>,</span><br><span class="line">    <span class="variable">$username</span>,</span><br><span class="line">    <span class="variable">$id</span></span><br><span class="line">  );</span><br><span class="line">  <span class="keyword">echo</span> <span class="variable">$sql</span> . <span class="string">&#x27;&lt;br&gt;&#x27;</span>;</span><br><span class="line">  <span class="variable">$result</span> = <span class="variable">$conn</span>-&gt;<span class="title function_ invoke__">query</span>(<span class="variable">$sql</span>);</span><br><span class="line">  <span class="keyword">if</span> (!<span class="variable">$result</span>) &#123;</span><br><span class="line">    <span class="keyword">die</span>(<span class="variable">$conn</span>-&gt;error);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="title function_ invoke__">header</span>(<span class="string">&quot;Location: index.php&quot;</span>);</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+    </div>
+     
+    <div class="post-footer__meta"><p>updated at 2022-09-07</p></div> 
+    <div class="post-entry__tags"></div> 
+</article>
+
+
+    <div class="nav">
+        <div class="nav__prev">
+            
+                <a href="/2021/12/01/TCP%20_%20IP/" class="nav__link">
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#808080"></path></svg>
+                    </div>
+                    <div>
+                        <div class="nav__label">
+                            Previous Post
+                        </div>
+                        <div class="nav__title">
+                            TCP / IP
+                        </div>
+                    </div>
+                </a>
+            
+        </div>
+        <div class="nav__next">
+            
+                <a href="/2021/12/01/DNS/" class="nav__link">
+                    <div>
+                        <div class="nav__label">
+                            Next Post
+                        </div>
+                        <div class="nav__title">
+                            DNS
+                        </div>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#808080"></path></svg>
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+
+
+
+
+
+</main>
+
+            <footer class="footer">
+    
+    
+
+
+    
+     
+ 
+
+ 
+    
+        
+        <p class="footer-copyright">
+            Copyright © 2022 <a href="/">倉鼠跑滾輪</a>
+        </p>
+    
+    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+</footer>
+
+        </div>
+         
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+    
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+    </body>
+</html>

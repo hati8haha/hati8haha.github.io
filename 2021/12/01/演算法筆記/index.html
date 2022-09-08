@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    
+    
+    
+    
+    
+
+
+    <!-- meta -->
+
+
+<title>演算法筆記 | 倉鼠跑滾輪</title>
+
+
+
+
+
+    <!-- OpenGraph -->
+ 
+    <meta name="description" content="tags: 資料結構與演算法What is Algorithm?演算法的定義 Algorithm is a finite sequence of well-defined, computer-implementable instructions, typically to solve a class of problems or to perform a computation. Easy spe">
+<meta property="og:type" content="article">
+<meta property="og:title" content="演算法筆記">
+<meta property="og:url" content="https://hati8haha.github.io/2021/12/01/%E6%BC%94%E7%AE%97%E6%B3%95%E7%AD%86%E8%A8%98/index.html">
+<meta property="og:site_name" content="倉鼠跑滾輪">
+<meta property="og:description" content="tags: 資料結構與演算法What is Algorithm?演算法的定義 Algorithm is a finite sequence of well-defined, computer-implementable instructions, typically to solve a class of problems or to perform a computation. Easy spe">
+<meta property="og:locale">
+<meta property="og:image" content="https://i.imgur.com/yXWn5c6.png">
+<meta property="og:image" content="https://i.imgur.com/NVyph3L.png">
+<meta property="og:image" content="https://i.imgur.com/VL8viAa.png">
+<meta property="article:published_time" content="2021-11-30T23:36:52.000Z">
+<meta property="article:modified_time" content="2022-09-07T15:41:25.285Z">
+<meta property="article:author" content="Haoting">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://i.imgur.com/yXWn5c6.png">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+    
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/default.css" media="none">
+        
+    
+
+    
+    
+
+    
+
+     
+
+    <!-- custom head -->
+
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+    <body>
+        <div id="app">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">Demo</span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">首页</a>
+                
+                    <a href="/tags/" class="navbar-menu button">标签</a>
+                
+                    <a href="/archives/" class="navbar-menu button">归档</a>
+                
+                    <a href="/friends/" class="navbar-menu button">友链</a>
+                
+                    <a href="/page/" class="navbar-menu button">Page</a>
+                
+            </div>
+        
+        
+        
+
+        
+        
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                
+                    <a href="/" class="dropdown-menu button">首页</a>
+                
+                    <a href="/tags/" class="dropdown-menu button">标签</a>
+                
+                    <a href="/archives/" class="dropdown-menu button">归档</a>
+                
+                    <a href="/friends/" class="dropdown-menu button">友链</a>
+                
+                    <a href="/page/" class="dropdown-menu button">Page</a>
+                
+            </div>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    
+
+<div class="post-title">
+    <h1 class="post-title__text">
+        演算法筆記
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2021/12/" class="post-meta__date button">2021-12-01</a>
+        
+ 
+        
+    
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+
+<article class="post content-card">
+    <div class="post__header"></div>
+    <div class="post__content">
+        <h6 id="tags-資料結構與演算法"><a href="#tags-資料結構與演算法" class="headerlink" title="tags: 資料結構與演算法"></a>tags: <code>資料結構與演算法</code></h6><h4 id="What-is-Algorithm"><a href="#What-is-Algorithm" class="headerlink" title="What is Algorithm?"></a>What is Algorithm?</h4><h5 id="演算法的定義"><a href="#演算法的定義" class="headerlink" title="演算法的定義"></a>演算法的定義</h5><ul>
+<li>Algorithm is a finite sequence of well-defined, computer-implementable instructions, typically to solve a class of problems or to perform a computation.</li>
+<li>Easy speaking, algorithm is a step-by-step procedure to solve a problem.</li>
+</ul>
+<p>有限的連續性事情，有完整定義，電腦可以執行，是用來解決一個問題或計算某些值。<br>一步一步去解決問題的程序，就可叫做演算法。</p>
+<h5 id="現實生活中的演算法"><a href="#現實生活中的演算法" class="headerlink" title="現實生活中的演算法:"></a>現實生活中的演算法:</h5><ul>
+<li>Google Maps 的路徑規劃</li>
+<li>YouTube 的推薦影片</li>
+<li>Excel 的數字排列</li>
+</ul>
+<h4 id="Comparing-Algorithm"><a href="#Comparing-Algorithm" class="headerlink" title="Comparing Algorithm"></a>Comparing Algorithm</h4><h5 id="為什麼要比較演算法？"><a href="#為什麼要比較演算法？" class="headerlink" title="為什麼要比較演算法？"></a>為什麼要比較演算法？</h5><p>比較速度、記憶體資源</p>
+<ul>
+<li>Time</li>
+<li>Space</li>
+</ul>
+<p>現實情況中用計時方式來評估演算法時間效率並不實際，為什麼？</p>
+<ul>
+<li>同個電腦上會得到不同的結果</li>
+<li>不同電腦會給出不同的結果</li>
+</ul>
+<h4 id="Complexity-複雜度"><a href="#Complexity-複雜度" class="headerlink" title="Complexity 複雜度"></a>Complexity 複雜度</h4><p>需要用到多少 operations？ &#x3D;&gt; 直接影響</p>
+<p>$f(n) &#x3D; n^2+3n+4$<br>n 為 input size<br>複雜度為</p>
+<p><img src="https://i.imgur.com/yXWn5c6.png"><br><img src="https://i.imgur.com/NVyph3L.png"></p>
+<p>$f(n)$ 與 $n$ have quadrctic relations.<br>有平方的關係</p>
+<p>設計演算法時應考慮避免把時間複雜度太高。</p>
+<h4 id="Big-O-Notation"><a href="#Big-O-Notation" class="headerlink" title="Big O Notation"></a>Big O Notation</h4><h5 id="定義"><a href="#定義" class="headerlink" title="定義"></a>定義</h5><ul>
+<li>Big O Notation is atool that describe the limiting behavior of a function when the argument tends towards a particular value or infinity.</li>
+<li>Big O Notation has a “worst case scenario”, which means it shows the general trends of complexity when the size of inputs is extremely large.</li>
+</ul>
+<p>Big O Notation 是用來描述 的工具<br>n 不斷擴大時，會走去哪裡<br>有一個最壞的情況的打算<br>Big O Notation 會展示演算法的趨勢，當 size 到極大時，它的趨勢是什麼</p>
+<h5 id="Calculating-Big-O-Value"><a href="#Calculating-Big-O-Value" class="headerlink" title="Calculating Big O Value"></a>Calculating Big O Value</h5><ol>
+<li>Constant doesn’t matter 常數不重要</li>
+<li>Small Terms don’t matter 較小的</li>
+<li>Longarithm Base doesn’t matter 底數（log 的）不重要</li>
+</ol>
+<p>$f(n) &#x3D; 5n^2+3n+4$ &#x3D;&gt; 只需要考慮 $5n^2$</p>
+<h4 id="Asymptotic-Notation"><a href="#Asymptotic-Notation" class="headerlink" title="Asymptotic Notation"></a>Asymptotic Notation</h4><p>Big O Omega 定義最低限度是多低<br>Big Theta</p>
+<p>Big O 定義：<br>The function $f(n)&#x3D;O(g(n)) iff  c, n0 s.t. 0 &lt;&#x3D; f(n)$ </p>
+<p>desmos 繪圖計算機<br><img src="https://i.imgur.com/VL8viAa.png"></p>
+<h4 id="Analysis-of-Arrays-and-Objects"><a href="#Analysis-of-Arrays-and-Objects" class="headerlink" title="Analysis of Arrays and Objects"></a>Analysis of Arrays and Objects</h4><p>Object：<br>Insertion $O(1)$<br>Removal  $O(1)$<br>Searching $O(n)$<br>Acessing $O(1)$</p>
+<p>hash Table  &#x3D;&gt; 因此找到 Object 內的資料無論多龐大都是 $O(1)$</p>
+<p>Array：<br>Insertion push &#x3D; $O(1)$ unshift &#x3D; $O(n)$<br>Removal  pop &#x3D; $O(1)$ shift &#x3D; $O(n)$<br>Searching $O(n)$<br>Acessing $O(1)$</p>
+<p>因為 array 有 index，因此在最前面新增會需要更改所有的 index</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2>
+    </div>
+     
+    <div class="post-footer__meta"><p>updated at 2022-09-07</p></div> 
+    <div class="post-entry__tags"></div> 
+</article>
+
+
+    <div class="nav">
+        <div class="nav__prev">
+            
+                <a href="/2021/12/01/MVC/" class="nav__link">
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#808080"></path></svg>
+                    </div>
+                    <div>
+                        <div class="nav__label">
+                            Previous Post
+                        </div>
+                        <div class="nav__title">
+                            MVC
+                        </div>
+                    </div>
+                </a>
+            
+        </div>
+        <div class="nav__next">
+            
+                <a href="/2021/12/01/AWS%20EC2%20Nginx%20+%20pm2%20%E5%AE%8C%E6%95%B4%E9%83%A8%E7%BD%B2%E6%B5%81%E7%A8%8B/" class="nav__link">
+                    <div>
+                        <div class="nav__label">
+                            Next Post
+                        </div>
+                        <div class="nav__title">
+                            AWS EC2 Nginx + pm2 完整部署流程
+                        </div>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#808080"></path></svg>
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+
+
+
+
+
+</main>
+
+            <footer class="footer">
+    
+    
+
+
+    
+     
+ 
+
+ 
+    
+        
+        <p class="footer-copyright">
+            Copyright © 2022 <a href="/">倉鼠跑滾輪</a>
+        </p>
+    
+    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+</footer>
+
+        </div>
+         
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+    
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+    </body>
+</html>

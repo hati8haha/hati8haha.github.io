@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    
+    
+    
+    
+    
+
+
+    <!-- meta -->
+
+
+<title>盒模型（box model） | 倉鼠跑滾輪</title>
+
+
+
+
+
+    <!-- OpenGraph -->
+ 
+    <meta name="description" content="tags: HTMLhtml 中的可以看到的每個元素，都可以將它看作是盒模型。 盒模型由四個部分組成，分別如下圖所示：  Content （內容）Content 為盒模型中置入內容的元素，元素中的文字會在此區塊呈現。在預設（box-sizing: content-box;）情況下，可以透過 width 以及 height 控制寬高。  Padding（內邊距）Padding 可以用來將 Conte">
+<meta property="og:type" content="article">
+<meta property="og:title" content="盒模型（box model）">
+<meta property="og:url" content="https://hati8haha.github.io/2021/12/01/%E7%9B%92%E6%A8%A1%E5%9E%8B%EF%BC%88box%20model%EF%BC%89/index.html">
+<meta property="og:site_name" content="倉鼠跑滾輪">
+<meta property="og:description" content="tags: HTMLhtml 中的可以看到的每個元素，都可以將它看作是盒模型。 盒模型由四個部分組成，分別如下圖所示：  Content （內容）Content 為盒模型中置入內容的元素，元素中的文字會在此區塊呈現。在預設（box-sizing: content-box;）情況下，可以透過 width 以及 height 控制寬高。  Padding（內邊距）Padding 可以用來將 Conte">
+<meta property="og:locale">
+<meta property="og:image" content="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/box-model.png">
+<meta property="article:published_time" content="2021-12-01T00:34:22.000Z">
+<meta property="article:modified_time" content="2022-09-07T15:41:25.285Z">
+<meta property="article:author" content="Haoting">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/box-model.png">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+    
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/default.css" media="none">
+        
+    
+
+    
+    
+
+    
+
+     
+
+    <!-- custom head -->
+
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+    <body>
+        <div id="app">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">Demo</span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">首页</a>
+                
+                    <a href="/tags/" class="navbar-menu button">标签</a>
+                
+                    <a href="/archives/" class="navbar-menu button">归档</a>
+                
+                    <a href="/friends/" class="navbar-menu button">友链</a>
+                
+                    <a href="/page/" class="navbar-menu button">Page</a>
+                
+            </div>
+        
+        
+        
+
+        
+        
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                
+                    <a href="/" class="dropdown-menu button">首页</a>
+                
+                    <a href="/tags/" class="dropdown-menu button">标签</a>
+                
+                    <a href="/archives/" class="dropdown-menu button">归档</a>
+                
+                    <a href="/friends/" class="dropdown-menu button">友链</a>
+                
+                    <a href="/page/" class="dropdown-menu button">Page</a>
+                
+            </div>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    
+
+<div class="post-title">
+    <h1 class="post-title__text">
+        盒模型（box model）
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2021/12/" class="post-meta__date button">2021-12-01</a>
+        
+ 
+        
+    
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+
+<article class="post content-card">
+    <div class="post__header"></div>
+    <div class="post__content">
+        <h6 id="tags-HTML"><a href="#tags-HTML" class="headerlink" title="tags: HTML"></a>tags: <code>HTML</code></h6><p>html 中的可以看到的每個元素，都可以將它看作是盒模型。</p>
+<p>盒模型由四個部分組成，分別如下圖所示：<br><img src="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/box-model.png" alt="圖片來源：MDN box-model 介紹"></p>
+<ol>
+<li><p>Content （內容）<br>Content 為盒模型中置入內容的元素，元素中的文字會在此區塊呈現。<br>在預設（<code>box-sizing: content-box;</code>）情況下，可以透過 <code>width</code> 以及 <code>height</code> 控制寬高。</p>
+</li>
+<li><p>Padding（內邊距）<br>Padding 可以用來將 Content 往內推，背景色會與 Content 相同。<br>可以透過 <code>padding:</code> 控制邊距的上下左右距離，越增加會將元素越往內推。</p>
+</li>
+<li><p>Border（邊框）<br>Border 包在 Padding 的外層，若增加數值會向外延伸。<br>可以透過 <code>border:</code> 控制邊框的上下左右寬度。<br>設定 <code>box-sizing: border-box;</code> 時，<code>width</code> 與 <code>height</code> 控制的寬高會是以邊框為範圍。</p>
+</li>
+<li><p>Margin（外邊距）<br>Margin 的背景色永遠為透明。<br>如果是 inline 元素，margin 的垂直方向 ( 上、下 ) 沒有效果。<br>透過 <code>margin:</code> 設定的的外邊距上下左右寬度可以為負值。</p>
+</li>
+</ol>
+<p><code>padding:</code>、<code>border:</code>、<code>margin:</code> 的語法如下：</p>
+<ul>
+<li>單位可以設定為像素 px、百分比 % 或 em、rem 等。</li>
+<li>四個值：上、右、下、左。範例：<code>padding: 36px 12px 24px 12px;</code></li>
+<li>三個值：上、左右、下。範例：<code>border: 36px 12px 24px;</code></li>
+<li>兩個值：上下、左右。範例：<code>margin: 36px 12px;</code></li>
+<li>一個值：上下左右。範例：<code>border: 12px;</code></li>
+</ul>
+
+    </div>
+     
+    <div class="post-footer__meta"><p>updated at 2022-09-07</p></div> 
+    <div class="post-entry__tags"></div> 
+</article>
+
+
+    <div class="nav">
+        <div class="nav__prev">
+            
+                <a href="/2021/12/01/CSRF%20%E7%9A%84%E6%94%BB%E6%93%8A%E5%8E%9F%E7%90%86%E4%BB%A5%E5%8F%8A%E9%98%B2%E7%AF%84%E6%96%B9%E6%B3%95/" class="nav__link">
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#808080"></path></svg>
+                    </div>
+                    <div>
+                        <div class="nav__label">
+                            Previous Post
+                        </div>
+                        <div class="nav__title">
+                            CSRF 的攻擊原理以及防範方法
+                        </div>
+                    </div>
+                </a>
+            
+        </div>
+        <div class="nav__next">
+            
+                <a href="/2021/12/01/Webpack%20%E6%98%AF%E5%81%9A%E4%BB%80%E9%BA%BC%E7%94%A8%E7%9A%84/" class="nav__link">
+                    <div>
+                        <div class="nav__label">
+                            Next Post
+                        </div>
+                        <div class="nav__title">
+                            Webpack 是做什麼用的
+                        </div>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#808080"></path></svg>
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+
+
+
+
+
+</main>
+
+            <footer class="footer">
+    
+    
+
+
+    
+     
+ 
+
+ 
+    
+        
+        <p class="footer-copyright">
+            Copyright © 2022 <a href="/">倉鼠跑滾輪</a>
+        </p>
+    
+    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+</footer>
+
+        </div>
+         
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+    
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+    </body>
+</html>

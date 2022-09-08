@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    
+    
+    
+    
+    
+
+
+    <!-- meta -->
+
+
+<title>Cookie 是什麼？如何設定？ | 倉鼠跑滾輪</title>
+
+
+
+
+
+    <!-- OpenGraph -->
+ 
+    <meta name="description" content="tags: web 基礎由於 HTTP 是無狀態的，因此每一個 Request 不相關，Server 會無法辨識是否為同個使用者。 而 Cookie 存在的目的就是為了讓 Server 能辨識使用者，透過 Cookie 這個儲存在瀏覽器的小型文字檔案，Server 便能辨識不同的 Request 是否來自同個使用者。 透過讓 Server 發送 Cookie 給瀏覽器，而瀏覽器將 Cookie 儲">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cookie 是什麼？如何設定？">
+<meta property="og:url" content="https://hati8haha.github.io/2021/12/01/Cookie%20%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F%E5%A6%82%E4%BD%95%E8%A8%AD%E5%AE%9A%EF%BC%9F/index.html">
+<meta property="og:site_name" content="倉鼠跑滾輪">
+<meta property="og:description" content="tags: web 基礎由於 HTTP 是無狀態的，因此每一個 Request 不相關，Server 會無法辨識是否為同個使用者。 而 Cookie 存在的目的就是為了讓 Server 能辨識使用者，透過 Cookie 這個儲存在瀏覽器的小型文字檔案，Server 便能辨識不同的 Request 是否來自同個使用者。 透過讓 Server 發送 Cookie 給瀏覽器，而瀏覽器將 Cookie 儲">
+<meta property="og:locale">
+<meta property="article:published_time" content="2021-12-01T00:19:16.000Z">
+<meta property="article:modified_time" content="2022-09-07T15:41:25.282Z">
+<meta property="article:author" content="Haoting">
+<meta name="twitter:card" content="summary_large_image">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+    
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/default.css" media="none">
+        
+    
+
+    
+    
+
+    
+
+     
+
+    <!-- custom head -->
+
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+    <body>
+        <div id="app">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">Demo</span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">首页</a>
+                
+                    <a href="/tags/" class="navbar-menu button">标签</a>
+                
+                    <a href="/archives/" class="navbar-menu button">归档</a>
+                
+                    <a href="/friends/" class="navbar-menu button">友链</a>
+                
+                    <a href="/page/" class="navbar-menu button">Page</a>
+                
+            </div>
+        
+        
+        
+
+        
+        
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                
+                    <a href="/" class="dropdown-menu button">首页</a>
+                
+                    <a href="/tags/" class="dropdown-menu button">标签</a>
+                
+                    <a href="/archives/" class="dropdown-menu button">归档</a>
+                
+                    <a href="/friends/" class="dropdown-menu button">友链</a>
+                
+                    <a href="/page/" class="dropdown-menu button">Page</a>
+                
+            </div>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    
+
+<div class="post-title">
+    <h1 class="post-title__text">
+        Cookie 是什麼？如何設定？
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2021/12/" class="post-meta__date button">2021-12-01</a>
+        
+ 
+        
+    
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+
+<article class="post content-card">
+    <div class="post__header"></div>
+    <div class="post__content">
+        <h6 id="tags-web-基礎"><a href="#tags-web-基礎" class="headerlink" title="tags: web 基礎"></a>tags: <code>web 基礎</code></h6><p>由於 HTTP 是無狀態的，因此每一個 Request 不相關，Server 會無法辨識是否為同個使用者。</p>
+<p>而 Cookie 存在的目的就是為了讓 Server 能辨識使用者，透過 Cookie 這個<strong>儲存在瀏覽器的小型文字檔案</strong>，Server 便能辨識不同的 Request 是否來自同個使用者。</p>
+<p>透過讓 Server 發送 Cookie 給瀏覽器，而瀏覽器將 Cookie 儲存起來，以便讓 Server 能辨識使用者。</p>
+<p>在 Server 發送 設定 Cookie 的 response 給 Client 端之後，Client 發送到 Server 的 request 的 header 中會帶上 cookie。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A[Client] -- rquest --&gt; B[Server]</span><br><span class="line">B -- Response with setCookie --&gt; A</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A[Client] -- rquest with Cookie --&gt; B[Server]</span><br><span class="line">B -- 可以辨識使用者 --&gt; A</span><br></pre></td></tr></table></figure>
+<p>在 php 實作中，可以用 <code>setcookie()</code> 來設定 cookie，可參考此範例：<br><code>setcookie(&quot;cookie 名稱&quot;, cookie 參數, 失效時間)</code><br><code>time()</code> 會回傳現在時間</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">  <span class="meta">&lt;?php</span></span><br><span class="line">  <span class="variable">$expire</span> = <span class="title function_ invoke__">time</span>() + <span class="number">3600</span> * <span class="number">24</span> * <span class="number">30</span>;  <span class="comment">//沒設時間會很快失效</span></span><br><span class="line">  <span class="title function_ invoke__">setcookie</span>(<span class="string">&quot;username&quot;</span>, <span class="variable">$username</span>, <span class="variable">$expire</span>)</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+    </div>
+     
+    <div class="post-footer__meta"><p>updated at 2022-09-07</p></div> 
+    <div class="post-entry__tags"></div> 
+</article>
+
+
+    <div class="nav">
+        <div class="nav__prev">
+            
+                <a href="/2021/12/01/%E9%9B%9C%E6%B9%8A%E8%B7%9F%E5%8A%A0%E5%AF%86%E7%9A%84%E5%B7%AE%E5%88%A5/" class="nav__link">
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#808080"></path></svg>
+                    </div>
+                    <div>
+                        <div class="nav__label">
+                            Previous Post
+                        </div>
+                        <div class="nav__title">
+                            雜湊跟加密的差別
+                        </div>
+                    </div>
+                </a>
+            
+        </div>
+        <div class="nav__next">
+            
+                <a href="/2021/12/01/NoSQL%20%E8%B7%9F%20SQL%20%E7%9A%84%E5%B7%AE%E5%88%A5%E5%9C%A8%E5%93%AA%E8%A3%A1%EF%BC%9F/" class="nav__link">
+                    <div>
+                        <div class="nav__label">
+                            Next Post
+                        </div>
+                        <div class="nav__title">
+                            NoSQL 跟 SQL 的差別在哪裡？
+                        </div>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#808080"></path></svg>
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+
+
+
+
+
+</main>
+
+            <footer class="footer">
+    
+    
+
+
+    
+     
+ 
+
+ 
+    
+        
+        <p class="footer-copyright">
+            Copyright © 2022 <a href="/">倉鼠跑滾輪</a>
+        </p>
+    
+    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+</footer>
+
+        </div>
+         
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+    
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+    </body>
+</html>
