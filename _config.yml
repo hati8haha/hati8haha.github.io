@@ -8,7 +8,7 @@ subtitle: '一直跑也不會前進'
 description: '寫 code 不做筆記也會停在原地'
 keywords:
 author: Haoting
-language: zh
+language: en
 timezone: ''
 
 # URL
@@ -98,21 +98,6 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: keep
-
-base_info:
-  title: Hamster
-  author: Haoting
-  url: https://hati8haha.github.io
-
-style:
-  # Theme primary color
-  primary_color: "#0066CC"
-
-  # Avatar (You can use local image or image external link)
-  avatar: /images/avatar.svg
-
-  # Favicon (You can use local image or image external link)
-  favicon: /images/logo.svg
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
