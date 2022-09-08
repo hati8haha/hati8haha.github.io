@@ -1,159 +1,171 @@
 <!DOCTYPE html>
 <html lang="zh">
-    <head>
+<head>
     <meta charset="utf-8">
-
-    
-
-    <!-- 渲染优化 -->
-    <meta name="renderer" content="webkit">
-    <meta name="force-rendering" content="webkit">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <meta name="HandheldFriendly" content="True" >
-    <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!--icon-->
-
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="寫 code 不做筆記也會停在原地">
+    <meta name="author" content="Keep Team">
     
-    
-    
-    
-    
-
-
-    <!-- meta -->
-
-
-<title>學習筆記 | 倉鼠跑滾輪</title>
-
-
-
-
-
-    <!-- OpenGraph -->
- 
-    <meta name="description" content="tags: 首頁關於 關於這份筆記  HTML display: inline, block 跟 inline-block 的差別是什麼？ 盒模型（box model） HTML tag blockquote、object、code  CSS CSS Selector 權重的計算方式  JS JSONP Ajax  web 基礎 SPA Cookie 是什麼？如何設定？ API 是什麼 HTTP">
-<meta property="og:type" content="article">
-<meta property="og:title" content="學習筆記">
-<meta property="og:url" content="https://hati8haha.github.io/2022/09/02/%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/index.html">
-<meta property="og:site_name" content="倉鼠跑滾輪">
-<meta property="og:description" content="tags: 首頁關於 關於這份筆記  HTML display: inline, block 跟 inline-block 的差別是什麼？ 盒模型（box model） HTML tag blockquote、object、code  CSS CSS Selector 權重的計算方式  JS JSONP Ajax  web 基礎 SPA Cookie 是什麼？如何設定？ API 是什麼 HTTP">
-<meta property="og:locale">
-<meta property="article:published_time" content="2022-09-02T07:21:26.000Z">
-<meta property="article:modified_time" content="2022-09-07T15:41:25.285Z">
-<meta property="article:author" content="Haoting">
-<meta name="twitter:card" content="summary_large_image">
-
-
-    
-<link rel="stylesheet" href="/css/style/main.css">
- 
-
-    
-    
-        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/default.css" media="none">
+    <title>
         
+            學習筆記 |
+        
+        Keep Theme
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/logo.svg">
+    
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"hati8haha.github.io","root":"/","language":"zh"};
+    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":false,"background_img":"/images/bg.svg","description":"Keep writing and Keep loving."},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":false,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+  </script>
+<meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="倉鼠跑滾輪" type="application/atom+xml">
+</head>
+
+
+<body>
+<div class="progress-bar-container">
     
 
     
-    
-
-    
-
-     
-
-    <!-- custom head -->
-
-<meta name="generator" content="Hexo 6.2.0"></head>
-
-    <body>
-        <div id="app">
-            <header class="header">
-    <div class="header__left">
-        <a href="/" class="button">
-            <span class="logo__text">Demo</span>
-        </a>
-    </div>
-    <div class="header__right">
-        
-            <div class="navbar__menus">
-                
-                    <a href="/" class="navbar-menu button">首页</a>
-                
-                    <a href="/tags/" class="navbar-menu button">标签</a>
-                
-                    <a href="/archives/" class="navbar-menu button">归档</a>
-                
-                    <a href="/friends/" class="navbar-menu button">友链</a>
-                
-                    <a href="/page/" class="navbar-menu button">Page</a>
-                
-            </div>
-        
-        
-        
-
-        
-        
-
-        
-            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
-            <div class="dropdown-menus" id="dropdown-menus">
-                
-                    <a href="/" class="dropdown-menu button">首页</a>
-                
-                    <a href="/tags/" class="dropdown-menu button">标签</a>
-                
-                    <a href="/archives/" class="dropdown-menu button">归档</a>
-                
-                    <a href="/friends/" class="dropdown-menu button">友链</a>
-                
-                    <a href="/page/" class="dropdown-menu button">Page</a>
-                
-            </div>
-        
-    </div>
-</header>
-
-
-            <main class="main">
-    
-
-<div class="post-title">
-    <h1 class="post-title__text">
-        學習筆記
-    </h1>
-    <div class="post-title__meta">
-        <a href="/archives/2022/09/" class="post-meta__date button">2022-09-02</a>
-        
- 
-        
-    
-    
-
-
- 
-
- 
-    </div>
 </div>
 
 
+<main class="page-container">
 
-<article class="post content-card">
-    <div class="post__header"></div>
-    <div class="post__content">
-        <h6 id="tags-首頁"><a href="#tags-首頁" class="headerlink" title="tags: 首頁"></a>tags: <code>首頁</code></h6><h2 id="關於"><a href="#關於" class="headerlink" title="關於"></a>關於</h2><ul>
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                Keep Theme
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                HOME
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                ARCHIVES
+                            </a>
+                        </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">HOME</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">ARCHIVES</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">學習筆記</span>
+        </div>
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/avatar.svg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">Keep Team</span>
+                        
+                            <span class="author-label">Lv4</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;
+        <span class="pc">2022-09-02 15:21:26</span>
+        <span class="mobile">2022-09-02 15:21</span>
+    </span>
+    
+    
+
+    
+    
+    
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <h6 id="tags-首頁"><a href="#tags-首頁" class="headerlink" title="tags: 首頁"></a>tags: <code>首頁</code></h6><h2 id="關於"><a href="#關於" class="headerlink" title="關於"></a>關於</h2><ul>
 <li><a href="/EDp1BHxSTKq32v-GLgO3Lg">關於這份筆記</a></li>
 </ul>
 <h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://hackmd.io/@hatiblog/Skn7TjVYF">display: inline, block 跟 inline-block 的差別是什麼？</a></li>
-<li><a target="_blank" rel="noopener" href="https://hackmd.io/@hatiblog/B1ezTo4KY">盒模型（box model）</a></li>
-<li><a target="_blank" rel="noopener" href="https://hackmd.io/@hatiblog/SkH8noEKt">HTML tag blockquote、object、code</a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://hackmd.io/@hatiblog/Skn7TjVYF" >display: inline, block 跟 inline-block 的差別是什麼？<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://hackmd.io/@hatiblog/B1ezTo4KY" >盒模型（box model）<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://hackmd.io/@hatiblog/SkH8noEKt" >HTML tag blockquote、object、code<i class="fas fa-external-link-alt"></i></a></li>
 </ul>
 <h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://hackmd.io/@hatiblog/Byb9WhEKY">CSS Selector 權重的計算方式</a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://hackmd.io/@hatiblog/Byb9WhEKY" >CSS Selector 權重的計算方式<i class="fas fa-external-link-alt"></i></a></li>
 </ul>
 <h2 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h2><ul>
 <li><a href="/xJyST6XdQxab8v3deRFIHg">JSONP</a></li>
@@ -168,7 +180,7 @@
 <li><a href="/jdySlGVGQrqdEjbEaThfKA">DNS</a></li>
 </ul>
 <h2 id="前端工具"><a href="#前端工具" class="headerlink" title="前端工具"></a>前端工具</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://hackmd.io/@hatiblog/BysPb24KF">Webpack 是做什麼用的</a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://hackmd.io/@hatiblog/BysPb24KF" >Webpack 是做什麼用的<i class="fas fa-external-link-alt"></i></a></li>
 </ul>
 <h2 id="DOM"><a href="#DOM" class="headerlink" title="DOM"></a>DOM</h2><ul>
 <li><a href="/-9EmIYB-TIqSKzcHdhzepg">BOM DOM 差別</a></li>
@@ -216,97 +228,161 @@
 <li><a href="/b7e3WRZ3SkeS-p4alGCz9g">MVC</a></li>
 </ul>
 
-    </div>
-     
-    <div class="post-footer__meta"><p>updated at 2022-09-07</p></div> 
-    <div class="post-entry__tags"></div> 
-</article>
-
-
-    <div class="nav">
-        <div class="nav__prev">
-            
         </div>
-        <div class="nav__next">
-            
-                <a href="/2022/09/02/Redux/" class="nav__link">
-                    <div>
-                        <div class="nav__label">
-                            Next Post
-                        </div>
-                        <div class="nav__title">
-                            Redux
-                        </div>
-                    </div>
-                    <div>
-                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#808080"></path></svg>
-                    </div>
-                </a>
-            
-        </div>
-    </div>
 
-
-
-
-
-</main>
-
-            <footer class="footer">
-    
-    
-
-
-    
-     
- 
-
- 
-    
         
-        <p class="footer-copyright">
-            Copyright © 2022 <a href="/">倉鼠跑滾輪</a>
-        </p>
-    
-    
-    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+
+        
+
+        
+            <div class="article-nav">
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/2022/09/02/Redux/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">Redux</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2020</span>
+              -
+            
+            2022&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Keep Team</a>
+        </div>
+        
+        <div class="theme-info info-item">
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.5</a>
+        </div>
+        
+        
+    </div>
 </footer>
 
         </div>
-         
+    </div>
 
- 
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
 
- 
+        <!-- go comment -->
+        
+    </ul>
+</div>
 
- 
+        </div>
+    
 
- 
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
 
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
 
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
 
- 
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
 
+        <!-- rss -->
+        
 
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
 
- 
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
 
 
     
- 
 
- 
-
- 
-
- 
-
- 
-
- 
+</main>
 
 
 
 
-    </body>
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+
+
+
+<div class="post-scripts">
+    
+</div>
+
+
+
+</body>
 </html>

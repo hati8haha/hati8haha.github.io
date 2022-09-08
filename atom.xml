@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>倉鼠跑滾輪</title>
+  
+  <subtitle>一直跑也不會前進</subtitle>
+  <link href="https://hati8haha.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://hati8haha.github.io/"/>
+  <updated>2022-09-07T15:41:25.285Z</updated>
+  <id>https://hati8haha.github.io/</id>
+  
+  <author>
+    <name>Haoting</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>學習筆記</title>
+    <link href="https://hati8haha.github.io/2022/09/02/%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/"/>
+    <id>https://hati8haha.github.io/2022/09/02/%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/</id>
+    <published>2022-09-02T07:21:26.000Z</published>
+    <updated>2022-09-07T15:41:25.285Z</updated>
+    
+    <content type="html"><![CDATA[<h6 id="tags-首頁"><a href="#tags-首頁" class="headerlink" title="tags: 首頁"></a>tags: <code>首頁</code></h6><h2 id="關於"><a href="#關於" class="headerlink" title="關於"></a>關於</h2><ul><li><a href="/EDp1BHxSTKq32v-GLgO3Lg">關於這份筆記</a></li></ul><h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><ul><li><a class="link"   href="https://hackmd.io/@hatiblog/Skn7TjVYF" >display: inline, block 跟 inline-block 的差別是什麼？<i class="fas fa-external-link-alt"></i></a></li><li><a class="link"   href="https://hackmd.io/@hatiblog/B1ezTo4KY" >盒模型（box model）<i class="fas fa-external-link-alt"></i></a></li><li><a class="link"   href="https://hackmd.io/@hatiblog/SkH8noEKt" >HTML tag blockquote、object、code<i class="fas fa-external-link-alt"></i></a></li></ul><h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><ul><li><a class="link"   href="https://hackmd.io/@hatiblog/Byb9WhEKY" >CSS Selector 權重的計算方式<i class="fas fa-external-link-alt"></i></a></li></ul><h2 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h2><ul><li><a href="/xJyST6XdQxab8v3deRFIHg">JSONP</a></li><li><a href="/MBNZws2ZTLeaboM9ORUD_w">Ajax</a></li></ul><h2 id="web-基礎"><a href="#web-基礎" class="headerlink" title="web 基礎"></a>web 基礎</h2><ul><li><a href="/fNGEgi5jT-SGiRqdqX5bsw">SPA</a></li><li><a href="/rqHPHVfeR66ZvFtdqU_4lA">Cookie 是什麼？如何設定？</a></li><li><a href="/iso2vj9iRsSBP1g-o7Godg">API 是什麼</a></li><li><a href="/xL2a-5AuRMKntoaKLjoVMA">HTTP</a></li><li><a href="/-TnHyE1xSgWjU10T3YitXQ">TCP &#x2F; IP</a></li><li><a href="/jdySlGVGQrqdEjbEaThfKA">DNS</a></li></ul><h2 id="前端工具"><a href="#前端工具" class="headerlink" title="前端工具"></a>前端工具</h2><ul><li><a class="link"   href="https://hackmd.io/@hatiblog/BysPb24KF" >Webpack 是做什麼用的<i class="fas fa-external-link-alt"></i></a></li></ul><h2 id="DOM"><a href="#DOM" class="headerlink" title="DOM"></a>DOM</h2><ul><li><a href="/-9EmIYB-TIqSKzcHdhzepg">BOM DOM 差別</a></li><li><a href="/GFrQW6p3S72C2p7pRWUpGg">事件傳遞機制：冒泡 &amp; 捕獲</a></li><li><a href="/rK_EFM98R-eqML_xzeNcvw">DOM</a></li><li><a href="/iQS1r3npSbuaRTDx_e49zQ">event delegation</a></li><li><a href="/0mpBdSIBT1ylBqsgAGOdqg">event.preventDefault() 跟 event.stopPropagation() 差別</a></li></ul><h2 id="react"><a href="#react" class="headerlink" title="react"></a>react</h2><ul><li><a href="/Wc8Em9WBTfKZbMrThJni0A">state 跟 props 的差別</a></li><li><a href="/VIDU45-rSOuTz7ZQDIQ-_A">React 的思考模式</a></li><li><a href="/JOulcuriSRuQtU-fG60FUg">React 解決了什麼問題</a></li><li><a href="/3bD6yjnaSQGS9WbiYa67OA">Redux</a></li></ul><h2 id="網路安全"><a href="#網路安全" class="headerlink" title="網路安全"></a>網路安全</h2><ul><li><a href="/juZTbPstSvOqBKQYZEd7Wg">CSRF 的攻擊原理以及防範方法</a></li><li><a href="/WEzVWmDRQaCUHA17RAC1tQ">SQL Injection 的攻擊原理以及防範方法</a></li><li><a href="/D2nfkcdBTO2jhszwzuUJYQ">XSS 的攻擊原理以及防範方法</a></li><li><a href="/pblfuacTTS6tkuDxlnCX4A">CORS</a></li><li><a href="/wQfYQTDITbmSrixkjlPFlg">雜湊跟加密的差別</a></li></ul><h2 id="資料結構與演算法"><a href="#資料結構與演算法" class="headerlink" title="資料結構與演算法"></a>資料結構與演算法</h2><ul><li><a href="/yNUlgF_pRfeJ8sWqI3X2Jw">Linked List</a></li><li><a href="/s2r0LK1kQSeg73nsyKtXcw">演算法筆記</a></li></ul><h2 id="資料庫"><a href="#資料庫" class="headerlink" title="資料庫"></a>資料庫</h2><ul><li><a href="/igCRtljTT-6w5hNAvrX90Q">NoSQL 跟 SQL 的差別在哪裡？</a></li><li><a href="/K_oU9Qt9SLSy9m9rNgu-ag">什麼是資料庫的 lock</a></li><li><a href="/QfxpeninRlWWTs_BeOff5A">資料庫的 ACID</a></li><li><a href="/w0QXwmXPTzaRHoVkV8Cn_w">VARCHAR 跟 TEXT 的差別是什麼</a></li></ul><h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><ul><li><a href="/o1brj_gRTViXuAuvhAL0lw">AWS EC2 Nginx + pm2 完整部署流程</a></li><li><a href="/vl8QJz_8Tt-Pxh2KL_pnRA">AWS EC2 nginx + pm2 部署踩雷紀錄</a></li></ul><h2 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h2><ul><li><a href="/9ULZsnorRb6FqJdd0KA1rA">include、require、include_once、require_once 的差別</a></li><li><a href="/SwJjixqeRqS7rIkdMWyJJw">PHP 學習筆記</a></li></ul><h2 id="產品開發"><a href="#產品開發" class="headerlink" title="產品開發"></a>產品開發</h2><ul><li><a href="/ELr941pCSqyyAXSetUXk5w">產品開發筆記</a></li></ul><h2 id="後端"><a href="#後端" class="headerlink" title="後端"></a>後端</h2><ul><li><a href="/MdsFlYAiSzi2pta1PBjl0g">Express 筆記</a></li><li><a href="/b7e3WRZ3SkeS-p4alGCz9g">MVC</a></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h6 id=&quot;tags-首頁&quot;&gt;&lt;a href=&quot;#tags-首頁&quot; class=&quot;headerlink&quot; title=&quot;tags: 首頁&quot;&gt;&lt;/a&gt;tags: &lt;code&gt;首頁&lt;/code&gt;&lt;/h6&gt;&lt;h2 id=&quot;關於&quot;&gt;&lt;a href=&quot;#關於&quot; class=&quot;heade</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Redux</title>
+    <link href="https://hati8haha.github.io/2022/09/02/Redux/"/>
+    <id>https://hati8haha.github.io/2022/09/02/Redux/</id>
+    <published>2022-09-02T07:20:46.000Z</published>
+    <updated>2022-09-07T15:41:25.277Z</updated>
+    
+    <content type="html"><![CDATA[<h6 id="tags-react-redux"><a href="#tags-react-redux" class="headerlink" title="tags: react redux"></a>tags: <code>react</code> <code>redux</code></h6><p>redux &#x3D;&gt; 狀態管理工具</p><p>jQuery -&gt; 資料與畫面分離<br>Vue、Angular -&gt; 資料與畫面雙向綁定<br>React -&gt; 只需要管資料</p><h3 id="flux-簡介"><a href="#flux-簡介" class="headerlink" title="flux 簡介"></a>flux 簡介</h3><p>看 <a class="link"   href="https://facebook.github.io/flux/docs/in-depth-overview" >facebook flux 影片<i class="fas fa-external-link-alt"></i></a><br><img src="https://i.imgur.com/LHEj84n.png"><br>原先可以直接從 View 去更改 Store(資料)<br>flux 讓 view 需要透過 action 到 dispatcher 去更改資料<br>好處是可以追蹤問題來源<br>若專案規模小可能會造成資源浪費</p><h3 id="redux-簡介"><a href="#redux-簡介" class="headerlink" title="redux 簡介"></a>redux 簡介</h3><p><img src="https://i.imgur.com/ckg5NnB.png"></p><p>react 把狀態放在 state<br>redux 把狀態放在 store</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> &#123;createStore&#125; = <span class="built_in">require</span>(<span class="string">&#x27;redux&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> initialState = &#123;</span><br><span class="line">  <span class="attr">value</span>: <span class="number">0</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">counterReducer</span>(<span class="params">stae = initialState, action</span>) &#123;</span><br><span class="line">  <span class="keyword">if</span> (action.<span class="property">type</span> === <span class="string">&#x27;plus&#x27;</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      <span class="attr">value</span>: state.<span class="property">value</span> + <span class="number">1</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> state</span><br><span class="line">&#125;</span><br><span class="line">store.<span class="title function_">dispatch</span>(&#123;</span><br><span class="line">  <span class="attr">type</span>: <span class="string">&#x27;plus&#x27;</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><p>訂閱 state 改變時要做的事情</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">store.<span class="title function_">subscribe</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;changed!&#x27;</span>, store.<span class="title function_">getState</span>())</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><p>action 中常會用的</p><ul><li>type &#x3D;&gt; action 名稱</li><li>payload &#x3D;&gt; 想要傳的參數</li></ul><p>避免 type 錯字難以 debug<br>&#x3D;&gt; 字串改成 object</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="title class_">ActionTypes</span> = &#123;</span><br><span class="line">  <span class="attr">ADD_TODO</span>: <span class="string">&#x27;add_todo&#x27;</span>,</span><br><span class="line">  <span class="attr">DELETE_TODO</span>: <span class="string">&#x27;delete_todo&#x27;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>action creattor<br><img src="https://i.imgur.com/y79HAIB.png"></p><h3 id="react-redux"><a href="#react-redux" class="headerlink" title="react-redux"></a>react-redux</h3><h4 id="selector"><a href="#selector" class="headerlink" title="selector"></a>selector</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> todos = <span class="title function_">useSelector</span>(<span class="function">(<span class="params">store</span>) =&gt;</span> store.<span class="property">todoReducer</span>.<span class="property">todos</span>)</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h6 id=&quot;tags-react-redux&quot;&gt;&lt;a href=&quot;#tags-react-redux&quot; class=&quot;headerlink&quot; title=&quot;tags: react redux&quot;&gt;&lt;/a&gt;tags: &lt;code&gt;react&lt;/code&gt; &lt;code&gt;redux&lt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>React 解決了什麼問題</title>
+    <link href="https://hati8haha.github.io/2022/09/02/React%20%E8%A7%A3%E6%B1%BA%E4%BA%86%E4%BB%80%E9%BA%BC%E5%95%8F%E9%A1%8C/"/>
+    <id>https://hati8haha.github.io/2022/09/02/React%20%E8%A7%A3%E6%B1%BA%E4%BA%86%E4%BB%80%E9%BA%BC%E5%95%8F%E9%A1%8C/</id>
+    <published>2022-09-02T07:20:30.000Z</published>
+    <updated>2022-09-07T15:41:25.277Z</updated>
+    
+    <content type="html"><![CDATA[<h6 id="tags-react"><a href="#tags-react" class="headerlink" title="tags: react"></a>tags: <code>react</code></h6><h3 id="新工具的出現，是為了解決既有的問題"><a href="#新工具的出現，是為了解決既有的問題" class="headerlink" title="新工具的出現，是為了解決既有的問題"></a>新工具的出現，是為了解決既有的問題</h3><p>而 React 做為一個 UI 的 JavaScript 的函式庫，它的出現便是為了解決 jQuery 以及原生 JavaScript 直接透過 DOM API 操作 DOM 時所衍生出的問題。</p><h3 id="那問題是什麼呢？"><a href="#那問題是什麼呢？" class="headerlink" title="那問題是什麼呢？"></a>那問題是什麼呢？</h3><ul><li><strong>重複渲染 DOM 過於消耗效能</strong></li><li><strong>資料與畫面不一致</strong></li></ul><p>接下來分別說明這兩點，以及 React 是透過什麼樣的方式找到解決方案。</p><h4 id="重複渲染-DOM-過於消耗效能"><a href="#重複渲染-DOM-過於消耗效能" class="headerlink" title="重複渲染 DOM 過於消耗效能"></a>重複渲染 DOM 過於消耗效能</h4><p>直接操作 DOM 的方式容易造成效能上的負擔，影響特別大的就是其中兩項過程：</p><ol><li>回流（Reflow）：計算 Render Tree 上各項元素的物理屬性，例如位置、大小。</li><li>重繪（Repaint）：將 Reflow 的計算結果轉換為螢幕上實際的像素顯示。</li></ol><p>由於每次的 Reflow 與 Repaint 需要重新計算所有節點，並且全部重新渲染，因此在架構較龐雜的網頁中每次的互動都需要耗費相當的資源。</p><p>為了因應這種問題，React 以 Virtual DOM 來實現只更改畫面中有需要更新的元素，不必每次繪製畫面都得全部打掉重來，藉此提升效能。</p><h4 id="資料與畫面不一致"><a href="#資料與畫面不一致" class="headerlink" title="資料與畫面不一致"></a>資料與畫面不一致</h4><p>若直接以 JavaScript 或 jQuery 設計網頁，網頁中的畫面需透過直接操作 DOM 的方式來改變，而資料則需要另外撰寫程式來控制。如果沒有刻意設計，網頁中的資料與畫面並不會隨時保持一致，對開發者而言，更動資料的同時也必須以另外寫程式去改變畫面，在維護與管理上較不容易。</p><p>React 的核心精神，與這個問題息息相關。透過 state，讓 UI 永遠由資料產生，藉此達到資料與畫面保持一致的目的。</p><h3 id="可以不用-React-嗎？"><a href="#可以不用-React-嗎？" class="headerlink" title="可以不用 React 嗎？"></a>可以不用 React 嗎？</h3><p>雖然 React 可以解決傳統 HTML + JavaScript 的痛點，但它依舊只是一項工具，只是達到目的的千百種工具的其中一種。<br>不過 React 的簡單、彈性以及有著豐富的生態系可以搭配，妥善運用的話可以大大地提昇開發效率與程式的重用性，不妨就嘗試看看巨人肩膀上的風景吧。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h6 id=&quot;tags-react&quot;&gt;&lt;a href=&quot;#tags-react&quot; class=&quot;headerlink&quot; title=&quot;tags: react&quot;&gt;&lt;/a&gt;tags: &lt;code&gt;react&lt;/code&gt;&lt;/h6&gt;&lt;h3 id=&quot;新工具的出現，是為了解決既有的問題&quot;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>React 的思考模式</title>
+    <link href="https://hati8haha.github.io/2022/09/02/React%20%E7%9A%84%E6%80%9D%E8%80%83%E6%A8%A1%E5%BC%8F/"/>
+    <id>https://hati8haha.github.io/2022/09/02/React%20%E7%9A%84%E6%80%9D%E8%80%83%E6%A8%A1%E5%BC%8F/</id>
+    <published>2022-09-02T07:20:16.000Z</published>
+    <updated>2022-09-07T15:41:25.278Z</updated>
+    
+    <content type="html"><![CDATA[<h6 id="tags-react"><a href="#tags-react" class="headerlink" title="tags: react"></a>tags: <code>react</code></h6><p>寫 React 時的思考模式與過往寫 HTML + JavaScript 的思考模式，個人認為最不一樣的兩點是：</p><ul><li>以元件（Component）為基本元素建構網頁</li><li>由 state 來決定網頁的畫面</li></ul><h3 id="以元件（Component）為基本元素建構網頁"><a href="#以元件（Component）為基本元素建構網頁" class="headerlink" title="以元件（Component）為基本元素建構網頁"></a>以元件（Component）為基本元素建構網頁</h3><p>在 React 中，網頁是由大大小小的 Component 所組合而成。而這些 Component 的該如何切分，才能達到更好的重用性便是重點。</p><p>對於初學 React 的新手來說，這與過去先將 HTML 寫好，再透過 JavaScript 改變 HTML 元素的方式很不一樣。在寫 Component 的同時就會需要考慮到這個 Component 會透過哪些 State 改變，需要傳什麼 props 給下一層等等問題。</p><h3 id="由-state-來決定網頁的畫面"><a href="#由-state-來決定網頁的畫面" class="headerlink" title="由 state 來決定網頁的畫面"></a>由 state 來決定網頁的畫面</h3><p>React 中很重要的一點是資料與畫面的一致。只要透過改變 state，畫面就可以跟著改變。</p><p>我認為這是寫 React 時很方便的一點，只要事先將 Component 寫好，state 一改變，畫面就可以跟著改變，不需要額外的程式控制畫面。</p><h3 id="火鍋跟烤肉"><a href="#火鍋跟烤肉" class="headerlink" title="火鍋跟烤肉"></a>火鍋跟烤肉</h3><p>如果要比喻的話，傳統的 HTML + JavaScript 就像是火鍋，而 React 則是烤肉？？？（什麼意思）</p><center><img src="https://images.unsplash.com/photo-1584509171119-9054d2d7d9a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2535&q=80" height=500 /><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80" height=500 /></center><center><font color=#A9A9A9>圖片來源：</font><a class="link"   href="https://unsplash.com/photos/BlUxJx3eNp0" >unsplash <i class="fas fa-external-link-alt"></i></a> <font color=#A9A9A9>&</font> <a class="link"   href="https://unsplash.com/photos/UC0HZdUitWY" >unsplash<i class="fas fa-external-link-alt"></i></a></center><p>HTML 就像湯底，只能看沒得吃，要把食材（JavaScript）倒入才算是功能齊全、可以享用的美食。<br>React 則像是烤肉，每一種食材（Component）都可以直接吃，有著各自的風味（功能），不過要把這些烤好的食材通通端出來才算是像樣的烤肉啊！</p><p>比喻的不是很好，不過好餓喔…</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h6 id=&quot;tags-react&quot;&gt;&lt;a href=&quot;#tags-react&quot; class=&quot;headerlink&quot; title=&quot;tags: react&quot;&gt;&lt;/a&gt;tags: &lt;code&gt;react&lt;/code&gt;&lt;/h6&gt;&lt;p&gt;寫 React 時的思考模式與過往寫 HTML</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>state 跟 props 的差別</title>
+    <link href="https://hati8haha.github.io/2022/09/02/state%20%E8%B7%9F%20props%20%E7%9A%84%E5%B7%AE%E5%88%A5/"/>
+    <id>https://hati8haha.github.io/2022/09/02/state%20%E8%B7%9F%20props%20%E7%9A%84%E5%B7%AE%E5%88%A5/</id>
+    <published>2022-09-02T07:19:46.000Z</published>
+    <updated>2022-09-07T15:41:25.273Z</updated>
+    
+    <content type="html"><![CDATA[<h6 id="tags-react"><a href="#tags-react" class="headerlink" title="tags: react"></a>tags: <code>react</code></h6><h3 id="state"><a href="#state" class="headerlink" title="state"></a>state</h3><p>state 是管理元件的<strong>狀態</strong>，state 的值可以改變。</p><h3 id="props"><a href="#props" class="headerlink" title="props"></a>props</h3><p>props 則是被傳遞進元件，用於父元件與子元件的溝通，值不可以改變。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h6 id=&quot;tags-react&quot;&gt;&lt;a href=&quot;#tags-react&quot; class=&quot;headerlink&quot; title=&quot;tags: react&quot;&gt;&lt;/a&gt;tags: &lt;code&gt;react&lt;/code&gt;&lt;/h6&gt;&lt;h3 id=&quot;state&quot;&gt;&lt;a href=&quot;#s</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>svgr component 在 jest 無法被讀取</title>
+    <link href="https://hati8haha.github.io/2022/09/02/svgr%20component%20%E5%9C%A8%20jest%20%E7%84%A1%E6%B3%95%E8%A2%AB%E8%AE%80%E5%8F%96/"/>
+    <id>https://hati8haha.github.io/2022/09/02/svgr%20component%20%E5%9C%A8%20jest%20%E7%84%A1%E6%B3%95%E8%A2%AB%E8%AE%80%E5%8F%96/</id>
+    <published>2022-09-02T07:19:18.000Z</published>
+    <updated>2022-09-07T15:41:25.272Z</updated>
+    
+    <content type="html"><![CDATA[<h6 id="tags-react-jest-svg"><a href="#tags-react-jest-svg" class="headerlink" title="tags: react jest svg"></a>tags: <code>react</code> <code>jest</code> <code>svg</code></h6><h2 id="問題"><a href="#問題" class="headerlink" title="問題"></a>問題</h2><p>svgr 在 jest 中無法被讀取，執行測試時會報錯<br>:::spoiler <strong>錯誤訊息</strong><br>:::danger<br>Error: Uncaught [Error: Element type is invalid: expected a string (for built-in components) or a class&#x2F;function (for composite components) but got: object.</p><p>Check the render method of <code>YourComponent</code>.]<br>:::</p><p>:::spoiler <strong>套件版本</strong></p><p>:::info<br>“next”: “12.2.5”,<br>“react”: “18.2.0”,<br>“jest”: “^29.0.1”,<br>“jest-environment-jsdom”: “^29.0.1”,<br>“@svgr&#x2F;webpack”: “^6.3.1”,<br>:::</p><h2 id="解決方法"><a href="#解決方法" class="headerlink" title="解決方法"></a>解決方法</h2><p>建立 <strong><code>/mock/svg.js</code></strong></p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="string">&#x27;SvgrURL&#x27;</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> <span class="title class_">ReactComponent</span> = <span class="string">&#x27;div&#x27;</span></span><br></pre></td></tr></table></figure><p>修改 <strong><code>jest.config.js</code></strong></p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> nextJest = <span class="built_in">require</span>(<span class="string">&#x27;next/jest&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> customJestConfig = &#123;</span><br><span class="line">  <span class="attr">setupFilesAfterEnv</span>: [<span class="string">&#x27;&lt;rootDir&gt;/jest.setup.js&#x27;</span>],</span><br><span class="line">  <span class="attr">moduleDirectories</span>: [<span class="string">&#x27;node_modules&#x27;</span>, <span class="string">&#x27;&lt;rootDir&gt;/&#x27;</span>],</span><br><span class="line">  <span class="attr">testEnvironment</span>: <span class="string">&#x27;jest-environment-jsdom&#x27;</span>,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> createJestConfig = <span class="title function_">nextJest</span>(&#123;</span><br><span class="line">  <span class="attr">dir</span>: <span class="string">&#x27;./&#x27;</span>,</span><br><span class="line">&#125;)(customJestConfig)</span><br><span class="line"></span><br><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = <span class="keyword">async</span> () =&gt; &#123;</span><br><span class="line">  <span class="keyword">const</span> jestConfig = <span class="keyword">await</span> <span class="title function_">createJestConfig</span>()</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> moduleNameMapper = &#123;</span><br><span class="line">    <span class="string">&#x27;\\.svg$&#x27;</span>: <span class="string">&#x27;&lt;rootDir&gt;/mock/svg.ts&#x27;</span>,</span><br><span class="line">    ...jestConfig.<span class="property">moduleNameMapper</span>,</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> &#123; ...jestConfig, moduleNameMapper &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h6 id=&quot;tags-react-jest-svg&quot;&gt;&lt;a href=&quot;#tags-react-jest-svg&quot; class=&quot;headerlink&quot; title=&quot;tags: react jest svg&quot;&gt;&lt;/a&gt;tags: &lt;code&gt;react&lt;/code&gt; &lt;co</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>CSRF 的攻擊原理以及防範方法</title>
+    <link href="https://hati8haha.github.io/2021/12/01/CSRF%20%E7%9A%84%E6%94%BB%E6%93%8A%E5%8E%9F%E7%90%86%E4%BB%A5%E5%8F%8A%E9%98%B2%E7%AF%84%E6%96%B9%E6%B3%95/"/>
+    <id>https://hati8haha.github.io/2021/12/01/CSRF%20%E7%9A%84%E6%94%BB%E6%93%8A%E5%8E%9F%E7%90%86%E4%BB%A5%E5%8F%8A%E9%98%B2%E7%AF%84%E6%96%B9%E6%B3%95/</id>
+    <published>2021-12-01T00:47:34.000Z</published>
+    <updated>2022-09-07T15:41:25.282Z</updated>
+    
+    <content type="html"><![CDATA[<h6 id="tags-網路安全"><a href="#tags-網路安全" class="headerlink" title="tags: 網路安全"></a>tags: <code>網路安全</code></h6><h3 id="攻擊原理"><a href="#攻擊原理" class="headerlink" title="攻擊原理"></a>攻擊原理</h3><p>CSRF 的全名為 Cross Site Request Forgery，中文名為「跨站請求偽造」，也被稱為 one-click attack。</p><p>CSRF 的攻擊模式是在使用者連線至惡意網站時，以 client 端儲存的 cookie 或 session 偽造使用者發送的 request，達到攻擊目的。</p><p>例如小明在登入網路銀行之後，在開啟新分頁玩小遊戲，但小遊戲網頁卻有隱藏的惡意連結，會發送轉帳的 request，因為有網路銀行的 session 是登入狀態，因此小明的錢就莫名其妙被轉帳到駭客帳戶了。</p><h3 id="防範方法：檢查-Referer、CSRF-token"><a href="#防範方法：檢查-Referer、CSRF-token" class="headerlink" title="防範方法：檢查 Referer、CSRF token"></a>防範方法：檢查 Referer、CSRF token</h3><p>CSRF 的 reuqest 跟使用者本人發出的 request 的不同就在於發送 request 的 domain 一個是來自不同 domain，另一個則是來自同 domain。檢查 Referer、CSRF token 兩種方法都是透過此概念實行的防禦手段。</p><ol><li>檢查 Referer<br>request 的 header 裡面會帶一個欄位是 referer ，可以從 referer 這個欄位看到該 request 是從哪發送的。因此可以透過此方式檢查是否為跨站 request。但有部分瀏覽器不會帶 referer 或使用者會關掉自動帶 referer 功能，同時檢查 referer 的程式若沒寫好可能會有漏洞。</li><li>CSRF token<br>CSRF token 是產生一組只有使用者知道的隨機 token，在發送 request 時需要帶上這個 token 才能通過驗證。CSRF token 有儲存在 server 端或儲存在 client 端的作法。因為攻擊者的沒辦法讀寫目標網站的 cookie，所以可以用來驗證是否為跨 domain 的 request。</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h6 id=&quot;tags-網路安全&quot;&gt;&lt;a href=&quot;#tags-網路安全&quot; class=&quot;headerlink&quot; title=&quot;tags: 網路安全&quot;&gt;&lt;/a&gt;tags: &lt;code&gt;網路安全&lt;/code&gt;&lt;/h6&gt;&lt;h3 id=&quot;攻擊原理&quot;&gt;&lt;a href=&quot;#攻擊原理&quot; </summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>盒模型（box model）</title>
+    <link href="https://hati8haha.github.io/2021/12/01/%E7%9B%92%E6%A8%A1%E5%9E%8B%EF%BC%88box%20model%EF%BC%89/"/>
+    <id>https://hati8haha.github.io/2021/12/01/%E7%9B%92%E6%A8%A1%E5%9E%8B%EF%BC%88box%20model%EF%BC%89/</id>
+    <published>2021-12-01T00:34:22.000Z</published>
+    <updated>2022-09-07T15:41:25.285Z</updated>
+    
+    <content type="html"><![CDATA[<h6 id="tags-HTML"><a href="#tags-HTML" class="headerlink" title="tags: HTML"></a>tags: <code>HTML</code></h6><p>html 中的可以看到的每個元素，都可以將它看作是盒模型。</p><p>盒模型由四個部分組成，分別如下圖所示：<br><img src="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/box-model.png" alt="圖片來源：MDN box-model 介紹"></p><ol><li><p>Content （內容）<br>Content 為盒模型中置入內容的元素，元素中的文字會在此區塊呈現。<br>在預設（<code>box-sizing: content-box;</code>）情況下，可以透過 <code>width</code> 以及 <code>height</code> 控制寬高。</p></li><li><p>Padding（內邊距）<br>Padding 可以用來將 Content 往內推，背景色會與 Content 相同。<br>可以透過 <code>padding:</code> 控制邊距的上下左右距離，越增加會將元素越往內推。</p></li><li><p>Border（邊框）<br>Border 包在 Padding 的外層，若增加數值會向外延伸。<br>可以透過 <code>border:</code> 控制邊框的上下左右寬度。<br>設定 <code>box-sizing: border-box;</code> 時，<code>width</code> 與 <code>height</code> 控制的寬高會是以邊框為範圍。</p></li><li><p>Margin（外邊距）<br>Margin 的背景色永遠為透明。<br>如果是 inline 元素，margin 的垂直方向 ( 上、下 ) 沒有效果。<br>透過 <code>margin:</code> 設定的的外邊距上下左右寬度可以為負值。</p></li></ol><p><code>padding:</code>、<code>border:</code>、<code>margin:</code> 的語法如下：</p><ul><li>單位可以設定為像素 px、百分比 % 或 em、rem 等。</li><li>四個值：上、右、下、左。範例：<code>padding: 36px 12px 24px 12px;</code></li><li>三個值：上、左右、下。範例：<code>border: 36px 12px 24px;</code></li><li>兩個值：上下、左右。範例：<code>margin: 36px 12px;</code></li><li>一個值：上下左右。範例：<code>border: 12px;</code></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h6 id=&quot;tags-HTML&quot;&gt;&lt;a href=&quot;#tags-HTML&quot; class=&quot;headerlink&quot; title=&quot;tags: HTML&quot;&gt;&lt;/a&gt;tags: &lt;code&gt;HTML&lt;/code&gt;&lt;/h6&gt;&lt;p&gt;html 中的可以看到的每個元素，都可以將它看作是盒模</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Webpack 是做什麼用的</title>
+    <link href="https://hati8haha.github.io/2021/12/01/Webpack%20%E6%98%AF%E5%81%9A%E4%BB%80%E9%BA%BC%E7%94%A8%E7%9A%84/"/>
+    <id>https://hati8haha.github.io/2021/12/01/Webpack%20%E6%98%AF%E5%81%9A%E4%BB%80%E9%BA%BC%E7%94%A8%E7%9A%84/</id>
+    <published>2021-12-01T00:26:24.000Z</published>
+    <updated>2022-09-07T15:41:25.272Z</updated>
+    
+    <content type="html"><![CDATA[<h6 id="tags-前端工具"><a href="#tags-前端工具" class="headerlink" title="tags: 前端工具"></a>tags: <code>前端工具</code></h6><p>Webpack 的官網是這樣介紹：</p><blockquote><p>At its core, webpack is a static module bundler for modern JavaScript applications. When webpack processes your application, it internally builds a dependency graph which maps every module your project needs and generates one or more bundles.</p></blockquote><p>Webpack 是用來打包 JavaScript 應用程式的模組打包工具，它可以打包的範圍不僅限於 npm 等 JavaScript 模組，也包含 sass、圖片、壓縮工具等各種類型。<br>它的運作方式是透過將各模組打包，並且建立關係對應表，讓所使用的模組可以對應到打包後的功能。</p><p>在專案中常用會運用到的模組包含能轉換新語法為舊語法的 babel、程式碼最小化、壓縮、SCSS 或 npm packages 等。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h6 id=&quot;tags-前端工具&quot;&gt;&lt;a href=&quot;#tags-前端工具&quot; class=&quot;headerlink&quot; title=&quot;tags: 前端工具&quot;&gt;&lt;/a&gt;tags: &lt;code&gt;前端工具&lt;/code&gt;&lt;/h6&gt;&lt;p&gt;Webpack 的官網是這樣介紹：&lt;/p&gt;
+&lt;bloc</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>CSS Selector 權重的計算方式</title>
+    <link href="https://hati8haha.github.io/2021/12/01/CSS%20Selector%20%E6%AC%8A%E9%87%8D%E7%9A%84%E8%A8%88%E7%AE%97%E6%96%B9%E5%BC%8F/"/>
+    <id>https://hati8haha.github.io/2021/12/01/CSS%20Selector%20%E6%AC%8A%E9%87%8D%E7%9A%84%E8%A8%88%E7%AE%97%E6%96%B9%E5%BC%8F/</id>
+    <published>2021-12-01T00:26:14.000Z</published>
+    <updated>2022-09-07T15:41:25.281Z</updated>
+    
+    <content type="html"><![CDATA[<h6 id="tags-CSS"><a href="#tags-CSS" class="headerlink" title="tags: CSS"></a>tags: <code>CSS</code></h6><h3 id="基本選擇器權重計算"><a href="#基本選擇器權重計算" class="headerlink" title="基本選擇器權重計算"></a>基本選擇器權重計算</h3><p>CSS Selector 的權重計算方式如下：</p><ol><li>計算 ID 選擇器的數量（設想為變數 a）</li><li>計算 Class 與 Attributes 選擇器（包含 Pseudo Class）的數量（設想為變數 b）</li><li>計算標籤選擇器的數量（設想為變數 c）</li><li>將 a、b、c 串接在一起，即可得到權重</li></ol><p>範例：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">*               <span class="comment">/* a=0 b=0 c=0 -&gt; 權重 =   0 */</span></span><br><span class="line"><span class="selector-tag">LI</span>              <span class="comment">/* a=0 b=0 c=1 -&gt; 權重 =   1 */</span></span><br><span class="line"><span class="selector-tag">UL</span> <span class="selector-tag">LI</span>           <span class="comment">/* a=0 b=0 c=2 -&gt; 權重 =   2 */</span></span><br><span class="line"><span class="selector-tag">UL</span> <span class="selector-tag">OL</span>+<span class="selector-tag">LI</span>        <span class="comment">/* a=0 b=0 c=3 -&gt; 權重 =   3 */</span></span><br><span class="line"><span class="selector-tag">H1</span> + *<span class="selector-attr">[REL=up]</span>  <span class="comment">/* a=0 b=1 c=1 -&gt; 權重 =  11 */</span></span><br><span class="line"><span class="selector-tag">UL</span> <span class="selector-tag">OL</span> <span class="selector-tag">LI</span><span class="selector-class">.red</span>    <span class="comment">/* a=0 b=1 c=3 -&gt; 權重 =  13 */</span></span><br><span class="line"><span class="selector-tag">LI</span><span class="selector-class">.red</span><span class="selector-class">.level</span>    <span class="comment">/* a=0 b=2 c=1 -&gt; 權重 =  21 */</span></span><br><span class="line"><span class="selector-id">#x34y</span>           <span class="comment">/* a=1 b=0 c=0 -&gt; 權重 = 100 */</span></span><br><span class="line"><span class="selector-id">#s12</span><span class="selector-pseudo">:not</span>(FOO)   <span class="comment">/* a=1 b=0 c=1 -&gt; 權重 = 101 */</span></span><br></pre></td></tr></table></figure><p>其中，a、b、c 計算後所得的權重並不是代表百位數、十位數、個位數，而是會依照 a、b、c 的順序進行比較，見下方範例：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.pink</span><span class="selector-class">.pink</span><span class="selector-class">.pink</span><span class="selector-class">.pink</span><span class="selector-class">.pink</span><span class="selector-class">.pink</span><span class="selector-class">.pink</span><span class="selector-class">.pink</span><span class="selector-class">.pink</span> ... <span class="selector-class">.pink</span></span><br><span class="line"><span class="comment">/* 101 個 .pink，權重為 0-101-0 */</span></span><br><span class="line"><span class="selector-id">#login-button</span></span><br><span class="line"><span class="comment">/* 權重為 100-0-0 */</span></span><br></pre></td></tr></table></figure><h3 id="inline-style-與-important"><a href="#inline-style-與-important" class="headerlink" title="inline style 與 !important"></a>inline style 與 !important</h3><p>CSS Selector 權重也需要考慮到 inline style 與 !important，這兩者的權重計算可以視為優先於上述選擇器權重。</p><p>根據 <a class="link"   href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity" >MDN<i class="fas fa-external-link-alt"></i></a> 所介紹</p><blockquote><p>Inline styles added to an element (e.g., <code>style=&quot;font-weight: bold;&quot;</code>) always overwrite any styles in external stylesheets, and thus can be thought of as having the highest specificity.</p></blockquote><p>Inline styles 可以直接覆蓋過 stylesheets 中的樣式</p><blockquote><p>When an important rule is used on a style declaration, this declaration overrides any other declarations. Although technically !important has nothing to do with specificity, it interacts directly with it.</p></blockquote><p>!important 則是不列入權重計算，有該註記的樣式會直接被套用</p><h3 id="總結"><a href="#總結" class="headerlink" title="總結"></a>總結</h3><p>CSS Selector 權重可以用以下一行簡單說明：</p><p><strong>!important &gt; inline styles &gt; ID 選擇器 &gt; Class 選擇器 &gt; Html 標籤選擇器</strong></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h6 id=&quot;tags-CSS&quot;&gt;&lt;a href=&quot;#tags-CSS&quot; class=&quot;headerlink&quot; title=&quot;tags: CSS&quot;&gt;&lt;/a&gt;tags: &lt;code&gt;CSS&lt;/code&gt;&lt;/h6&gt;&lt;h3 id=&quot;基本選擇器權重計算&quot;&gt;&lt;a href=&quot;#基本選擇器</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>SPA</title>
+    <link href="https://hati8haha.github.io/2021/12/01/SPA/"/>
+    <id>https://hati8haha.github.io/2021/12/01/SPA/</id>
+    <published>2021-12-01T00:24:24.000Z</published>
+    <updated>2022-09-07T15:41:25.277Z</updated>
+    
+    <content type="html"><![CDATA[<h6 id="tags-web-基礎"><a href="#tags-web-基礎" class="headerlink" title="tags: web 基礎"></a>tags: <code>web 基礎</code></h6><h2 id="Single-Page-Application"><a href="#Single-Page-Application" class="headerlink" title="Single Page Application"></a>Single Page Application</h2><p>single-page application 縮寫為 SPA，中文為「單一頁面應用程式」。其主要的概念是透過<strong>單一頁面</strong>達成的建立、讀取、修改與刪除資料等功能。</p><p>相對於早期的網站設計主要採多頁設計，通常一個功能一個頁面，在資料傳送間必須重新載入頁面。</p><p>而 SPA 的資料傳輸主要以 ajax 的方式進行，透過 ajax 資料可以在背景傳輸，讓資料存取功能在不切換頁面的情況下可以實現。</p><p>由於早期的網站設計主要採多頁設計，不同功能或傳送資料時必須重新載入頁面，每次重新載入代表整個 html 畫面的重新繪製，需要較多的網路資源。</p><h2 id="SPA-的優缺點為何"><a href="#SPA-的優缺點為何" class="headerlink" title="SPA 的優缺點為何"></a>SPA 的優缺點為何</h2><h3 id="優點"><a href="#優點" class="headerlink" title="優點"></a>優點</h3><p>相較於採用多頁設計的網站，SPA 在存取資料時不需要重新載入頁，若網站中只有一部分資料更動，只需對該部份進行更新，達到較佳使用者體驗。</p><h3 id="缺點"><a href="#缺點" class="headerlink" title="缺點"></a>缺點</h3><p>由於 SPA 的網站資料可能是由 JavaScript 等方式動態生成，因此搜尋引擎無法直接取得網站資料內容，對於 SEO 會有影響。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h6 id=&quot;tags-web-基礎&quot;&gt;&lt;a href=&quot;#tags-web-基礎&quot; class=&quot;headerlink&quot; title=&quot;tags: web 基礎&quot;&gt;&lt;/a&gt;tags: &lt;code&gt;web 基礎&lt;/code&gt;&lt;/h6&gt;&lt;h2 id=&quot;Single-Page-Ap</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>SQL Injection 的攻擊原理以及防範方法</title>
+    <link href="https://hati8haha.github.io/2021/12/01/SQL%20Injection%20%E7%9A%84%E6%94%BB%E6%93%8A%E5%8E%9F%E7%90%86%E4%BB%A5%E5%8F%8A%E9%98%B2%E7%AF%84%E6%96%B9%E6%B3%95/"/>
+    <id>https://hati8haha.github.io/2021/12/01/SQL%20Injection%20%E7%9A%84%E6%94%BB%E6%93%8A%E5%8E%9F%E7%90%86%E4%BB%A5%E5%8F%8A%E9%98%B2%E7%AF%84%E6%96%B9%E6%B3%95/</id>
+    <published>2021-12-01T00:23:12.000Z</published>
+    <updated>2022-09-07T15:41:25.276Z</updated>
+    
+    <content type="html"><![CDATA[<h6 id="tags-網路安全"><a href="#tags-網路安全" class="headerlink" title="tags: 網路安全"></a>tags: <code>網路安全</code></h6><h3 id="攻擊原理"><a href="#攻擊原理" class="headerlink" title="攻擊原理"></a>攻擊原理</h3><p>輸入特定含有 sql 語法的資料，讓 sql query 內容被竄改，達到符合攻擊目的。<br>例如以下範例：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> hati8haha_users <span class="keyword">WHERE</span> username <span class="operator">=</span> $username <span class="keyword">AND</span> password <span class="operator">=</span> $password</span><br></pre></td></tr></table></figure><p>正常情況下變數 <code>$username</code> 與 <code>$password</code> 會帶入使用者輸入的資料，若有符合條件才會列出。<br>但若將 <code>$password</code> 替換成 <code>&#39; OR 1=1 #</code> 那麼就會執行以下 sql query</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> hati8haha_users <span class="keyword">WHERE</span> username <span class="operator">=</span> <span class="string">&#x27;username&#x27;</span> <span class="keyword">AND</span> password <span class="operator">=</span> <span class="string">&#x27;&#x27;</span> <span class="keyword">OR</span> <span class="number">1</span><span class="operator">=</span><span class="number">1</span> #<span class="string">&#x27;</span></span><br></pre></td></tr></table></figure><p>因為 <code>OR 1=1</code>，因此無論輸入任何帳號密碼都可以取得身分認證成功登入。</p><h3 id="防範方法：Prepared-statement"><a href="#防範方法：Prepared-statement" class="headerlink" title="防範方法：Prepared statement"></a>防範方法：Prepared statement</h3><p>將傳進去的資料用編譯後的參數替代，不會直接用原始資料進行 sql query</p><p>php 的 prepared statement 範例：</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$sql</span> = <span class="string">&quot;insert into comments(nickname, content) values(?,?)&quot;</span>;</span><br><span class="line"><span class="variable">$stmt</span> = <span class="variable">$conn</span>-&gt;<span class="title function_ invoke__">prepare</span>(<span class="variable">$sql</span>);</span><br><span class="line"><span class="variable">$stmt</span>-&gt;<span class="title function_ invoke__">bind_param</span>(<span class="string">&#x27;ss&#x27;</span>, <span class="variable">$nickname</span>, <span class="variable">$content</span>);</span><br><span class="line"><span class="variable">$result</span> = <span class="variable">$stmt</span>-&gt;<span class="title function_ invoke__">execute</span>();</span><br><span class="line"><span class="keyword">if</span> (!<span class="variable">$result</span>) &#123;</span><br><span class="line">  <span class="keyword">die</span>(<span class="variable">$conn</span>-&gt;error);</span><br><span class="line">&#125;</span><br><span class="line"><span class="variable">$result</span> = <span class="variable">$stmt</span>-&gt;<span class="title function_ invoke__">get_result</span>()</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h6 id=&quot;tags-網路安全&quot;&gt;&lt;a href=&quot;#tags-網路安全&quot; class=&quot;headerlink&quot; title=&quot;tags: 網路安全&quot;&gt;&lt;/a&gt;tags: &lt;code&gt;網路安全&lt;/code&gt;&lt;/h6&gt;&lt;h3 id=&quot;攻擊原理&quot;&gt;&lt;a href=&quot;#攻擊原理&quot; </summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>XSS 的攻擊原理以及防範方法</title>
+    <link href="https://hati8haha.github.io/2021/12/01/XSS%20%E7%9A%84%E6%94%BB%E6%93%8A%E5%8E%9F%E7%90%86%E4%BB%A5%E5%8F%8A%E9%98%B2%E7%AF%84%E6%96%B9%E6%B3%95/"/>
+    <id>https://hati8haha.github.io/2021/12/01/XSS%20%E7%9A%84%E6%94%BB%E6%93%8A%E5%8E%9F%E7%90%86%E4%BB%A5%E5%8F%8A%E9%98%B2%E7%AF%84%E6%96%B9%E6%B3%95/</id>
+    <published>2021-12-01T00:23:06.000Z</published>
+    <updated>2022-09-07T15:41:25.272Z</updated>
+    
+    <content type="html"><![CDATA[<h6 id="tags-網路安全"><a href="#tags-網路安全" class="headerlink" title="tags: 網路安全"></a>tags: <code>網路安全</code></h6><h3 id="攻擊原理"><a href="#攻擊原理" class="headerlink" title="攻擊原理"></a>攻擊原理</h3><p>XSS 為 Cross-site Scriptinng 的縮寫，中文為「跨網站指令碼」。</p><p>利用網站漏洞將帶有程式的 <code>&lt;script&gt;</code> 標籤或其它腳本程式注入網站，讓攻擊者可以取得更高的權限，例如讓網站重新導向至惡意連結或取得 cookie 等。</p><h3 id="防範方法：避免直接輸出"><a href="#防範方法：避免直接輸出" class="headerlink" title="防範方法：避免直接輸出"></a>防範方法：避免直接輸出</h3><ol><li>跳脫<br>若能將 <code>&lt;script&gt;</code> 經過編碼轉換，在 html 渲染時以純文字的方式印出，就能避免 XSS。</li><li>過濾<br>若需要將使用者輸入文字以 html 渲染出來，例如部落格文章中的 <code>&lt;h1&gt;</code>、<code>&lt;h2&gt;</code>、<code>&lt;h3&gt;</code> 等標籤，則可以採用過濾的方式，把 <code>script</code>、<code>iframe</code> 等標籤針對性的不直接印出。</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h6 id=&quot;tags-網路安全&quot;&gt;&lt;a href=&quot;#tags-網路安全&quot; class=&quot;headerlink&quot; title=&quot;tags: 網路安全&quot;&gt;&lt;/a&gt;tags: &lt;code&gt;網路安全&lt;/code&gt;&lt;/h6&gt;&lt;h3 id=&quot;攻擊原理&quot;&gt;&lt;a href=&quot;#攻擊原理&quot; </summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>include、require、include_once、require_once 的差別</title>
+    <link href="https://hati8haha.github.io/2021/12/01/include%E3%80%81require%E3%80%81include_once%E3%80%81require_once%20%E7%9A%84%E5%B7%AE%E5%88%A5/"/>
+    <id>https://hati8haha.github.io/2021/12/01/include%E3%80%81require%E3%80%81include_once%E3%80%81require_once%20%E7%9A%84%E5%B7%AE%E5%88%A5/</id>
+    <published>2021-12-01T00:22:18.000Z</published>
+    <updated>2022-09-07T15:42:34.737Z</updated>
+    
+    <content type="html"><![CDATA[<h6 id="tags-PHP"><a href="#tags-PHP" class="headerlink" title="tags: PHP"></a>tags: <code>PHP</code></h6><p><code>include</code> 與 <code>require</code> 都是用來引入既有的外部 php 檔案至目前檔案中執行。</p><p>兩者差別在於若引入的檔案執行出現錯誤時，<code>include</code> 會產生 E_WARNING（非致命的執行時錯誤，程式會繼續執行），而 <code>require</code> 則會產生 E_COMPILE_ERROR（程式會停止）</p><p><code>include_once</code>、<code>require_once</code> 與 <code>include</code>、<code>require</code> 功能幾乎一樣，唯一的差別是 <code>include_once</code>、<code>require_once</code> 會先檢查要引入的檔案是否已經在該程式中被引入過，如果有的話就不會再次重複引入該檔案。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h6 id=&quot;tags-PHP&quot;&gt;&lt;a href=&quot;#tags-PHP&quot; class=&quot;headerlink&quot; title=&quot;tags: PHP&quot;&gt;&lt;/a&gt;tags: &lt;code&gt;PHP&lt;/code&gt;&lt;/h6&gt;&lt;p&gt;&lt;code&gt;include&lt;/code&gt; 與 &lt;code&gt;re</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>雜湊跟加密的差別</title>
+    <link href="https://hati8haha.github.io/2021/12/01/%E9%9B%9C%E6%B9%8A%E8%B7%9F%E5%8A%A0%E5%AF%86%E7%9A%84%E5%B7%AE%E5%88%A5/"/>
+    <id>https://hati8haha.github.io/2021/12/01/%E9%9B%9C%E6%B9%8A%E8%B7%9F%E5%8A%A0%E5%AF%86%E7%9A%84%E5%B7%AE%E5%88%A5/</id>
+    <published>2021-12-01T00:21:36.000Z</published>
+    <updated>2022-09-07T15:41:25.285Z</updated>
+    
+    <content type="html"><![CDATA[<h6 id="tags-網路安全-資料庫"><a href="#tags-網路安全-資料庫" class="headerlink" title="tags: 網路安全 資料庫"></a>tags: <code>網路安全</code> <code>資料庫</code></h6><p>雜湊跟加密的最重要的差別是加密可以解密，而雜湊不行還原。因此密碼要雜湊過後才存入資料庫。</p><h3 id="加密-encryption"><a href="#加密-encryption" class="headerlink" title="加密 encryption"></a>加密 encryption</h3><p>透過演算法與 key，將字串計算得出加密後的密文，根據是否使用同一組 key 加密與解密可分為對稱加密法與與非對稱加密法。<br>加密是一對一關係，若知道 key 跟演算法也會被解開</p><p>明文 &#x3D;&gt; 加密 &#x3D;&gt; 密文<br>密文 &#x3D;&gt; 解密 &#x3D;&gt; 明文</p><h3 id="雜湊-hash"><a href="#雜湊-hash" class="headerlink" title="雜湊 hash"></a>雜湊 hash</h3><p>將字元丟進去某個公式計算的方式就叫做雜湊（Hash），而這個計算公式就稱為雜湊函數（Hash function）</p><p>雜湊為多對一關係，這也是無法還原的原因</p><p>明文 &#x3D;&gt; hash &#x3D;&gt; 文字</p><p>若兩個不同密碼產生同個 hash 稱碰撞</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h6 id=&quot;tags-網路安全-資料庫&quot;&gt;&lt;a href=&quot;#tags-網路安全-資料庫&quot; class=&quot;headerlink&quot; title=&quot;tags: 網路安全 資料庫&quot;&gt;&lt;/a&gt;tags: &lt;code&gt;網路安全&lt;/code&gt; &lt;code&gt;資料庫&lt;/code&gt;&lt;/h6&gt;&lt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Cookie 是什麼？如何設定？</title>
+    <link href="https://hati8haha.github.io/2021/12/01/Cookie%20%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F%E5%A6%82%E4%BD%95%E8%A8%AD%E5%AE%9A%EF%BC%9F/"/>
+    <id>https://hati8haha.github.io/2021/12/01/Cookie%20%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F%E5%A6%82%E4%BD%95%E8%A8%AD%E5%AE%9A%EF%BC%9F/</id>
+    <published>2021-12-01T00:19:16.000Z</published>
+    <updated>2022-09-07T15:41:25.282Z</updated>
+    
+    <content type="html"><![CDATA[<h6 id="tags-web-基礎"><a href="#tags-web-基礎" class="headerlink" title="tags: web 基礎"></a>tags: <code>web 基礎</code></h6><p>由於 HTTP 是無狀態的，因此每一個 Request 不相關，Server 會無法辨識是否為同個使用者。</p><p>而 Cookie 存在的目的就是為了讓 Server 能辨識使用者，透過 Cookie 這個<strong>儲存在瀏覽器的小型文字檔案</strong>，Server 便能辨識不同的 Request 是否來自同個使用者。</p><p>透過讓 Server 發送 Cookie 給瀏覽器，而瀏覽器將 Cookie 儲存起來，以便讓 Server 能辨識使用者。</p><p>在 Server 發送 設定 Cookie 的 response 給 Client 端之後，Client 發送到 Server 的 request 的 header 中會帶上 cookie。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A[Client] -- rquest --&gt; B[Server]</span><br><span class="line">B -- Response with setCookie --&gt; A</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A[Client] -- rquest with Cookie --&gt; B[Server]</span><br><span class="line">B -- 可以辨識使用者 --&gt; A</span><br></pre></td></tr></table></figure><p>在 php 實作中，可以用 <code>setcookie()</code> 來設定 cookie，可參考此範例：<br><code>setcookie(&quot;cookie 名稱&quot;, cookie 參數, 失效時間)</code><br><code>time()</code> 會回傳現在時間</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">  <span class="meta">&lt;?php</span></span><br><span class="line">  <span class="variable">$expire</span> = <span class="title function_ invoke__">time</span>() + <span class="number">3600</span> * <span class="number">24</span> * <span class="number">30</span>;  <span class="comment">//沒設時間會很快失效</span></span><br><span class="line">  <span class="title function_ invoke__">setcookie</span>(<span class="string">&quot;username&quot;</span>, <span class="variable">$username</span>, <span class="variable">$expire</span>)</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h6 id=&quot;tags-web-基礎&quot;&gt;&lt;a href=&quot;#tags-web-基礎&quot; class=&quot;headerlink&quot; title=&quot;tags: web 基礎&quot;&gt;&lt;/a&gt;tags: &lt;code&gt;web 基礎&lt;/code&gt;&lt;/h6&gt;&lt;p&gt;由於 HTTP 是無狀態的，因此每一個</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>NoSQL 跟 SQL 的差別在哪裡？</title>
+    <link href="https://hati8haha.github.io/2021/12/01/NoSQL%20%E8%B7%9F%20SQL%20%E7%9A%84%E5%B7%AE%E5%88%A5%E5%9C%A8%E5%93%AA%E8%A3%A1%EF%BC%9F/"/>
+    <id>https://hati8haha.github.io/2021/12/01/NoSQL%20%E8%B7%9F%20SQL%20%E7%9A%84%E5%B7%AE%E5%88%A5%E5%9C%A8%E5%93%AA%E8%A3%A1%EF%BC%9F/</id>
+    <published>2021-12-01T00:17:52.000Z</published>
+    <updated>2022-09-07T15:41:25.277Z</updated>
+    
+    <content type="html"><![CDATA[<h6 id="tags-資料庫"><a href="#tags-資料庫" class="headerlink" title="tags: 資料庫"></a>tags: <code>資料庫</code></h6><p>NoSQL是Not Only SQL的縮寫，與 SQL（關聯式資料庫）有以下差別：</p><ol><li>沒有 schema，通常以 JSON、XML 或 CSV 等檔案類型儲存</li><li>用 key-value 來存資料</li><li>不支援 JOIN</li><li>通常用來存一些結構不固定的資料（log 之類的）</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h6 id=&quot;tags-資料庫&quot;&gt;&lt;a href=&quot;#tags-資料庫&quot; class=&quot;headerlink&quot; title=&quot;tags: 資料庫&quot;&gt;&lt;/a&gt;tags: &lt;code&gt;資料庫&lt;/code&gt;&lt;/h6&gt;&lt;p&gt;NoSQL是Not Only SQL的縮寫，與 SQL（關聯式</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>什麼是資料庫的 lock</title>
+    <link href="https://hati8haha.github.io/2021/12/01/%E4%BB%80%E9%BA%BC%E6%98%AF%E8%B3%87%E6%96%99%E5%BA%AB%E7%9A%84%20lock/"/>
+    <id>https://hati8haha.github.io/2021/12/01/%E4%BB%80%E9%BA%BC%E6%98%AF%E8%B3%87%E6%96%99%E5%BA%AB%E7%9A%84%20lock/</id>
+    <published>2021-12-01T00:17:42.000Z</published>
+    <updated>2022-09-07T15:41:25.285Z</updated>
+    
+    <content type="html"><![CDATA[<h6 id="tags-資料庫"><a href="#tags-資料庫" class="headerlink" title="tags: 資料庫"></a>tags: <code>資料庫</code></h6><h3 id="lock-是什麼"><a href="#lock-是什麼" class="headerlink" title="lock 是什麼"></a>lock 是什麼</h3><p>資料庫的 lock 是指鎖住資料庫的狀態，不讓在 lock 狀態下的資料庫，資料無法更動。</p><p>為了避免 race condition 發生，因此需要透過 lock 來將資料庫鎖定狀態。</p><h4 id="php-lock-範例程式碼"><a href="#php-lock-範例程式碼" class="headerlink" title="php lock 範例程式碼"></a>php lock 範例程式碼</h4><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$conn</span>-&gt;<span class="title function_ invoke__">autocommit</span>(<span class="literal">FALSE</span>);  </span><br><span class="line"><span class="variable">$conn</span>-&gt;<span class="title function_ invoke__">begin_transaction</span>();  </span><br><span class="line"><span class="variable">$conn</span>-&gt;<span class="title function_ invoke__">query</span>(<span class="string">&quot;SELECT amount from products where id = 1 for update&quot;</span>);  </span><br><span class="line"><span class="variable">$conn</span>-&gt;<span class="title function_ invoke__">commit</span>();  </span><br></pre></td></tr></table></figure><h3 id="什麼是-race-condition"><a href="#什麼是-race-condition" class="headerlink" title="什麼是 race condition"></a>什麼是 race condition</h3><p>例如某網路商城的貨品 A 只剩下一件，小明和老王都同時下貨品 A 的訂單，而下訂單的程式邏輯為：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. 確認庫存數量大於或等於下單貨品數量</span><br><span class="line">2. 若結果為 false，則下單失敗；若為 true，繼續執行</span><br><span class="line">3. 庫存數量 - 下訂單貨品數量</span><br><span class="line">4. 購物車數量 - 下訂單貨品數量</span><br><span class="line">5. 帳戶訂單 + 下訂單貨品數量</span><br></pre></td></tr></table></figure><p>若小明訂單在步驟 1<del>2 結果為 「庫存數量大於或等於下單貨品數量」，還沒執行到步驟 3 時，老王的訂單就開始執行步驟 1</del>2，那麼就會造成兩人在步驟 1~2 結果都為 「庫存數量大於或等於下單貨品數量」。</p><p>結果就是會造成程式會執行兩筆訂單的 3~5 步驟，造成超賣現象。而這種情形稱作 race condition。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h6 id=&quot;tags-資料庫&quot;&gt;&lt;a href=&quot;#tags-資料庫&quot; class=&quot;headerlink&quot; title=&quot;tags: 資料庫&quot;&gt;&lt;/a&gt;tags: &lt;code&gt;資料庫&lt;/code&gt;&lt;/h6&gt;&lt;h3 id=&quot;lock-是什麼&quot;&gt;&lt;a href=&quot;#lock-是</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>資料庫的 ACID</title>
+    <link href="https://hati8haha.github.io/2021/12/01/%E8%B3%87%E6%96%99%E5%BA%AB%E7%9A%84%20ACID/"/>
+    <id>https://hati8haha.github.io/2021/12/01/%E8%B3%87%E6%96%99%E5%BA%AB%E7%9A%84%20ACID/</id>
+    <published>2021-12-01T00:17:30.000Z</published>
+    <updated>2022-09-07T15:41:25.285Z</updated>
+    
+    <content type="html"><![CDATA[<h6 id="tags-資料庫"><a href="#tags-資料庫" class="headerlink" title="tags: 資料庫"></a>tags: <code>資料庫</code></h6><h3 id="Transaction-交易"><a href="#Transaction-交易" class="headerlink" title="Transaction 交易"></a>Transaction 交易</h3><p>在以下情況中，會涉及多個以上的 query，而這些 query 必須確保所有動作都是成功且不受干擾。這類動作會被稱為 Transaction。</p><ul><li>轉帳</li><li>購物（一次買多個品項）</li><li>其他一次牽扯到多個 query 的操作</li></ul><h4 id="php-範例程式碼"><a href="#php-範例程式碼" class="headerlink" title="php 範例程式碼"></a>php 範例程式碼</h4><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$conn</span>-&gt;<span class="title function_ invoke__">autocommit</span>(<span class="literal">FALSE</span>);  </span><br><span class="line"><span class="variable">$conn</span>-&gt;<span class="title function_ invoke__">begin_transaction</span>();  </span><br><span class="line"><span class="variable">$conn</span>-&gt;<span class="title function_ invoke__">query</span>(<span class="string">&quot;update from money set amount = 20&quot;</span>);  </span><br><span class="line"><span class="variable">$conn</span>-&gt;<span class="title function_ invoke__">query</span>(<span class="string">&quot;update from money set sum = 10&quot;</span>);  </span><br><span class="line"><span class="variable">$conn</span>-&gt;<span class="title function_ invoke__">commit</span>();</span><br></pre></td></tr></table></figure><h3 id="ACID"><a href="#ACID" class="headerlink" title="ACID"></a>ACID</h3><p>為了保證 Transaction 的正確性，要符合以下四個特性</p><ol><li><strong>原子性 atomicity</strong>：只能全部失敗或全部成功</li><li><strong>一致性 consistency</strong>：維持資料的一致性（錢的總數相同）</li><li><strong>隔離性 isolation</strong>：多筆交易不會互相影響（不能同時改同一個值）</li><li><strong>持久性 durability</strong>：交易成功之後，寫入的資料不會不見</li></ol><p>這四個特性的字首縮寫便是 ACID。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h6 id=&quot;tags-資料庫&quot;&gt;&lt;a href=&quot;#tags-資料庫&quot; class=&quot;headerlink&quot; title=&quot;tags: 資料庫&quot;&gt;&lt;/a&gt;tags: &lt;code&gt;資料庫&lt;/code&gt;&lt;/h6&gt;&lt;h3 id=&quot;Transaction-交易&quot;&gt;&lt;a href=&quot;#</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>VARCHAR 跟 TEXT 的差別是什麼</title>
+    <link href="https://hati8haha.github.io/2021/12/01/VARCHAR%20%E8%B7%9F%20TEXT%20%E7%9A%84%E5%B7%AE%E5%88%A5%E6%98%AF%E4%BB%80%E9%BA%BC/"/>
+    <id>https://hati8haha.github.io/2021/12/01/VARCHAR%20%E8%B7%9F%20TEXT%20%E7%9A%84%E5%B7%AE%E5%88%A5%E6%98%AF%E4%BB%80%E9%BA%BC/</id>
+    <published>2021-12-01T00:17:12.000Z</published>
+    <updated>2022-09-07T15:41:25.272Z</updated>
+    
+    <content type="html"><![CDATA[<h6 id="tags-資料庫"><a href="#tags-資料庫" class="headerlink" title="tags: 資料庫"></a>tags: <code>資料庫</code></h6><h3 id="VARCHAR"><a href="#VARCHAR" class="headerlink" title="VARCHAR"></a>VARCHAR</h3><p>通常字數較少會存成 VARCHAR，例如文章標題。</p><p>為可變長度（0 ~ 65,535）的字串，可自行設定最大的有效長度限制。</p><h3 id="TEXT"><a href="#TEXT" class="headerlink" title="TEXT"></a>TEXT</h3><p>字數較長會存成 TEXT，例如文章內文。</p><p>純文字欄位，最大長度為同樣為 65,535，儲存時會附加 2 個位元組來記錄長度。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h6 id=&quot;tags-資料庫&quot;&gt;&lt;a href=&quot;#tags-資料庫&quot; class=&quot;headerlink&quot; title=&quot;tags: 資料庫&quot;&gt;&lt;/a&gt;tags: &lt;code&gt;資料庫&lt;/code&gt;&lt;/h6&gt;&lt;h3 id=&quot;VARCHAR&quot;&gt;&lt;a href=&quot;#VARCHAR</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
