@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Cookie 是什麼？如何設定？ | 倉鼠跑滾輪</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="tags: web 基礎由於 HTTP 是無狀態的，因此每一個 Request 不相關，Server 會無法辨識是否為同個使用者。 而 Cookie 存在的目的就是為了讓 Server 能辨識使用者，透過 Cookie 這個儲存在瀏覽器的小型文字檔案，Server 便能辨識不同的 Request 是否來自同個使用者。 透過讓 Server 發送 Cookie 給瀏覽器，而瀏覽器將 Cookie 儲">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cookie 是什麼？如何設定？">
+<meta property="og:url" content="http://example.com/2021/12/01/Cookie%20%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F%E5%A6%82%E4%BD%95%E8%A8%AD%E5%AE%9A%EF%BC%9F/index.html">
+<meta property="og:site_name" content="倉鼠跑滾輪">
+<meta property="og:description" content="tags: web 基礎由於 HTTP 是無狀態的，因此每一個 Request 不相關，Server 會無法辨識是否為同個使用者。 而 Cookie 存在的目的就是為了讓 Server 能辨識使用者，透過 Cookie 這個儲存在瀏覽器的小型文字檔案，Server 便能辨識不同的 Request 是否來自同個使用者。 透過讓 Server 發送 Cookie 給瀏覽器，而瀏覽器將 Cookie 儲">
+<meta property="og:locale">
+<meta property="article:published_time" content="2021-12-01T00:19:16.000Z">
+<meta property="article:modified_time" content="2022-09-07T15:41:25.282Z">
+<meta property="article:author" content="Haoting">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="倉鼠跑滾輪" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">倉鼠跑滾輪</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">一直跑也不會前進</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Cookie 是什麼？如何設定？" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/12/01/Cookie%20%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F%E5%A6%82%E4%BD%95%E8%A8%AD%E5%AE%9A%EF%BC%9F/" class="article-date">
+  <time class="dt-published" datetime="2021-12-01T00:19:16.000Z" itemprop="datePublished">2021-12-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Cookie 是什麼？如何設定？
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h6 id="tags-web-基礎"><a href="#tags-web-基礎" class="headerlink" title="tags: web 基礎"></a>tags: <code>web 基礎</code></h6><p>由於 HTTP 是無狀態的，因此每一個 Request 不相關，Server 會無法辨識是否為同個使用者。</p>
+<p>而 Cookie 存在的目的就是為了讓 Server 能辨識使用者，透過 Cookie 這個<strong>儲存在瀏覽器的小型文字檔案</strong>，Server 便能辨識不同的 Request 是否來自同個使用者。</p>
+<p>透過讓 Server 發送 Cookie 給瀏覽器，而瀏覽器將 Cookie 儲存起來，以便讓 Server 能辨識使用者。</p>
+<p>在 Server 發送 設定 Cookie 的 response 給 Client 端之後，Client 發送到 Server 的 request 的 header 中會帶上 cookie。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A[Client] -- rquest --&gt; B[Server]</span><br><span class="line">B -- Response with setCookie --&gt; A</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A[Client] -- rquest with Cookie --&gt; B[Server]</span><br><span class="line">B -- 可以辨識使用者 --&gt; A</span><br></pre></td></tr></table></figure>
+<p>在 php 實作中，可以用 <code>setcookie()</code> 來設定 cookie，可參考此範例：<br><code>setcookie(&quot;cookie 名稱&quot;, cookie 參數, 失效時間)</code><br><code>time()</code> 會回傳現在時間</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">  <span class="meta">&lt;?php</span></span><br><span class="line">  <span class="variable">$expire</span> = <span class="title function_ invoke__">time</span>() + <span class="number">3600</span> * <span class="number">24</span> * <span class="number">30</span>;  <span class="comment">//沒設時間會很快失效</span></span><br><span class="line">  <span class="title function_ invoke__">setcookie</span>(<span class="string">&quot;username&quot;</span>, <span class="variable">$username</span>, <span class="variable">$expire</span>)</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/12/01/Cookie%20%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F%E5%A6%82%E4%BD%95%E8%A8%AD%E5%AE%9A%EF%BC%9F/" data-id="cl7t40xw00008wo7k0d5eaq29" data-title="Cookie 是什麼？如何設定？" class="article-share-link">Teilen</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2021/12/01/%E9%9B%9C%E6%B9%8A%E8%B7%9F%E5%8A%A0%E5%AF%86%E7%9A%84%E5%B7%AE%E5%88%A5/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Neuer</strong>
+      <div class="article-nav-title">
+        
+          雜湊跟加密的差別
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2021/12/01/NoSQL%20%E8%B7%9F%20SQL%20%E7%9A%84%E5%B7%AE%E5%88%A5%E5%9C%A8%E5%93%AA%E8%A3%A1%EF%BC%9F/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">NoSQL 跟 SQL 的差別在哪裡？</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archiv</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">September 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/12/">December 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">letzter Beitrag</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/09/07/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2022/09/02/%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/">學習筆記</a>
+          </li>
+        
+          <li>
+            <a href="/2022/09/02/Redux/">Redux</a>
+          </li>
+        
+          <li>
+            <a href="/2022/09/02/React%20%E8%A7%A3%E6%B1%BA%E4%BA%86%E4%BB%80%E9%BA%BC%E5%95%8F%E9%A1%8C/">React 解決了什麼問題</a>
+          </li>
+        
+          <li>
+            <a href="/2022/09/02/React%20%E7%9A%84%E6%80%9D%E8%80%83%E6%A8%A1%E5%BC%8F/">React 的思考模式</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 Haoting<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
