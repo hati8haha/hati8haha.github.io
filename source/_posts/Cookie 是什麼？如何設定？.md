@@ -1,7 +1,11 @@
 ---
 title: Cookie 是什麼？如何設定？
+tags:
+- cookie
+- web 基礎
+categories:
+- 前端
 ---
-###### tags: `web 基礎`
 由於 HTTP 是無狀態的，因此每一個 Request 不相關，Server 會無法辨識是否為同個使用者。
 
 而 Cookie 存在的目的就是為了讓 Server 能辨識使用者，透過 Cookie 這個**儲存在瀏覽器的小型文字檔案**，Server 便能辨識不同的 Request 是否來自同個使用者。

@@ -1,7 +1,12 @@
 ---
 title: BOM DOM 差別
+tags:
+- DOM
+- BOM
+- 瀏覽器
+categories:
+- 前端
 ---
-###### tags: `DOM`
 
 JavaScript 並沒有提供網頁的操作方法，前端開發者在網頁的操作方法都是「瀏覽器」（JavaScript 操作平台）提供的。
 

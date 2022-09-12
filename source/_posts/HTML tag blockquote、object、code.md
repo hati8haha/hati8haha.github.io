@@ -1,5 +1,10 @@
 ---
 title: HTML tag blockquote、object、code
+tags:
+- HTML
+categories:
+- 前端
+- HTML
 ---
 ###### tags: `HTML`
 ### 1. `<blockquote>`

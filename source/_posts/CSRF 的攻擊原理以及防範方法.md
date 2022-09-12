@@ -1,7 +1,11 @@
 ---
 title: CSRF 的攻擊原理以及防範方法
+tags:
+- 資安
+- CSRF
+categories:
+- 前端
 ---
-###### tags: `網路安全`
 ### 攻擊原理
 CSRF 的全名為 Cross Site Request Forgery，中文名為「跨站請求偽造」，也被稱為 one-click attack。
 

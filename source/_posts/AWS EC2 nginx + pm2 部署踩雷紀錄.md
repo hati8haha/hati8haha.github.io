@@ -1,7 +1,12 @@
 ---
 title: AWS EC2 nginx + pm2 部署踩雷紀錄
+tags:
+- 部屬
+- AWS
+- Nginx
+categories:
+- DevOps
 ---
-###### tags: `部署`
 
 ## port 22: Connection refused 重啟 instance 後無法連線
 ` ssh -i "mykey.pem" ubuntu@ec2-3-144-77-50.us-east-2.compute.amazonaws.com`

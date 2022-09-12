@@ -1,8 +1,11 @@
 ---
 title: event delegation
+tags:
+- DOM
+- 瀏覽器
+categories:
+- 前端
 ---
-###### tags: `DOM`
-
 
 event delegation 意思為事件代理。
 

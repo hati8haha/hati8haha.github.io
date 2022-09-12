@@ -1,7 +1,11 @@
 ---
 title: CORS
+tags:
+- 資安
+- CORS
+categories:
+- 前端
 ---
-###### tags: `網路安全`
 
 CORS，全名為 Cross-origin resource sharing，中文為跨來源資源共用。
 由於瀏覽器基於安全性的考量，因此會有[同源政策 Same Origin Policy](https://developer.mozilla.org/zh-TW/docs/Web/Security/Same-origin_policy) 的限制，會阻止跨網域的 request。

@@ -1,7 +1,11 @@
 ---
 title: 盒模型（box model）
+tags:
+- HTML
+categories:
+- 前端
+- HTML
 ---
-###### tags: `HTML`
 html 中的可以看到的每個元素，都可以將它看作是盒模型。
 
 盒模型由四個部分組成，分別如下圖所示：

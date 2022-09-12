@@ -1,5 +1,10 @@
 ---
 title: display 的 inline, block 跟 inline-block 的差別是什麼？
+tags:
+- HTML
+categories:
+- 前端
+- HTML
 ---
 ###### tags: `HTML`
 ### display: inline

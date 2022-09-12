@@ -1,10 +1,12 @@
 
 ---
 title: event.preventDefault() 跟 event.stopPropagation() 差別
+tags:
+- DOM
+- 瀏覽器
+categories:
+- 前端
 ---
-
-###### tags: `DOM`
-
 ### event.preventDefault()
 取消事件的預設行為，例如避免送出表單或阻止超連結。
 但是不會影響事件傳遞，事件的捕獲與冒泡會正常傳遞。

@@ -1,7 +1,11 @@
 ---
 title: CSS Selector 權重的計算方式
+tags:
+- CSS
+categories:
+- 前端
+- CSS
 ---
-###### tags: `CSS`
 ### 基本選擇器權重計算
 CSS Selector 的權重計算方式如下：
 1. 計算 ID 選擇器的數量（設想為變數 a）

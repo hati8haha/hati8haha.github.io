@@ -1,7 +1,10 @@
 ---
 title: HTTP
+tags:
+- web 基礎
+categories:
+- 前端
 ---
-###### tags: `web 基礎`
 ## 為甚麼需要協定（protocol）
 標準 -> 規模化
 

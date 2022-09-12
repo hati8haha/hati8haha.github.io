@@ -1,7 +1,10 @@
 ---
 title: DNS
+tags:
+- web 基礎
+categories:
+- 前端
 ---
-###### tags: `web 基礎`
 ## 什麼是 DNS？Google 有提供的公開的 DNS，對 Google 的好處以及對一般大眾的好處是什麼？
 DNS 為 Domain Name System 縮寫，中文為網域名稱系統，是用來管理域名與 IP 位址對應關係的一項服務。
 

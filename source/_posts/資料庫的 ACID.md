@@ -1,7 +1,10 @@
 ---
 title: 資料庫的 ACID
+tags:
+- 資料庫
+categories:
+- 後端
 ---
-###### tags: `資料庫`
 ### Transaction 交易
 在以下情況中，會涉及多個以上的 query，而這些 query 必須確保所有動作都是成功且不受干擾。這類動作會被稱為 Transaction。
 * 轉帳

@@ -1,7 +1,10 @@
 ---
 title: JSONP
+tags:
+- JavaScript
+categories:
+- JavaScript
 ---
-###### tags: `JS`
 ## JSONP 是什麼？
 JSONP 的全名是 JSON with Padding，是一種可以進行跨來源請求的方法。
 原理是利用 `<script></script>` 標籤可以跨網域的特性，將遠端的資料利用 callback function 帶入本地端。

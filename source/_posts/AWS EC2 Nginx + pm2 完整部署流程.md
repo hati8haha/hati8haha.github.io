@@ -1,7 +1,12 @@
 ---
 title: AWS EC2 Nginx + pm2 完整部署流程
+tags:
+- 部屬
+- AWS
+- Nginx
+categories:
+- DevOps
 ---
-###### tags: `部署`
 
 1. EC2 新建 instance
 2. 連線到 VPS
