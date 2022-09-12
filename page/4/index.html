@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -20,8 +20,8 @@
 
     <script id="hexo-configurations">
     let KEEP = window.KEEP || {};
-    KEEP.hexo_config = {"hostname":"hati8haha.github.io","root":"/","language":"en"};
-    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#195954","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":false,"background_img":"/images/bg.svg","description":"倉鼠跑滾輪一直跑不停"},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":true,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
+    KEEP.hexo_config = {"hostname":"hati8haha.github.io","root":"/","language":"zh","path":"search.json"};
+    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#76abb9","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"倉鼠跑滾輪一直跑不停"},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":true,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
     KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
   </script>
 <meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="倉鼠跑滾輪" type="application/atom+xml">
@@ -77,6 +77,22 @@
                             </a>
                         </li>
                     
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                CATEGORIES
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                TAGS
+                            </a>
+                        </li>
+                    
                     
                         <li class="menu-item search search-popup-trigger">
                             <i class="fas fa-search"></i>
@@ -106,6 +122,16 @@
                 <li class="drawer-menu-item flex-center">
                     <a class=""
                        href="/archives">ARCHIVES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">CATEGORIES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">TAGS</a>
                 </li>
             
         </ul>
@@ -138,8 +164,8 @@
 
                 <div class="home-article-content markdown-body">
                     
-                        tags: web 基礎API 是 Application Programming Interface 的縮寫，中文稱作「應用程式介面」，是應用程式之間用以進行資料交換的介面。
-例如我想取用 twitch 的實況人數資料，這時就可以從 twitch ...
+                        API 是 Application Programming Interface 的縮寫，中文稱作「應用程式介面」，是應用程式之間用以進行資料交換的介面。
+例如我想取用 twitch 的實況人數資料，這時就可以從 twitch 的 API 取得資料；或...
                     
                 </div>
 
@@ -167,9 +193,10 @@
 
                 <div class="home-article-content markdown-body">
                     
-                        tags: web 基礎為甚麼需要協定（protocol）標準 -&gt; 規模化
+                        為甚麼需要協定（protocol）標準 -&gt; 規模化
 HTTP 是啥？HTTP（HyperText Transfer Protocol）是全球資訊網資料通訊的基礎。
-HTTP request 的一生Charles 可以看...
+HTTP request 的一生Charles 可以看瀏覽器
+瀏覽器 -&gt...
                     
                 </div>
 
@@ -197,8 +224,8 @@ HTTP request 的一生Charles 可以看...
 
                 <div class="home-article-content markdown-body">
                     
-                        tags: web 基礎網路的層級OSI 七層TCP &#x2F; IP 四層IPIPv4 IPv6 不同版本的 IP
-不同類型 IP固定 IP一台電腦一個 IP，server 會用固定 IP浮動 IP每次連線時 IP 不同虛擬 IP內網內可互相連接...
+                        網路的層級OSI 七層TCP &#x2F; IP 四層IPIPv4 IPv6 不同版本的 IP
+不同類型 IP固定 IP一台電腦一個 IP，server 會用固定 IP浮動 IP每次連線時 IP 不同虛擬 IP內網內可互相連接，外網無法連至內網 IP...
                     
                 </div>
 
@@ -226,8 +253,8 @@ HTTP request 的一生Charles 可以看...
 
                 <div class="home-article-content markdown-body">
                     
-                        tags: PHP安裝 XAMPP安裝 XAMPP 之後，執行 Apache 與 MySQL，點 Config，就能查到目錄。檔案會在 C:\xampp\htdocs 中。
-資料庫系統server &#x3D;&gt; 專門處理 request 跟 ...
+                        安裝 XAMPP安裝 XAMPP 之後，執行 Apache 與 MySQL，點 Config，就能查到目錄。檔案會在 C:\xampp\htdocs 中。
+資料庫系統server &#x3D;&gt; 專門處理 request 跟 respone 的...
                     
                 </div>
 
@@ -255,7 +282,8 @@ HTTP request 的一生Charles 可以看...
 
                 <div class="home-article-content markdown-body">
                     
-                        tags: web 基礎什麼是 DNS？Google 有提供的公開的 DNS，對 Google 的好處以及對一般大眾的好處是什麼？DNS 為 Domain Name System 縮寫，中文為網域名稱系統，是用來管理域名與 IP 位址對應關係的一項服...
+                        什麼是 DNS？Google 有提供的公開的 DNS，對 Google 的好處以及對一般大眾的好處是什麼？DNS 為 Domain Name System 縮寫，中文為網域名稱系統，是用來管理域名與 IP 位址對應關係的一項服務。
+DNS 的運作方式...
                     
                 </div>
 
@@ -283,8 +311,8 @@ HTTP request 的一生Charles 可以看...
 
                 <div class="home-article-content markdown-body">
                     
-                        tags: 後端Express123graph LRA[瀏覽器] --&gt; B[Express Server]B --&gt;A
-Apache + PHP12345graph LRA[瀏覽器] --&gt; B[Apache Server]B -...
+                        Express123graph LRA[瀏覽器] --&gt; B[Express Server]B --&gt;A
+Apache + PHP12345graph LRA[瀏覽器] --&gt; B[Apache Server]B --&gt; C[...
                     
                 </div>
 
@@ -341,7 +369,8 @@ Apache + PHP12345graph LRA[瀏覽器] --&gt; B[Apache Server]B -...
 
                 <div class="home-article-content markdown-body">
                     
-                        tags: 產品開發工程師的一天 &#x2F; 兩周Sprint Planning - 0.5 day開發 + Daily Standup - 7.5 day部署 - 1 daySprint demo + Sprint retrospective -...
+                        工程師的一天 &#x2F; 兩周Sprint Planning - 0.5 day開發 + Daily Standup - 7.5 day部署 - 1 daySprint demo + Sprint retrospective - 1 day
+工程師...
                     
                 </div>
 
@@ -369,9 +398,9 @@ Apache + PHP12345graph LRA[瀏覽器] --&gt; B[Apache Server]B -...
 
                 <div class="home-article-content markdown-body">
                     
-                        tags: 後端什麼是 MVC？MVC（Model–view–controller）是一種軟體的設計模式（design pattern），將軟體系統分為三個基本部分：模型（Model）、視圖（View）和控制器（Controller）。
+                        什麼是 MVC？MVC（Model–view–controller）是一種軟體的設計模式（design pattern），將軟體系統分為三個基本部分：模型（Model）、視圖（View）和控制器（Controller）。
 
-Model...
+Model負責資料，包含資...
                     
                 </div>
 
@@ -399,8 +428,8 @@ Model...
 
                 <div class="home-article-content markdown-body">
                     
-                        tags: 資料結構與演算法What is Algorithm?演算法的定義
-Algorithm is a finite sequence of well-defined, computer-implementable instructions, t...
+                        What is Algorithm?演算法的定義
+Algorithm is a finite sequence of well-defined, computer-implementable instructions, typically to so...
                     
                 </div>
 

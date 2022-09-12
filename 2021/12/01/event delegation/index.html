@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -22,8 +22,8 @@
 
     <script id="hexo-configurations">
     let KEEP = window.KEEP || {};
-    KEEP.hexo_config = {"hostname":"hati8haha.github.io","root":"/","language":"en"};
-    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#195954","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":false,"background_img":"/images/bg.svg","description":"倉鼠跑滾輪一直跑不停"},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":true,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
+    KEEP.hexo_config = {"hostname":"hati8haha.github.io","root":"/","language":"zh","path":"search.json"};
+    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#76abb9","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"倉鼠跑滾輪一直跑不停"},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":true,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
     KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
   </script>
 <meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="倉鼠跑滾輪" type="application/atom+xml">
@@ -79,6 +79,22 @@
                             </a>
                         </li>
                     
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                CATEGORIES
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                TAGS
+                            </a>
+                        </li>
+                    
                     
                         <li class="menu-item search search-popup-trigger">
                             <i class="fas fa-search"></i>
@@ -108,6 +124,16 @@
                 <li class="drawer-menu-item flex-center">
                     <a class=""
                        href="/archives">ARCHIVES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">CATEGORIES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">TAGS</a>
                 </li>
             
         </ul>
@@ -152,6 +178,32 @@
         <span class="mobile">2021-12-01 08:12</span>
     </span>
     
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/DOM/">DOM</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E7%80%8F%E8%A6%BD%E5%99%A8/">瀏覽器</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
     
 
     
@@ -166,7 +218,7 @@
         
 
         <div class="article-content markdown-body">
-            <h6 id="tags-DOM"><a href="#tags-DOM" class="headerlink" title="tags: DOM"></a>tags: <code>DOM</code></h6><p>event delegation 意思為事件代理。</p>
+            <p>event delegation 意思為事件代理。</p>
 <p>當網頁中有許多事件需要監聽，除了針對每一個事件增加監聽之外，透過 DOM 的事件傳遞機制，可以發現到若要觸發一個節點上的事件，該節點上層的所有節點都會經過捕獲與冒泡階段，這也代表可以透過在上層節點增加監聽事件，就可以達到對目標節點監聽的效果。</p>
 <p>event delegation 的好處是可以節省資源，讓程式有更好的效能。此外，對於動態新增的事件也可以進行監聽。</p>
 
@@ -174,6 +226,18 @@
 
         
 
+        
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/tags/DOM/">#DOM</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item">
+                        <a href="/tags/%E7%80%8F%E8%A6%BD%E5%99%A8/">#瀏覽器</a>&nbsp;
+                    </li>
+                
+            </ul>
         
 
         

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -22,8 +22,8 @@
 
     <script id="hexo-configurations">
     let KEEP = window.KEEP || {};
-    KEEP.hexo_config = {"hostname":"hati8haha.github.io","root":"/","language":"en"};
-    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#195954","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":false,"background_img":"/images/bg.svg","description":"倉鼠跑滾輪一直跑不停"},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":true,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
+    KEEP.hexo_config = {"hostname":"hati8haha.github.io","root":"/","language":"zh","path":"search.json"};
+    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#76abb9","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"倉鼠跑滾輪一直跑不停"},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":true,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
     KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
   </script>
 <meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="倉鼠跑滾輪" type="application/atom+xml">
@@ -79,6 +79,22 @@
                             </a>
                         </li>
                     
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                CATEGORIES
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                TAGS
+                            </a>
+                        </li>
+                    
                     
                         <li class="menu-item search search-popup-trigger">
                             <i class="fas fa-search"></i>
@@ -108,6 +124,16 @@
                 <li class="drawer-menu-item flex-center">
                     <a class=""
                        href="/archives">ARCHIVES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">CATEGORIES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">TAGS</a>
                 </li>
             
         </ul>
@@ -152,6 +178,32 @@
         <span class="mobile">2021-12-01 08:21</span>
     </span>
     
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E8%B3%87%E5%AE%89/">資安</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E8%B3%87%E5%AE%89/">資安</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E8%B3%87%E6%96%99%E5%BA%AB/">資料庫</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
     
 
     
@@ -166,7 +218,7 @@
         
 
         <div class="article-content markdown-body">
-            <h6 id="tags-網路安全-資料庫"><a href="#tags-網路安全-資料庫" class="headerlink" title="tags: 網路安全 資料庫"></a>tags: <code>網路安全</code> <code>資料庫</code></h6><p>雜湊跟加密的最重要的差別是加密可以解密，而雜湊不行還原。因此密碼要雜湊過後才存入資料庫。</p>
+            <p>雜湊跟加密的最重要的差別是加密可以解密，而雜湊不行還原。因此密碼要雜湊過後才存入資料庫。</p>
 <h3 id="加密-encryption"><a href="#加密-encryption" class="headerlink" title="加密 encryption"></a>加密 encryption</h3><p>透過演算法與 key，將字串計算得出加密後的密文，根據是否使用同一組 key 加密與解密可分為對稱加密法與與非對稱加密法。<br>加密是一對一關係，若知道 key 跟演算法也會被解開</p>
 <p>明文 &#x3D;&gt; 加密 &#x3D;&gt; 密文<br>密文 &#x3D;&gt; 解密 &#x3D;&gt; 明文</p>
 <h3 id="雜湊-hash"><a href="#雜湊-hash" class="headerlink" title="雜湊 hash"></a>雜湊 hash</h3><p>將字元丟進去某個公式計算的方式就叫做雜湊（Hash），而這個計算公式就稱為雜湊函數（Hash function）</p>
@@ -178,6 +230,18 @@
 
         
 
+        
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/tags/%E8%B3%87%E5%AE%89/">#資安</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item">
+                        <a href="/tags/%E8%B3%87%E6%96%99%E5%BA%AB/">#資料庫</a>&nbsp;
+                    </li>
+                
+            </ul>
         
 
         

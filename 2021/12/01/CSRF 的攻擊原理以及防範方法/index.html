@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -22,8 +22,8 @@
 
     <script id="hexo-configurations">
     let KEEP = window.KEEP || {};
-    KEEP.hexo_config = {"hostname":"hati8haha.github.io","root":"/","language":"en"};
-    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#195954","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":false,"background_img":"/images/bg.svg","description":"倉鼠跑滾輪一直跑不停"},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":true,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
+    KEEP.hexo_config = {"hostname":"hati8haha.github.io","root":"/","language":"zh","path":"search.json"};
+    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#76abb9","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"倉鼠跑滾輪一直跑不停"},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":true,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
     KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
   </script>
 <meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="倉鼠跑滾輪" type="application/atom+xml">
@@ -79,6 +79,22 @@
                             </a>
                         </li>
                     
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                CATEGORIES
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                TAGS
+                            </a>
+                        </li>
+                    
                     
                         <li class="menu-item search search-popup-trigger">
                             <i class="fas fa-search"></i>
@@ -108,6 +124,16 @@
                 <li class="drawer-menu-item flex-center">
                     <a class=""
                        href="/archives">ARCHIVES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">CATEGORIES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">TAGS</a>
                 </li>
             
         </ul>
@@ -152,6 +178,32 @@
         <span class="mobile">2021-12-01 08:47</span>
     </span>
     
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E8%B3%87%E5%AE%89/">資安</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/CSRF/">CSRF</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
     
 
     
@@ -166,7 +218,7 @@
         
 
         <div class="article-content markdown-body">
-            <h6 id="tags-網路安全"><a href="#tags-網路安全" class="headerlink" title="tags: 網路安全"></a>tags: <code>網路安全</code></h6><h3 id="攻擊原理"><a href="#攻擊原理" class="headerlink" title="攻擊原理"></a>攻擊原理</h3><p>CSRF 的全名為 Cross Site Request Forgery，中文名為「跨站請求偽造」，也被稱為 one-click attack。</p>
+            <h3 id="攻擊原理"><a href="#攻擊原理" class="headerlink" title="攻擊原理"></a>攻擊原理</h3><p>CSRF 的全名為 Cross Site Request Forgery，中文名為「跨站請求偽造」，也被稱為 one-click attack。</p>
 <p>CSRF 的攻擊模式是在使用者連線至惡意網站時，以 client 端儲存的 cookie 或 session 偽造使用者發送的 request，達到攻擊目的。</p>
 <p>例如小明在登入網路銀行之後，在開啟新分頁玩小遊戲，但小遊戲網頁卻有隱藏的惡意連結，會發送轉帳的 request，因為有網路銀行的 session 是登入狀態，因此小明的錢就莫名其妙被轉帳到駭客帳戶了。</p>
 <h3 id="防範方法：檢查-Referer、CSRF-token"><a href="#防範方法：檢查-Referer、CSRF-token" class="headerlink" title="防範方法：檢查 Referer、CSRF token"></a>防範方法：檢查 Referer、CSRF token</h3><p>CSRF 的 reuqest 跟使用者本人發出的 request 的不同就在於發送 request 的 domain 一個是來自不同 domain，另一個則是來自同 domain。檢查 Referer、CSRF token 兩種方法都是透過此概念實行的防禦手段。</p>
@@ -180,6 +232,18 @@
         
 
         
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/tags/%E8%B3%87%E5%AE%89/">#資安</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item">
+                        <a href="/tags/CSRF/">#CSRF</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
 
         
             <div class="article-nav">
@@ -187,13 +251,13 @@
                     <div class="article-prev">
                         <a class="prev"
                            rel="prev"
-                           href="/2022/09/02/svgr%20component%20%E5%9C%A8%20jest%20%E7%84%A1%E6%B3%95%E8%A2%AB%E8%AE%80%E5%8F%96/"
+                           href="/2022/08/12/%E5%BB%BA%E7%AB%8BcesiumReact%E5%B0%88%E6%A1%88/"
                         >
                             <span class="left arrow-icon flex-center">
                               <i class="fas fa-chevron-left"></i>
                             </span>
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">svgr component 在 jest 無法被讀取</span>
+                                <span class="post-nav-title-item">建立 cesium React 專案</span>
                                 <span class="post-nav-item">Prev posts</span>
                             </span>
                         </a>

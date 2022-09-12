@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -20,8 +20,8 @@
 
     <script id="hexo-configurations">
     let KEEP = window.KEEP || {};
-    KEEP.hexo_config = {"hostname":"hati8haha.github.io","root":"/","language":"en"};
-    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#195954","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":false,"background_img":"/images/bg.svg","description":"倉鼠跑滾輪一直跑不停"},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":true,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
+    KEEP.hexo_config = {"hostname":"hati8haha.github.io","root":"/","language":"zh","path":"search.json"};
+    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#76abb9","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"倉鼠跑滾輪一直跑不停"},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":true,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
     KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
   </script>
 <meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="倉鼠跑滾輪" type="application/atom+xml">
@@ -77,6 +77,22 @@
                             </a>
                         </li>
                     
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                CATEGORIES
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                TAGS
+                            </a>
+                        </li>
+                    
                     
                         <li class="menu-item search search-popup-trigger">
                             <i class="fas fa-search"></i>
@@ -106,6 +122,16 @@
                 <li class="drawer-menu-item flex-center">
                     <a class=""
                        href="/archives">ARCHIVES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">CATEGORIES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">TAGS</a>
                 </li>
             
         </ul>
@@ -167,8 +193,8 @@
 
                 <div class="home-article-content markdown-body">
                     
-                        tags: 網路安全攻擊原理輸入特定含有 sql 語法的資料，讓 sql query 內容被竄改，達到符合攻擊目的。例如以下範例：
-1SELECT * FROM hati8haha_users WHERE username = $username A...
+                        攻擊原理輸入特定含有 sql 語法的資料，讓 sql query 內容被竄改，達到符合攻擊目的。例如以下範例：
+1SELECT * FROM hati8haha_users WHERE username = $username AND passwor...
                     
                 </div>
 
@@ -196,8 +222,8 @@
 
                 <div class="home-article-content markdown-body">
                     
-                        tags: 網路安全攻擊原理XSS 為 Cross-site Scriptinng 的縮寫，中文為「跨網站指令碼」。
-利用網站漏洞將帶有程式的 &lt;script&gt; 標籤或其它腳本程式注入網站，讓攻擊者可以取得更高的權限，例如讓網站重新導向至...
+                        攻擊原理XSS 為 Cross-site Scriptinng 的縮寫，中文為「跨網站指令碼」。
+利用網站漏洞將帶有程式的 &lt;script&gt; 標籤或其它腳本程式注入網站，讓攻擊者可以取得更高的權限，例如讓網站重新導向至惡意連結或取得 co...
                     
                 </div>
 
@@ -225,8 +251,8 @@
 
                 <div class="home-article-content markdown-body">
                     
-                        tags: PHPinclude 與 require 都是用來引入既有的外部 php 檔案至目前檔案中執行。
-兩者差別在於若引入的檔案執行出現錯誤時，include 會產生 E_WARNING（非致命的執行時錯誤，程式會繼續執行），而 require...
+                        include 與 require 都是用來引入既有的外部 php 檔案至目前檔案中執行。
+兩者差別在於若引入的檔案執行出現錯誤時，include 會產生 E_WARNING（非致命的執行時錯誤，程式會繼續執行），而 require 則會產生 E_C...
                     
                 </div>
 
@@ -254,8 +280,8 @@
 
                 <div class="home-article-content markdown-body">
                     
-                        tags: 網路安全 資料庫雜湊跟加密的最重要的差別是加密可以解密，而雜湊不行還原。因此密碼要雜湊過後才存入資料庫。
-加密 encryption透過演算法與 key，將字串計算得出加密後的密文，根據是否使用同一組 key 加密與解密可分為對稱加密法與...
+                        雜湊跟加密的最重要的差別是加密可以解密，而雜湊不行還原。因此密碼要雜湊過後才存入資料庫。
+加密 encryption透過演算法與 key，將字串計算得出加密後的密文，根據是否使用同一組 key 加密與解密可分為對稱加密法與與非對稱加密法。加密是一對一...
                     
                 </div>
 
@@ -283,8 +309,8 @@
 
                 <div class="home-article-content markdown-body">
                     
-                        tags: web 基礎由於 HTTP 是無狀態的，因此每一個 Request 不相關，Server 會無法辨識是否為同個使用者。
-而 Cookie 存在的目的就是為了讓 Server 能辨識使用者，透過 Cookie 這個儲存在瀏覽器的小型文字檔案...
+                        由於 HTTP 是無狀態的，因此每一個 Request 不相關，Server 會無法辨識是否為同個使用者。
+而 Cookie 存在的目的就是為了讓 Server 能辨識使用者，透過 Cookie 這個儲存在瀏覽器的小型文字檔案，Server 便能辨識...
                     
                 </div>
 
@@ -345,9 +371,9 @@
 
                 <div class="home-article-content markdown-body">
                     
-                        tags: 資料庫lock 是什麼資料庫的 lock 是指鎖住資料庫的狀態，不讓在 lock 狀態下的資料庫，資料無法更動。
+                        lock 是什麼資料庫的 lock 是指鎖住資料庫的狀態，不讓在 lock 狀態下的資料庫，資料無法更動。
 為了避免 race condition 發生，因此需要透過 lock 來將資料庫鎖定狀態。
-php lock 範例程式碼12...
+php lock 範例程式碼1234$conn-&...
                     
                 </div>
 
@@ -375,11 +401,13 @@ php lock 範例程式碼12...
 
                 <div class="home-article-content markdown-body">
                     
-                        tags: 資料庫Transaction 交易在以下情況中，會涉及多個以上的 query，而這些 query 必須確保所有動作都是成功且不受干擾。這類動作會被稱為 Transaction。
+                        Transaction 交易在以下情況中，會涉及多個以上的 query，而這些 query 必須確保所有動作都是成功且不受干擾。這類動作會被稱為 Transaction。
 
 轉帳
 購物（一次買多個品項）
-其他一次牽扯到多個 quer...
+其他一次牽扯到多個 query 的操作
+
+ph...
                     
                 </div>
 
@@ -407,10 +435,10 @@ php lock 範例程式碼12...
 
                 <div class="home-article-content markdown-body">
                     
-                        tags: 資料庫VARCHAR通常字數較少會存成 VARCHAR，例如文章標題。
+                        VARCHAR通常字數較少會存成 VARCHAR，例如文章標題。
 為可變長度（0 ~ 65,535）的字串，可自行設定最大的有效長度限制。
 TEXT字數較長會存成 TEXT，例如文章內文。
-純文字欄位，最大長度為同樣為 65,535...
+純文字欄位，最大長度為同樣為 65,535，儲存時會附加 2...
                     
                 </div>
 

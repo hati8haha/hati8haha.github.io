@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="寫 code 不做筆記也會停在原地">
+    <meta name="author" content="敘利亞倉鼠">
+    
+    <title>
+        
+            建立 cesium React 專案 |
+        
+        倉鼠跑滾輪
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/logo.svg">
+    
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"hati8haha.github.io","root":"/","language":"zh","path":"search.json"};
+    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#76abb9","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"倉鼠跑滾輪一直跑不停"},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":true,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+  </script>
+<meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="倉鼠跑滾輪" type="application/atom+xml">
+</head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="/images/logo.svg">
+                </a>
+            
+            <a class="logo-title" href="/">
+                倉鼠跑滾輪
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                HOME
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                ARCHIVES
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                CATEGORIES
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                TAGS
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">HOME</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">ARCHIVES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">CATEGORIES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">TAGS</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">建立 cesium React 專案</span>
+        </div>
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/avatar.svg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">敘利亞倉鼠</span>
+                        
+                            <span class="author-label">Lv4</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;
+        <span class="pc">2022-08-12 21:43:30</span>
+        <span class="mobile">2022-08-12 21:43</span>
+    </span>
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/react/">react</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/cesium/">cesium</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/resium/">resium</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <details><summary>優缺點</summary>
+<p>
+
+<ul>
+<li>優點：模組累積數個專案經驗，有已經客製好的功能模組可用。具備擴充彈性。</li>
+<li>缺點：模組目前綁定固定功能，當模組持續擴充，可能會過於冗贅，如何管控和持續維護是要考量的點。</li>
+</ul>
+</p>
+</details>
+
+<p>用原生 Cesium 寫的模組結合 React 元件使用，建議直接引用 GIAP <code>/core</code> 中的模組檔案。</p>
+<h2 id="Resium"><a href="#Resium" class="headerlink" title="Resium"></a><a class="link"   target="_blank" rel="noopener" href="https://resium.reearth.io/" >Resium<i class="fas fa-external-link-alt"></i></a></h2><details><summary>優缺點</summary>
+<p>
+* 優點：能以 React 元件方式寫 Cesium，與 React 整合度較高
+* 缺點：社群使用量不多，需考慮是否有潛在 bug 或因封裝而功能受限。
+
+</p>
+</details>
+
+<p>Resium 是提供 Cesium React 元件函式庫，讓 Cesium 模組可以元件化使用。</p>
+<p><a class="link"   target="_blank" rel="noopener" href="https://resium.reearth.io/" >Resium 文件<i class="fas fa-external-link-alt"></i></a></p>
+<h2 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h2><h3 id="create-react-app"><a href="#create-react-app" class="headerlink" title="create react app"></a>create react app</h3><ul>
+<li>缺點：開發時 hot reload 速度慢</li>
+</ul>
+<ol>
+<li><p>建立 react ts 專案</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn create react-app project-name --template typescript</span><br></pre></td></tr></table></figure></li>
+<li><p>安裝 craco resium</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yarn add @craco/craco craco-cesium cesium</span><br><span class="line"><span class="comment">## 若採用 Resium 則新增</span></span><br><span class="line">yarn add resium</span><br></pre></td></tr></table></figure></li>
+<li><p>修改 package.json</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line"> <span class="comment">// ...</span></span><br><span class="line"> <span class="attr">&quot;scripts&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">   <span class="attr">&quot;start&quot;</span><span class="punctuation">:</span> <span class="string">&quot;craco start&quot;</span><span class="punctuation">,</span> <span class="comment">// react-scripts -&gt; craco</span></span><br><span class="line">   <span class="attr">&quot;build&quot;</span><span class="punctuation">:</span> <span class="string">&quot;craco build&quot;</span><span class="punctuation">,</span> <span class="comment">// react-scripts -&gt; craco</span></span><br><span class="line">   <span class="attr">&quot;test&quot;</span><span class="punctuation">:</span> <span class="string">&quot;craco test&quot;</span><span class="punctuation">,</span>   <span class="comment">// react-scripts -&gt; craco</span></span><br><span class="line">   <span class="attr">&quot;eject&quot;</span><span class="punctuation">:</span> <span class="string">&quot;react-scripts eject&quot;</span></span><br><span class="line"> <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line"> <span class="comment">// ...</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>建立 craco config</p>
+<p>在根目錄建立 <code>craco.config.js</code></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line">  <span class="attr">plugins</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">plugin</span>: <span class="built_in">require</span>(<span class="string">&quot;craco-cesium&quot;</span>)()</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li>
+<li><p><code>yarn start </code>啟動專案</p>
+</li>
+</ol>
+<h3 id="vite"><a href="#vite" class="headerlink" title="vite"></a>vite</h3><ul>
+<li>優點：速度快</li>
+<li>缺點：社群小，版本不穩定</li>
+</ul>
+<ol>
+<li><p>vite 建立 react ts 專案</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn create vite project-name</span><br></pre></td></tr></table></figure>
+
+<p>選擇 <code>react</code> ➡️ <code>react-ts</code></p>
+</li>
+<li><p>安裝 cesium、resium、必須插件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">yarn add cesium</span><br><span class="line">yarn add --dev vite-plugin-cesium</span><br><span class="line"></span><br><span class="line"><span class="comment">## 若採用 Resium 則新增</span></span><br><span class="line">yarn add resium</span><br></pre></td></tr></table></figure></li>
+<li><p>完成</p>
+</li>
+</ol>
+<details><summary>優缺點</summary>
+<p>
+如果跳出 error <code>The requested module xxx does not provide an export named 'default'</code>
+
+<p>可參考<a class="link"   target="_blank" rel="noopener" href="https://github.com/nshen/vite-plugin-cesium/issues/34" >此 issue<i class="fas fa-external-link-alt"></i></a>，將 cesium 版本降至 1.95.0 以下即可解決</p>
+<blockquote>
+<p><strong>2022&#x2F;08&#x2F;18 <a class="link"   href="mailto:&#118;&#105;&#116;&#101;&#x2d;&#112;&#x6c;&#117;&#x67;&#105;&#110;&#45;&#x63;&#101;&#115;&#x69;&#117;&#x6d;&#64;&#49;&#46;&#x32;&#46;&#x32;&#x30;" >&#118;&#105;&#116;&#101;&#x2d;&#112;&#x6c;&#117;&#x67;&#105;&#110;&#45;&#x63;&#101;&#115;&#x69;&#117;&#x6d;&#64;&#49;&#46;&#x32;&#46;&#x32;&#x30;<i class="fas fa-external-link-alt"></i></a> + <a class="link"   href="mailto:&#99;&#101;&#x73;&#105;&#117;&#109;&#x40;&#49;&#x2e;&#57;&#53;&#x2e;&#x30;" >&#99;&#101;&#x73;&#105;&#117;&#109;&#x40;&#49;&#x2e;&#57;&#53;&#x2e;&#x30;<i class="fas fa-external-link-alt"></i></a> 可運作</strong></p>
+</blockquote>
+</p>
+</details>
+
+        </div>
+
+        
+
+        
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/tags/react/">#react</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item">
+                        <a href="/tags/cesium/">#cesium</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item">
+                        <a href="/tags/resium/">#resium</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+            <div class="article-nav">
+                
+                    <div class="article-prev">
+                        <a class="prev"
+                           rel="prev"
+                           href="/2022/09/02/svgr%20component%20%E5%9C%A8%20jest%20%E7%84%A1%E6%B3%95%E8%A2%AB%E8%AE%80%E5%8F%96/"
+                        >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">svgr component 在 jest 無法被讀取</span>
+                                <span class="post-nav-item">Prev posts</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/2021/12/01/CSRF%20%E7%9A%84%E6%94%BB%E6%93%8A%E5%8E%9F%E7%90%86%E4%BB%A5%E5%8F%8A%E9%98%B2%E7%AF%84%E6%96%B9%E6%B3%95/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">CSRF 的攻擊原理以及防範方法</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2020</span>
+              -
+            
+            2022&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">敘利亞倉鼠</a>
+        </div>
+        
+        <div class="theme-info info-item">
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.5</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+<div class="post-scripts">
+    
+</div>
+
+
+
+</body>
+</html>

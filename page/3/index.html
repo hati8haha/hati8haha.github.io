@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -20,8 +20,8 @@
 
     <script id="hexo-configurations">
     let KEEP = window.KEEP || {};
-    KEEP.hexo_config = {"hostname":"hati8haha.github.io","root":"/","language":"en"};
-    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#195954","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":false,"background_img":"/images/bg.svg","description":"倉鼠跑滾輪一直跑不停"},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":true,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
+    KEEP.hexo_config = {"hostname":"hati8haha.github.io","root":"/","language":"zh","path":"search.json"};
+    KEEP.theme_config = {"toc":{"enable":false,"number":false,"expand_all":false,"init_open":false},"style":{"primary_color":"#76abb9","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"倉鼠跑滾輪一直跑不停"},"scroll":{"progress_bar":{"enable":false},"percent":{"enable":false}}},"local_search":{"enable":true,"preload":false},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
     KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
   </script>
 <meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="倉鼠跑滾輪" type="application/atom+xml">
@@ -77,6 +77,22 @@
                             </a>
                         </li>
                     
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                CATEGORIES
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                TAGS
+                            </a>
+                        </li>
+                    
                     
                         <li class="menu-item search search-popup-trigger">
                             <i class="fas fa-search"></i>
@@ -106,6 +122,16 @@
                 <li class="drawer-menu-item flex-center">
                     <a class=""
                        href="/archives">ARCHIVES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">CATEGORIES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">TAGS</a>
                 </li>
             
         </ul>
@@ -138,7 +164,7 @@
 
                 <div class="home-article-content markdown-body">
                     
-                        tags: JSJSONP 是什麼？JSONP 的全名是 JSON with Padding，是一種可以進行跨來源請求的方法。原理是利用 &lt;script&gt;&lt;/script&gt; 標籤可以跨網域的特性，將遠端的資料利用 callba...
+                        JSONP 是什麼？JSONP 的全名是 JSON with Padding，是一種可以進行跨來源請求的方法。原理是利用 &lt;script&gt;&lt;/script&gt; 標籤可以跨網域的特性，將遠端的資料利用 callback funct...
                     
                 </div>
 
@@ -166,7 +192,7 @@
 
                 <div class="home-article-content markdown-body">
                     
-                        tags: 網路安全CORS，全名為 Cross-origin resource sharing，中文為跨來源資源共用。由於瀏覽器基於安全性的考量，因此會有同源政策 Same Origin Policy 的限制，會阻止跨網域的 request。為了解...
+                        CORS，全名為 Cross-origin resource sharing，中文為跨來源資源共用。由於瀏覽器基於安全性的考量，因此會有同源政策 Same Origin Policy 的限制，會阻止跨網域的 request。為了解決存取跨網域的需求，...
                     
                 </div>
 
@@ -194,8 +220,8 @@
 
                 <div class="home-article-content markdown-body">
                     
-                        tags: JS什麼是 Ajax？Ajax 全名是 Asynchronous JavaScript and XML，指的是非同步的 JavaScript 與 XML。
-Javascript 指的是使用的程式語言，而 XML 則是交換資料的類型（現在也...
+                        什麼是 Ajax？Ajax 全名是 Asynchronous JavaScript and XML，指的是非同步的 JavaScript 與 XML。
+Javascript 指的是使用的程式語言，而 XML 則是交換資料的類型（現在也不限於 XML、...
                     
                 </div>
 
@@ -223,8 +249,8 @@ Javascript 指的是使用的程式語言，而 XML 則是交換資料的類型�
 
                 <div class="home-article-content markdown-body">
                     
-                        tags: DOMJavaScript 並沒有提供網頁的操作方法，前端開發者在網頁的操作方法都是「瀏覽器」（JavaScript 操作平台）提供的。
-這些操作方法基本上會分別由這兩種物件所擁有：「BOM」與「DOM」。『BOM』完全依賴瀏覽器廠商實作...
+                        JavaScript 並沒有提供網頁的操作方法，前端開發者在網頁的操作方法都是「瀏覽器」（JavaScript 操作平台）提供的。
+這些操作方法基本上會分別由這兩種物件所擁有：「BOM」與「DOM」。『BOM』完全依賴瀏覽器廠商實作本身沒有標準規範，...
                     
                 </div>
 
@@ -252,7 +278,7 @@ Javascript 指的是使用的程式語言，而 XML 則是交換資料的類型�
 
                 <div class="home-article-content markdown-body">
                     
-                        tags: DOMDOM 的事件在傳遞時，是由根結點向下傳遞至目標，傳遞至目標後會依序向上傳遞。在這過程中，向下傳遞的過程被稱為捕獲階段（Capture Phase），而向上傳遞的過程則是冒泡階段（Bubbling Phase），在事件抵達目標時則會...
+                        DOM 的事件在傳遞時，是由根結點向下傳遞至目標，傳遞至目標後會依序向上傳遞。在這過程中，向下傳遞的過程被稱為捕獲階段（Capture Phase），而向上傳遞的過程則是冒泡階段（Bubbling Phase），在事件抵達目標時則會有目標階段（Tar...
                     
                 </div>
 
@@ -280,8 +306,8 @@ Javascript 指的是使用的程式語言，而 XML 則是交換資料的類型�
 
                 <div class="home-article-content markdown-body">
                     
-                        tags: DOMDOM 為 Document Object Model 的縮寫，中文為文件物件模型。
-透過 DOM，可以將 html 文件以物件的形式提供給程式進行存取，進而可以改變 html 的架構、style 以及內容。而這個物件是根據 htm...
+                        DOM 為 Document Object Model 的縮寫，中文為文件物件模型。
+透過 DOM，可以將 html 文件以物件的形式提供給程式進行存取，進而可以改變 html 的架構、style 以及內容。而這個物件是根據 html 中的標籤所建立...
                     
                 </div>
 
@@ -309,8 +335,8 @@ Javascript 指的是使用的程式語言，而 XML 則是交換資料的類型�
 
                 <div class="home-article-content markdown-body">
                     
-                        tags: DOMevent delegation 意思為事件代理。
-當網頁中有許多事件需要監聽，除了針對每一個事件增加監聽之外，透過 DOM 的事件傳遞機制，可以發現到若要觸發一個節點上的事件，該節點上層的所有節點都會經過捕獲與冒泡階段，這也代表可...
+                        event delegation 意思為事件代理。
+當網頁中有許多事件需要監聽，除了針對每一個事件增加監聽之外，透過 DOM 的事件傳遞機制，可以發現到若要觸發一個節點上的事件，該節點上層的所有節點都會經過捕獲與冒泡階段，這也代表可以透過在上層節點增...
                     
                 </div>
 
@@ -338,8 +364,8 @@ Javascript 指的是使用的程式語言，而 XML 則是交換資料的類型�
 
                 <div class="home-article-content markdown-body">
                     
-                        tags: DOMevent.preventDefault()取消事件的預設行為，例如避免送出表單或阻止超連結。但是不會影響事件傳遞，事件的捕獲與冒泡會正常傳遞。
-event.stopPropagation()可以取消事件的傳遞，可以透過 targe...
+                        event.preventDefault()取消事件的預設行為，例如避免送出表單或阻止超連結。但是不會影響事件傳遞，事件的捕獲與冒泡會正常傳遞。
+event.stopPropagation()可以取消事件的傳遞，可以透過 target.addEven...
                     
                 </div>
 
