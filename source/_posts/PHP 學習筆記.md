@@ -1,7 +1,8 @@
 ---
 title: PHP 學習筆記
+tags:
+- PHP
 ---
-###### tags: `PHP`
 ## 安裝 XAMPP
 安裝 XAMPP 之後，執行 Apache 與 MySQL，點 Config，就能查到目錄。
 檔案會在 `C:\xampp\htdocs` 中。

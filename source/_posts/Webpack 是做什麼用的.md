@@ -1,7 +1,10 @@
 ---
 title: Webpack 是做什麼用的
+tags:
+- webpack
+categories:
+- 前端
 ---
-###### tags: `前端工具`
 
 Webpack 的官網是這樣介紹：
 >At its core, webpack is a static module bundler for modern JavaScript applications. When webpack processes your application, it internally builds a dependency graph which maps every module your project needs and generates one or more bundles.

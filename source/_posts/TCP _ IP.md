@@ -1,7 +1,10 @@
 ---
 title: TCP / IP
+tags:
+- web 基礎
+categories:
+- 前端
 ---
-###### tags: `web 基礎`
 ### 網路的層級
 #### OSI 七層
 #### TCP / IP 四層

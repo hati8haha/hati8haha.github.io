@@ -1,7 +1,10 @@
 ---
 title: VARCHAR 跟 TEXT 的差別是什麼
+tags:
+- 資料庫
+categories:
+- 後端
 ---
-###### tags: `資料庫`
 ### VARCHAR
 通常字數較少會存成 VARCHAR，例如文章標題。
 

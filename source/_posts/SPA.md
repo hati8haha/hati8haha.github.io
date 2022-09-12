@@ -1,5 +1,10 @@
 ---
 title: SPA
+tags:
+- SPA
+- web 基礎
+categories:
+- 前端
 ---
 ###### tags: `web 基礎`
 ## Single Page Application

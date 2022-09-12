@@ -1,7 +1,12 @@
 ---
 title: Redux
+tags:
+- react
+- redux
+categories:
+- 前端
+- React
 ---
-###### tags: `react` `redux`
 
 redux => 狀態管理工具
 

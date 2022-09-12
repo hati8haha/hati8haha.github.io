@@ -1,7 +1,11 @@
 ---
 title: XSS 的攻擊原理以及防範方法
+tags:
+- 資安
+- XSS
+categories:
+- 資安
 ---
-###### tags: `網路安全`
 ### 攻擊原理
 XSS 為 Cross-site Scriptinng 的縮寫，中文為「跨網站指令碼」。
 

@@ -1,7 +1,11 @@
 ---
 title: MVC
+tags:
+- MVC
+- 設計模式
+categories:
+- 設計模式
 ---
-###### tags: `後端`
 
 ## 什麼是 MVC？
 

@@ -1,7 +1,13 @@
 ---
 title: svgr component 在 jest 無法被讀取
+tags:
+- react
+- svg
+- jest
+categories:
+- 前端
+- React
 ---
-###### tags: `react` `jest` `svg`
 ## 問題
 
 svgr 在 jest 中無法被讀取，執行測試時會報錯

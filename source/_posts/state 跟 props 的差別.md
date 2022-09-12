@@ -1,7 +1,11 @@
 ---
 title: state 跟 props 的差別
+tags:
+- react
+categories:
+- 前端
+- React
 ---
-###### tags: `react`
 ### state
 state 是管理元件的**狀態**，state 的值可以改變。
 ### props

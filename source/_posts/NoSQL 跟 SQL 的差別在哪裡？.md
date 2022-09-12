@@ -1,5 +1,11 @@
 ---
 title: NoSQL 跟 SQL 的差別在哪裡？
+tags:
+- SQL
+- NoSQL
+- 資料庫
+categories:
+- 後端
 ---
 ###### tags: `資料庫`
 NoSQL是Not Only SQL的縮寫，與 SQL（關聯式資料庫）有以下差別：

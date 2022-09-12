@@ -1,7 +1,12 @@
 ---
 title: SQL Injection 的攻擊原理以及防範方法
+tags:
+- 資料庫
+- 資安
+- SQL Injection
+categories:
+- 前端
 ---
-###### tags: `網路安全`
 ### 攻擊原理
 輸入特定含有 sql 語法的資料，讓 sql query 內容被竄改，達到符合攻擊目的。
 例如以下範例：

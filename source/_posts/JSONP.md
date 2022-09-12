@@ -3,6 +3,7 @@ title: JSONP
 tags:
 - JavaScript
 categories:
+- 前端
 - JavaScript
 ---
 ## JSONP 是什麼？

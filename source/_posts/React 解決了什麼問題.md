@@ -1,7 +1,11 @@
 ---
 title: React 解決了什麼問題
+tags:
+- react
+categories:
+- 前端
+- React
 ---
-###### tags: `react`
 ### 新工具的出現，是為了解決既有的問題
 
 而 React 做為一個 UI 的 JavaScript 的函式庫，它的出現便是為了解決 jQuery 以及原生 JavaScript 直接透過 DOM API 操作 DOM 時所衍生出的問題。

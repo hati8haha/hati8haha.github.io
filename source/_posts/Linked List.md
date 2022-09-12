@@ -1,5 +1,9 @@
 ---
 title: Linked List
+tags:
+- 資料結構
+categories:
+- 演算法
 ---
 ###### tags: `資料結構與演算法`
 Linked List 類似 Array

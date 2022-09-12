@@ -1,7 +1,11 @@
 ---
 title: React 的思考模式
+tags:
+- react
+categories:
+- 前端
+- React
 ---
-###### tags: `react`
 
 寫 React 時的思考模式與過往寫 HTML + JavaScript 的思考模式，個人認為最不一樣的兩點是：
 - 以元件（Component）為基本元素建構網頁
